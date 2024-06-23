@@ -19,6 +19,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+// https://www.youtube.com/watch?v=C_VO6tD6Y1g&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-&index=3 playlist
 @Mod(TestMod.MOD_ID)
 public class TestMod {
     public static final String MOD_ID = "testmod";
