@@ -2,5 +2,8 @@
   "item.testmod.sapphire" : "Sapphire",
   "item.testmod.raw_sapphire" : "Raw Sapphire",
 
-  "creativetab.test_tab" : "God Tab"
+  "creativetab.test_tab" : "God Tab",
+
+  "block.testmod.sapphire_block" : "Block of Sapphire",
+  "block.testmod.raw_sapphire_block" : "Block of Raw Sapphire"
 }

@@ -1,6 +1,7 @@
 package net.agent.testmod.item;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.block.ModBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
+                        output.accept(ModBlock.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlock.RAW_SAPPHIRE_BLOCK.get());
 
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
