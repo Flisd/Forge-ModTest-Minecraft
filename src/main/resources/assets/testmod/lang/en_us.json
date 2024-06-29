@@ -12,5 +12,7 @@
   "block.testmod.nether_sapphire_ore" : "Nether Sapphire Ore",
   "block.testmod.end_sapphire_ore" : "Endstone Sapphire Ore",
 
-  "item.testmod.metal_detector" : "Metal Detector"
+  "item.testmod.metal_detector" : "Metal Detector",
+
+  "block.testmod.sound_block" : "Sound Block"
 }

@@ -30,7 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.END_SAPPHIRE_ORE.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
-
+                        output.accept(ModBlock.SOUND_BLOCK.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

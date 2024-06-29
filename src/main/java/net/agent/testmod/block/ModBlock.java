@@ -1,6 +1,7 @@
 package net.agent.testmod.block;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.block.custom.SoundBlock;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformFloat;
@@ -46,6 +47,8 @@ public class ModBlock {
             () -> new DropExperienceBlock(UniformInt.of( 10,20), BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
                     .strength(3.5f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

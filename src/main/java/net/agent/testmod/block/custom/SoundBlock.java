@@ -1,0 +1,49 @@
+package net.agent.testmod.block.custom;
+import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+
+import java.lang.reflect.Field;
+import java.util.*;
+
+public class SoundBlock extends Block {
+    public SoundBlock(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
+        Random rand = new Random();
+        List<SoundEvent> eventsList = new ArrayList<>();
+        Field[] fields = SoundEvents.class.getDeclaredFields();
+
+        for (Field field : fields) {
+            if (field.getType().equals(SoundEvent.class)) {
+                if (field.getName().toLowerCase().contains("note_block")) {
+                    try {
+                        field.setAccessible(true);
+                        eventsList.add((SoundEvent) field.get(null));
+                    } catch (IllegalAccessException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }
+        }
+        // eventsList.get(rand.nextInt(eventsList.size()))
+        level.playSound(player, blockPos, SoundEvents.NOTE_BLOCK_CHIME.get(), SoundSource.BLOCKS,2f,rand.nextFloat(5));
+        return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public float getJumpFactor() {
+        return super.getJumpFactor()+2f;
+    }
+}
