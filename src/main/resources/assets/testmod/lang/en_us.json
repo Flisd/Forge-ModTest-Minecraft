@@ -5,5 +5,12 @@
   "creativetab.test_tab" : "God Tab",
 
   "block.testmod.sapphire_block" : "Block of Sapphire",
-  "block.testmod.raw_sapphire_block" : "Block of Raw Sapphire"
+  "block.testmod.raw_sapphire_block" : "Block of Raw Sapphire",
+
+  "block.testmod.sapphire_ore" : "Sapphire Ore",
+  "block.testmod.deepslate_sapphire_ore" : " Deepslate Sapphire Ore",
+  "block.testmod.nether_sapphire_ore" : "Nether Sapphire Ore",
+  "block.testmod.end_sapphire_ore" : "Endstone Sapphire Ore",
+
+  "item.testmod.metal_detector" : "Metal Detector"
 }

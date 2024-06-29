@@ -24,6 +24,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlock.RAW_SAPPHIRE_BLOCK.get());
 
+                        output.accept(ModBlock.SAPPHIRE_ORE.get());
+                        output.accept(ModBlock.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlock.NETHER_SAPPHIRE_ORE.get());
+                        output.accept(ModBlock.END_SAPPHIRE_ORE.get());
+
+                        output.accept(ModItems.METAL_DETECTOR.get());
+
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })
