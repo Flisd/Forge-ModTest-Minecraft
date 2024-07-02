@@ -20,5 +20,7 @@
 
   "item.testmod.strawberry" : "Strawberry",
 
-  "item.testmod.pine_cone" : "Pine Cone"
+  "item.testmod.pine_cone" : "Pine Cone",
+
+  "tooltip.testmod.metal_detector.tooltip" : "Finds some very precious ores below"
 }

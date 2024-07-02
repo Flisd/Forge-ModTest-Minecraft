@@ -2,16 +2,21 @@ package net.agent.testmod.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.Nullable;
 
 import java.lang.reflect.Field;
 import java.util.*;
@@ -43,6 +48,12 @@ public class SoundBlock extends Block {
         // eventsList.get(rand.nextInt(eventsList.size()))
         level.playSound(player, blockPos, eventsList.get(rand.nextInt(eventsList.size())).get(), SoundSource.BLOCKS, 2f, rand.nextFloat(5));
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack p_49816_, @Nullable BlockGetter p_49817_, List<Component> p_49818_, TooltipFlag p_49819_) {
+        p_49818_.add(Component.literal("like a note block, only different..."));
+        super.appendHoverText(p_49816_, p_49817_, p_49818_, p_49819_);
     }
 
     @Override
