@@ -16,5 +16,9 @@
 
   "block.testmod.sound_block" : "Sound Block",
 
-  "block.testmod.launch_block" : "Launch Block"
+  "block.testmod.launch_block" : "Launch Block",
+
+  "item.testmod.strawberry" : "Strawberry",
+
+  "item.testmod.pine_cone" : "Pine Cone"
 }

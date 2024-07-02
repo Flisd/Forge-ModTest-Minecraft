@@ -32,6 +32,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModBlock.SOUND_BLOCK.get());
                         output.accept(ModBlock.LAUNCH_BLOCK.get());
+
+                        output.accept(ModItems.STRAWBERRY.get());
+
+                        output.accept(ModItems.PINE_CONE.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })
