@@ -1,6 +1,7 @@
 package net.agent.testmod.block;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.block.custom.LaunchYou1000BlocksInTheAirBlock;
 import net.agent.testmod.block.custom.SoundBlock;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.IntProvider;
@@ -49,6 +50,9 @@ public class ModBlock {
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> LAUNCH_BLOCK = registerBlock("launch_block",
+            () -> new LaunchYou1000BlocksInTheAirBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

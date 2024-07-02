@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "D#D",
+    "#S#",
+    "D#D"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "S": {
+      "item" : "minecraft:slime_block"
+    },
+    "D" : {
+      "item" : "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "testmod:launch_block"
+  }
+}

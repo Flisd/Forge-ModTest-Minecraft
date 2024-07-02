@@ -1,5 +1,7 @@
 package net.agent.testmod.block.custom;
+
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -22,28 +24,29 @@ public class SoundBlock extends Block {
     @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         Random rand = new Random();
-        List<SoundEvent> eventsList = new ArrayList<>();
+        List<Holder.Reference<SoundEvent>> eventsList = new ArrayList<>();
         Field[] fields = SoundEvents.class.getDeclaredFields();
 
         for (Field field : fields) {
-            if (field.getType().equals(SoundEvent.class)) {
+            if (field.getType().equals(Holder.Reference.class)) {
                 if (field.getName().toLowerCase().contains("note_block")) {
                     try {
-                        field.setAccessible(true);
-                        eventsList.add((SoundEvent) field.get(null));
+                        field.setAccessible(true); // This line is added to ensure you can access private fields
+                        eventsList.add((Holder.Reference<SoundEvent>) field.get(null)); // Use null for static fields
                     } catch (IllegalAccessException e) {
                         throw new RuntimeException(e);
                     }
                 }
             }
         }
+
         // eventsList.get(rand.nextInt(eventsList.size()))
-        level.playSound(player, blockPos, SoundEvents.NOTE_BLOCK_CHIME.get(), SoundSource.BLOCKS,2f,rand.nextFloat(5));
+        level.playSound(player, blockPos, eventsList.get(rand.nextInt(eventsList.size())).get(), SoundSource.BLOCKS, 2f, rand.nextFloat(5));
         return InteractionResult.SUCCESS;
     }
 
     @Override
     public float getJumpFactor() {
-        return super.getJumpFactor()+2f;
+        return super.getJumpFactor() + 2f;
     }
 }

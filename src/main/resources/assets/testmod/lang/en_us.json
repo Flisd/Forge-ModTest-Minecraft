@@ -14,5 +14,7 @@
 
   "item.testmod.metal_detector" : "Metal Detector",
 
-  "block.testmod.sound_block" : "Sound Block"
+  "block.testmod.sound_block" : "Sound Block",
+
+  "block.testmod.launch_block" : "Launch Block"
 }
