@@ -13,6 +13,6 @@ public class ModFoods {
             .effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200), 0.8f)
             .effect(()->new MobEffectInstance(MobEffects.GLOWING,200), 1f)
             .effect(()->new MobEffectInstance(MobEffects.ABSORPTION,400), 1f)
+            .alwaysEat()
             .build();
-
 }
