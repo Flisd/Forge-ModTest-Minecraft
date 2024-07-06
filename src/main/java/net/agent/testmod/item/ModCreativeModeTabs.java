@@ -1,13 +1,11 @@
 package net.agent.testmod.item;
 
 import net.agent.testmod.TestMod;
-import net.agent.testmod.block.ModBlock;
+import net.agent.testmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,17 +19,17 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
-                        output.accept(ModBlock.SAPPHIRE_BLOCK.get());
-                        output.accept(ModBlock.RAW_SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
-                        output.accept(ModBlock.SAPPHIRE_ORE.get());
-                        output.accept(ModBlock.DEEPSLATE_SAPPHIRE_ORE.get());
-                        output.accept(ModBlock.NETHER_SAPPHIRE_ORE.get());
-                        output.accept(ModBlock.END_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.END_SAPPHIRE_ORE.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
-                        output.accept(ModBlock.SOUND_BLOCK.get());
-                        output.accept(ModBlock.LAUNCH_BLOCK.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModBlocks.LAUNCH_BLOCK.get());
 
                         output.accept(ModItems.STRAWBERRY.get());
 

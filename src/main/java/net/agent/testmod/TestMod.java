@@ -1,11 +1,10 @@
 package net.agent.testmod;
 
 import com.mojang.logging.LogUtils;
-import net.agent.testmod.block.ModBlock;
+import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,7 +32,7 @@ public class TestMod {
 
         ModItems.register(modEventBus);
 
-        ModBlock.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

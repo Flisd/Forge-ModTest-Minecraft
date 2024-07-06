@@ -4,8 +4,6 @@ import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.LaunchYou1000BlocksInTheAirBlock;
 import net.agent.testmod.block.custom.SoundBlock;
 import net.agent.testmod.item.ModItems;
-import net.minecraft.util.valueproviders.IntProvider;
-import net.minecraft.util.valueproviders.UniformFloat;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,7 +19,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlock {
+public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
