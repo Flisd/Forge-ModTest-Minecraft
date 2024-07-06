@@ -30,6 +30,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                         ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                         ModBlocks.END_SAPPHIRE_ORE.get(),
+                        ModBlocks.LAUNCH_BLOCK.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
 
