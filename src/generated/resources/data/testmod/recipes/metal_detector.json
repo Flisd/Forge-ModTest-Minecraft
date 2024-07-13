@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "S": {
+      "item": "testmod:sapphire_block"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#S#",
+    " # "
+  ],
+  "result": {
+    "item": "testmod:metal_detector"
+  }
+}

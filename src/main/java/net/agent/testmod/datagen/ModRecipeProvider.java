@@ -62,7 +62,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(p_297267_);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
-                .pattern(" #")
+                .pattern(" # ")
                 .pattern("#S#")
                 .pattern(" # ")
                 .define('#', Blocks.IRON_BLOCK)
