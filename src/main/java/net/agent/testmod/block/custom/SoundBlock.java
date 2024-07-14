@@ -45,7 +45,7 @@ public class SoundBlock extends Block {
             }
         }
 
-        // eventsList.get(rand.nextInt(eventsList.size()))
+//         eventsList.get(rand.nextInt(eventsList.size()))
         level.playSound(player, blockPos, eventsList.get(rand.nextInt(eventsList.size())).get(), SoundSource.BLOCKS, 2f, rand.nextFloat(5));
 //        level.playSound(player, blockPos,SoundEvents.NOTE_BLOCK_DIDGERIDOO.get(), SoundSource.BLOCKS, 2f, rand.nextFloat(5));
         return InteractionResult.SUCCESS;
