@@ -32,5 +32,13 @@
 
   "item.testmod.pine_cone" : "Pine Cone",
 
-  "tooltip.testmod.metal_detector.tooltip" : "Finds some very precious ores below"
+  "tooltip.testmod.metal_detector.tooltip" : "Finds some very precious ores below",
+
+  "item.testmod.sapphire_staff" : "Sappire Staff",
+
+  "item.testmod.sapphire_sword": "Sapphire Sword",
+  "item.testmod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.testmod.sapphire_axe": "Sapphire Axe",
+  "item.testmod.sapphire_shovel": "Sapphire Shovel",
+  "item.testmod.sapphire_hoe": "Sapphire Hoe"
 }

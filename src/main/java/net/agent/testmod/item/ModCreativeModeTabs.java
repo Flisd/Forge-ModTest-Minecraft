@@ -44,6 +44,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SAPPHIRE_WALL.get());
                         output.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         output.accept(ModBlocks.SAPPHIRE_TRAP_DOOR.get());
+
+                        output.accept(ModItems.SAPPHIRE_STAFF.get());
+
+                        output.accept(ModItems.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.SAPPHIRE_SHOVEL.get());
+                        output.accept(ModItems.SAPPHIRE_HOE.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })
