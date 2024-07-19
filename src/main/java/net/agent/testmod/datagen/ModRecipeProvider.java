@@ -5,6 +5,7 @@ import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -68,6 +69,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Blocks.IRON_BLOCK)
                 .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPAWNER_DETECTOR.get())
+                .pattern("`#`")
+                .pattern("#S#")
+                .pattern("`#`")
+                .define('#', Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE)
+                .define('S', Blocks.NETHERITE_BLOCK)
+                .define('`', ModItems.METAL_DETECTOR.get())
+                .unlockedBy(getHasName(ModItems.METAL_DETECTOR.get()), has(Blocks.NETHERITE_BLOCK))
                 .save(p_297267_);
 
     }

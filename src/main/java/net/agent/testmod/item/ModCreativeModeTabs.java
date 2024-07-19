@@ -57,6 +57,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         output.accept(ModItems.SAPPHIRE_BOOTS.get());
+                        output.accept(ModItems.SPAWNER_DETECTOR.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

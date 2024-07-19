@@ -45,5 +45,7 @@
   "item.testmod.sapphire_helmet" : "Sapphire Helmet",
   "item.testmod.sapphire_chestplate" : "Sapphire Chestplate",
   "item.testmod.sapphire_leggings" : "Sapphire Leggings",
-  "item.testmod.sapphire_boots" : "Sapphire Boots"
+  "item.testmod.sapphire_boots" : "Sapphire Boots",
+
+  "item.testmod.spawner_detector" : "Spawner Detector"
 }

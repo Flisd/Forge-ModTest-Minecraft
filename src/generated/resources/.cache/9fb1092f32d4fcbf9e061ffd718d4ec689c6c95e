@@ -1,4 +1,4 @@
-// 1.20.4	2024-07-13T13:46:46.8345633	Recipes
+// 1.20.4	2024-07-19T16:50:36.1525639	Recipes
 5334c550790722c4ebd2820c3a61a454daf1e862 data/testmod/advancements/recipes/misc/metal_detector.json
 39b966082f44d11dad8e557c3cd7b80c868cdb90 data/testmod/advancements/recipes/misc/raw_sapphire_block.json
 20f9e671d10513c0baa1e4bde68cd2ed75fdedd9 data/testmod/advancements/recipes/misc/sapphire.json
@@ -14,6 +14,7 @@ f5b96ce1dac3b5892f178b36fa60785fdf7cb396 data/testmod/advancements/recipes/misc/
 a5e4eb00e4fd6f3498c3e3f0c69dfcc34205b827 data/testmod/advancements/recipes/misc/sapphire_from_smelting_raw_sapphire.json
 a15972695542d9b6992220a37614e9cda80dfe1a data/testmod/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
 422501d3c1d577c09ca82a41e197aca87721ed1f data/testmod/advancements/recipes/misc/sound_block.json
+3518881a41c4e185db98261c307620e758009681 data/testmod/advancements/recipes/misc/spawner_detector.json
 f6fac5cfe37672836870bf44fe405ff34cf456d8 data/testmod/recipes/metal_detector.json
 f4784de98f91f31150333d6812314f25cc5a169a data/testmod/recipes/raw_sapphire_block.json
 d7005ce934d5e41c035eeff934a53b19908e837a data/testmod/recipes/sapphire.json
@@ -29,3 +30,4 @@ f20b7f3f65d40ceb2cc335f44900389235b1dc9f data/testmod/recipes/sapphire_from_smel
 6083d4fbf393499b7fe586880a9b214ad44418a9 data/testmod/recipes/sapphire_from_smelting_raw_sapphire.json
 c7813c2cfbebbfa24521dcaad22a59811f87ac2b data/testmod/recipes/sapphire_from_smelting_sapphire_ore.json
 284759919c5563d3276a7d14cb6419b99cd67007 data/testmod/recipes/sound_block.json
+fc7a784712a58302674b0c7d461eea95fe33b31a data/testmod/recipes/spawner_detector.json

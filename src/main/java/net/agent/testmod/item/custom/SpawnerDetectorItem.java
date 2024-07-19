@@ -14,12 +14,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.Tags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class MetalDetectorItem extends Item {
-    public MetalDetectorItem(Properties properties) {
+public class SpawnerDetectorItem extends Item {
+    public SpawnerDetectorItem(Properties properties) {
         super(properties);
     }
 
@@ -35,7 +36,7 @@ public class MetalDetectorItem extends Item {
                     for (int z = -1; z <= 1; z++) {
                         BlockPos searchPos = blockPos.offset(x, y, z);
                         BlockState state = useOnContext.getLevel().getBlockState(searchPos);
-                        if (isValuableBlock(state)) {
+                        if (isSpawnerBlock(state)) {
                             outputValuableCords(searchPos, player, state.getBlock());
                             foundBlock = true;
                             break;
@@ -68,7 +69,7 @@ public class MetalDetectorItem extends Item {
                 "(" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"));
     }
 
-    private boolean isValuableBlock(BlockState state) {
-        return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
+    private boolean isSpawnerBlock(BlockState state) {
+        return state.getBlock() == Blocks.SPAWNER;
     }
 }
