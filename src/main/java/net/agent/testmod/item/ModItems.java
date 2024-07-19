@@ -2,6 +2,7 @@ package net.agent.testmod.item;
 
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.FuelItem;
+import net.agent.testmod.item.custom.DrillToolItem;
 import net.agent.testmod.item.custom.MetalDetectorItem;
 import net.agent.testmod.item.custom.SpawnerDetectorItem;
 import net.minecraft.world.item.*;
@@ -60,6 +61,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> DRILL = ITEMS.register("drill",
+            () -> new DrillToolItem(new Item.Properties().durability(2000)));
 
 
 

@@ -47,5 +47,6 @@
   "item.testmod.sapphire_leggings" : "Sapphire Leggings",
   "item.testmod.sapphire_boots" : "Sapphire Boots",
 
-  "item.testmod.spawner_detector" : "Spawner Detector"
+  "item.testmod.spawner_detector" : "Spawner Detector",
+  "item.testmod.drill" : "Drill"
 }
