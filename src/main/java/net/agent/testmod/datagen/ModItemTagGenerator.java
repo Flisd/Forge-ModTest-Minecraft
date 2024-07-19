@@ -1,9 +1,11 @@
 package net.agent.testmod.datagen;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import javax.annotation.Nullable;
@@ -18,6 +20,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(   ModItems.SAPPHIRE_HELMET.get(),
+                        ModItems.SAPPHIRE_CHESTPLATE.get(),
+                        ModItems.SAPPHIRE_LEGGINGS.get(),
+                        ModItems.SAPPHIRE_BOOTS.get());
+
 
     }
 }
