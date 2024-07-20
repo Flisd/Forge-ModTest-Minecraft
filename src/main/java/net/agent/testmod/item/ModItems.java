@@ -5,7 +5,10 @@ import net.agent.testmod.block.custom.FuelItem;
 import net.agent.testmod.item.custom.DrillToolItem;
 import net.agent.testmod.item.custom.MetalDetectorItem;
 import net.agent.testmod.item.custom.SpawnerDetectorItem;
+import net.agent.testmod.util.ModTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -41,6 +44,9 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
             () -> new PickaxeItem(ModToolTiers.SAPPHIRE,1,2, new Item.Properties()));
 
+    public static final RegistryObject<Item> DRILL = ITEMS.register("drill",
+            () -> new DrillToolItem(1,2,ModToolTiers.SAPPHIRE, BlockTags.MINEABLE_WITH_PICKAXE,new Item.Properties().durability(2000)));
+
     public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
             () -> new AxeItem(ModToolTiers.SAPPHIRE,7,1.5f, new Item.Properties()));
 
@@ -62,8 +68,7 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> DRILL = ITEMS.register("drill",
-            () -> new DrillToolItem(new Item.Properties().durability(2000)));
+
 
 
 
