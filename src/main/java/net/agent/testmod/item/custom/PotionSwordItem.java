@@ -1,12 +1,15 @@
 package net.agent.testmod.item.custom;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -16,10 +19,14 @@ import java.util.List;
 
 public class PotionSwordItem extends SwordItem {
     private static final int MAX_POTIONS = 3;
-    private List<MobEffectInstance> potionEffects = new ArrayList<>();
+    public static List<MobEffectInstance> potionEffects = new ArrayList<>();
 
     public PotionSwordItem(Tier tier, int attackDamage, float attackSpeed, Properties properties) {
         super(tier, attackDamage, attackSpeed, properties);
+        // 200 ticks = 10 seconds, amplifier = 1 for Slowness II
+        potionEffects.add(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 1));
+        potionEffects.add(new MobEffectInstance(MobEffects.HARM, 30, 1));
+        potionEffects.add(new MobEffectInstance(MobEffects.REGENERATION, 200, 1));
     }
 
     @Override
@@ -34,7 +41,7 @@ public class PotionSwordItem extends SwordItem {
         return super.hurtEnemy(stack, target, attacker);
     }
 
-    public void addPotionEffect(MobEffectInstance effect) {
+    public static void addPotionEffect(MobEffectInstance effect) {
         if (potionEffects.size() >= MAX_POTIONS) {
             // If the sword already has 3 potions, replace the first one
             potionEffects.remove(0);
@@ -54,11 +61,4 @@ public class PotionSwordItem extends SwordItem {
         p_41423_.add(Component.literal(pots.toString()));
         super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
     }
-
-//    @Override
-//    public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
-//        p_41423_.add(Component.translatable("tooltip.testmod.metal_detector.tooltip"));
-//        super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
-//    }
-
 }

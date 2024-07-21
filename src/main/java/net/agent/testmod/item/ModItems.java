@@ -73,7 +73,7 @@ public class ModItems {
             () -> new ExplosiveSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> POTION_SWORD = ITEMS.register("potion_sword",
-            () -> new PosionSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
+            () -> new PotionSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
