@@ -2,9 +2,7 @@ package net.agent.testmod.item;
 
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.FuelItem;
-import net.agent.testmod.item.custom.DrillToolItem;
-import net.agent.testmod.item.custom.MetalDetectorItem;
-import net.agent.testmod.item.custom.SpawnerDetectorItem;
+import net.agent.testmod.item.custom.*;
 import net.agent.testmod.util.ModTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
@@ -39,22 +37,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE,4,2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE,1,2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 1, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> DRILL = ITEMS.register("drill",
-            () -> new DrillToolItem(1,2,ModToolTiers.SAPPHIRE, BlockTags.MINEABLE_WITH_PICKAXE,new Item.Properties().durability(2000)));
+            () -> new DrillToolItem(1, 2, ModToolTiers.SAPPHIRE, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(2000)));
 
     public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
-            () -> new AxeItem(ModToolTiers.SAPPHIRE,7,1.5f, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 7, 1.5f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register("sapphire_shovel",
-            () -> new ShovelItem(ModToolTiers.SAPPHIRE,0,0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
-            () -> new HoeItem(ModToolTiers.SAPPHIRE,0,0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -68,8 +66,14 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> IVY_SWORD = ITEMS.register("ivy_sword",
+            () -> new PosionSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
+    public static final RegistryObject<Item> TNT_SWORD = ITEMS.register("tnt_sword",
+            () -> new ExplosiveSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
+    public static final RegistryObject<Item> POTION_SWORD = ITEMS.register("potion_sword",
+            () -> new PosionSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

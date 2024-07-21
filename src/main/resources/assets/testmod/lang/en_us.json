@@ -48,5 +48,9 @@
   "item.testmod.sapphire_boots" : "Sapphire Boots",
 
   "item.testmod.spawner_detector" : "Spawner Detector",
-  "item.testmod.drill" : "Drill"
+  "item.testmod.drill" : "Drill",
+
+  "item.testmod.ivy_sword" : "Ivy Sword",
+  "item.testmod.tnt_sword" : "TNT Sword",
+  "item.testmod.potion_sword" : "Potion Sword"
 }

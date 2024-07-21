@@ -60,6 +60,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SPAWNER_DETECTOR.get());
                         output.accept(ModItems.DRILL.get());
+
+                        output.accept(ModItems.IVY_SWORD.get());
+                        output.accept(ModItems.TNT_SWORD.get());
+                        output.accept(ModItems.POTION_SWORD.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

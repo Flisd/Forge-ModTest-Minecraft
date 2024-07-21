@@ -1,16 +1,31 @@
 package net.agent.testmod.datagen;
 
+import com.mojang.blaze3d.shaders.Effect;
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.item.ModItems;
+import net.agent.testmod.item.custom.PosionSwordItem;
+import net.agent.testmod.item.custom.PotionSwordItem;
+import net.minecraft.core.NonNullList;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.inventory.CraftingContainer;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -23,6 +38,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
+
+    protected List<Potion> PotionsList = new ArrayList<>(ForgeRegistries.POTIONS.getValues());
 
     @Override
     protected void buildRecipes(RecipeOutput p_297267_) {
@@ -81,9 +98,50 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.METAL_DETECTOR.get()), has(Blocks.NETHERITE_BLOCK))
                 .save(p_297267_);
 
+        for (Potion potion : PotionsList) {
+            List<MobEffectInstance> effects = potion.getEffects();
+            if (!effects.isEmpty()) {
+                // Get the PotionSwordItem instance from the game
+                PotionSwordItem potionSword = (PotionSwordItem) ModItems.POTION_SWORD.get();
+                // Add each effect to the sword
+                for (MobEffectInstance effect : effects) {
+                    potionSword.addPotionEffect(effect);
+                }
+            }
+        }
     }
 
-
+//    public class PotionSwordRecipe extends ShapelessRecipe {
+//        public PotionSwordRecipe(String p_249640_, CraftingBookCategory p_249390_, ItemStack p_252071_, NonNullList<Ingredient> p_250689_) {
+//            super(p_249640_, p_249390_, p_252071_, p_250689_);
+//        }
+//
+//        public ItemStack assemble(CraftingContainer inv) {
+//            ItemStack sword = ItemStack.EMPTY;
+//            List<MobEffectInstance> effects = new ArrayList<>();
+//
+//            for (int i = 0; i < inv.getContainerSize(); i++) {
+//                ItemStack stack = inv.getItem(i);
+//                if (!stack.isEmpty()) {
+//                    if (stack.getItem() instanceof PotionSwordItem) {
+//                        sword = stack;
+//                    } else if (stack.getItem() == Items.LINGERING_POTION) {
+//                        List<MobEffectInstance> potionEffects = PotionUtils.getMobEffects(stack);
+//                        effects.addAll(potionEffects);
+//                    }
+//                }
+//            }
+//
+//            if (!sword.isEmpty() && !effects.isEmpty()) {
+//                PotionSwordItem potionSword = (PotionSwordItem) sword.getItem();
+//                for (MobEffectInstance effect : effects) {
+//                    potionSword.addPotionEffect(effect);
+//                }
+//            }
+//
+//            return sword;
+//        }
+//    }
     protected static void oreSmelting(RecipeOutput p_300202_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {
         oreCooking(p_300202_, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, p_250172_, p_250588_, p_251868_, p_250789_, p_252144_, p_251687_, "_from_smelting");
     }

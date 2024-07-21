@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "testmod:potion_sword"
+    },
+    {
+      "item": "minecraft:lingering_potion"
+    }
+  ],
+  "result": {
+    "item": "testmod:potion_sword"
+  }
+}
