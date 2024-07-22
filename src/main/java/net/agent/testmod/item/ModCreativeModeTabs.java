@@ -64,6 +64,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.IVY_SWORD.get());
                         output.accept(ModItems.TNT_SWORD.get());
                         output.accept(ModItems.POTION_SWORD.get());
+                        output.accept(ModItems.LIGHTNING_SWORD.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

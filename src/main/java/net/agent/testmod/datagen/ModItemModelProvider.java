@@ -74,6 +74,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.IVY_SWORD);
         handheldItem(ModItems.TNT_SWORD);
         handheldItem(ModItems.POTION_SWORD);
+        handheldItem(ModItems.LIGHTNING_SWORD);
 
         trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);

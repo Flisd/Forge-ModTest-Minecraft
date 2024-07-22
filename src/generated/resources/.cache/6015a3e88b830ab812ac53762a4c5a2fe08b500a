@@ -1,6 +1,7 @@
-// 1.20.4	2024-07-20T21:18:36.9351101	Item Models: testmod
+// 1.20.4	2024-07-22T12:38:44.9032136	Item Models: testmod
 d571d12468e729aa11596000e997a3eaf4481526 assets/testmod/models/item/drill.json
 650f0b951d99c7aa1f713829fb330673ffbdab69 assets/testmod/models/item/ivy_sword.json
+2bba9dc2f87b7962681b8b7e306b030fae0a0575 assets/testmod/models/item/lighting_sword.json
 d89ed460e9c5a6a8a06b154ab143e4a5a06307a4 assets/testmod/models/item/metal_detector.json
 4aec79de5dc4ce9b6a9997bddb9f8cf3b80e82c9 assets/testmod/models/item/pine_cone.json
 30bb35fee43d9e8618f9458df51f91e3cc99e244 assets/testmod/models/item/potion_sword.json
