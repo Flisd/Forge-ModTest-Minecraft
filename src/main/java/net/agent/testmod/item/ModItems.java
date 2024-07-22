@@ -77,7 +77,7 @@ public class ModItems {
             () -> new LightingSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> ORE_PICKAXE = ITEMS.register("ore_pickaxe",
-            () -> new OreDestroyer(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(2000)));
+            () -> new OreDestroyer(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(101)));
 
 
     public static void register(IEventBus eventBus) {

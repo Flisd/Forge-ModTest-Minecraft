@@ -55,7 +55,7 @@ public class OreDestroyer extends DiggerItem {
                         // Check if the current block is a valuable ore
                         if (isValuableOre(currentState)) {
                             // Simulate breaking the block with a Fortune III pickaxe
-                            simulateBlockBreakWithFortune(world, currentPos, player, 3);
+                            simulateBlockBreakWithFortune(world, currentPos, player, 5);
                         }
                     }
                 }
@@ -69,9 +69,9 @@ public class OreDestroyer extends DiggerItem {
         BlockState state = world.getBlockState(pos);
         Block block = state.getBlock();
 
-        // Create a fake Fortune III pickaxe
         ItemStack fortunePickaxe = new ItemStack(Items.DIAMOND_PICKAXE);
         fortunePickaxe.enchant(Enchantments.BLOCK_FORTUNE, fortuneLevel);
+
 
         // Get the drops for the block as if it was mined with the Fortune III pickaxe
         List<ItemStack> drops = Block.getDrops(state, (ServerLevel) world, pos, null, player, fortunePickaxe);
@@ -83,6 +83,8 @@ public class OreDestroyer extends DiggerItem {
 
         // Remove the original block
         world.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+
+        fortunePickaxe.hurtAndBreak(50, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
     }
 
     private static void popResource(Level world, BlockPos pos, ItemStack stack) {
