@@ -2,15 +2,19 @@ package net.agent.testmod.item.custom;
 
 import net.agent.testmod.util.ModTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -18,9 +22,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 
-public class GlowOrePickaxeItem extends DiggerItem {
+public class OreDestroyer extends DiggerItem {
 
-    public GlowOrePickaxeItem(float p_204108_, float p_204109_, Tier p_204110_, TagKey<Block> p_204111_, Properties p_204112_) {
+    public OreDestroyer(float p_204108_, float p_204109_, Tier p_204110_, TagKey<Block> p_204111_, Properties p_204112_) {
         super(p_204108_, p_204109_, p_204110_, p_204111_, p_204112_);
     }
 
@@ -38,7 +42,6 @@ public class GlowOrePickaxeItem extends DiggerItem {
     public InteractionResult useOn(UseOnContext useOnContext) {
         Player player = useOnContext.getPlayer();
         Level world = useOnContext.getLevel();
-        ItemStack stack = useOnContext.getItemInHand();
 
         if (!world.isClientSide) {
             // Get all blocks in a certain radius around the player
@@ -51,19 +54,45 @@ public class GlowOrePickaxeItem extends DiggerItem {
                         BlockState currentState = world.getBlockState(currentPos);
                         // Check if the current block is a valuable ore
                         if (isValuableOre(currentState)) {
-                            // Replace the ore with a diamond block
-                            world.setBlock(currentPos, Blocks.DIAMOND_BLOCK.defaultBlockState(), 3);
+                            // Simulate breaking the block with a Fortune III pickaxe
+                            simulateBlockBreakWithFortune(world, currentPos, player, 3);
                         }
                     }
                 }
             }
-
-            // Reduce the item's durability
-            stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(useOnContext.getHand()));
         }
 
         return InteractionResult.SUCCESS;
     }
+
+    private void simulateBlockBreakWithFortune(Level world, BlockPos pos, Player player, int fortuneLevel) {
+        BlockState state = world.getBlockState(pos);
+        Block block = state.getBlock();
+
+        // Create a fake Fortune III pickaxe
+        ItemStack fortunePickaxe = new ItemStack(Items.DIAMOND_PICKAXE);
+        fortunePickaxe.enchant(Enchantments.BLOCK_FORTUNE, fortuneLevel);
+
+        // Get the drops for the block as if it was mined with the Fortune III pickaxe
+        List<ItemStack> drops = Block.getDrops(state, (ServerLevel) world, pos, null, player, fortunePickaxe);
+
+        // Spawn the drops in the world
+        for (ItemStack drop : drops) {
+            popResource(world, pos, drop);
+        }
+
+        // Remove the original block
+        world.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+    }
+
+    private static void popResource(Level world, BlockPos pos, ItemStack stack) {
+        if (!world.isClientSide && !stack.isEmpty() && world.getGameRules().getBoolean(GameRules.RULE_DOBLOCKDROPS)) {
+            ItemEntity itementity = new ItemEntity(world, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, stack);
+            itementity.setDefaultPickUpDelay();
+            world.addFreshEntity(itementity);
+        }
+    }
+
 
     private boolean isValuableOre(BlockState state) {
         return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);

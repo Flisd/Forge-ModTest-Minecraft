@@ -3,10 +3,8 @@ package net.agent.testmod.item;
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.FuelItem;
 import net.agent.testmod.item.custom.*;
-import net.agent.testmod.util.ModTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -78,8 +76,8 @@ public class ModItems {
     public static final RegistryObject<Item> LIGHTNING_SWORD = ITEMS.register("lighting_sword",
             () -> new LightingSwordItem(Tiers.NETHERITE, 4, 2, new Item.Properties()));
 
-    public static final RegistryObject<Item> GLOW_PICKAXE = ITEMS.register("glow_pickaxe",
-            () -> new GlowOrePickaxeItem(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> ORE_PICKAXE = ITEMS.register("ore_pickaxe",
+            () -> new OreDestroyer(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(2000)));
 
 
     public static void register(IEventBus eventBus) {

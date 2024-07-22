@@ -16,10 +16,8 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.world.ModifiableBiomeInfo;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.checkerframework.common.returnsreceiver.qual.This;
 
 import java.util.LinkedHashMap;
 
@@ -75,6 +73,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TNT_SWORD);
         handheldItem(ModItems.POTION_SWORD);
         handheldItem(ModItems.LIGHTNING_SWORD);
+        handheldItem(ModItems.ORE_PICKAXE);
 
         trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
