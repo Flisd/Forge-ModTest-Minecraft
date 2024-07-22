@@ -53,5 +53,7 @@
   "item.testmod.ivy_sword" : "Ivy Sword",
   "item.testmod.tnt_sword" : "TNT Sword",
   "item.testmod.potion_sword" : "Potion Sword",
-  "item.testmod.lighting_sword" : "Lighting Sword"
+  "item.testmod.lighting_sword" : "Lighting Sword",
+
+  "item.testmod.glow_pickaxe" : "Glow Pickaxe"
 }
