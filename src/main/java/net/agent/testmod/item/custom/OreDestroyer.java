@@ -42,6 +42,7 @@ public class OreDestroyer extends DiggerItem {
     public InteractionResult useOn(UseOnContext useOnContext) {
         Player player = useOnContext.getPlayer();
         Level world = useOnContext.getLevel();
+        ItemStack stack = useOnContext.getItemInHand();
 
         if (!world.isClientSide) {
             // Get all blocks in a certain radius around the player
@@ -54,16 +55,17 @@ public class OreDestroyer extends DiggerItem {
                         BlockState currentState = world.getBlockState(currentPos);
                         // Check if the current block is a valuable ore
                         if (isValuableOre(currentState)) {
-                            // Simulate breaking the block with a Fortune III pickaxe
+                            // Simulate breaking the block with a Fortune V pickaxe
                             simulateBlockBreakWithFortune(world, currentPos, player, 5);
+                            stack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(p.getUsedItemHand()));
                         }
                     }
                 }
             }
         }
-
         return InteractionResult.SUCCESS;
     }
+
 
     private void simulateBlockBreakWithFortune(Level world, BlockPos pos, Player player, int fortuneLevel) {
         BlockState state = world.getBlockState(pos);
@@ -83,8 +85,6 @@ public class OreDestroyer extends DiggerItem {
 
         // Remove the original block
         world.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
-
-        fortunePickaxe.hurtAndBreak(50, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
     }
 
     private static void popResource(Level world, BlockPos pos, ItemStack stack) {
