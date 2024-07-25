@@ -39,7 +39,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.SAPPHIRE_BLOCK.get());
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                        .add(ModBlocks.ENDER_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.NETHER_SAPPHIRE_ORE.get());

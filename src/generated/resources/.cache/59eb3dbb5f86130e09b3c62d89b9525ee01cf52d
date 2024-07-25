@@ -1,5 +1,6 @@
-// 1.20.4	2024-07-14T19:44:47.0244795	Loot Tables
+// 1.20.4	2024-07-24T19:43:37.1303409	Loot Tables
 30e721c94b74507aa37af640875dbff4d9840983 data/testmod/loot_tables/blocks/deepslate_sapphire_ore.json
+06b49d0bf05fb45f9ee42033003ff86b8940e165 data/testmod/loot_tables/blocks/ender_block.json
 198b1eee9eb16d0c0ffe2fa8e712382a1cf5782a data/testmod/loot_tables/blocks/end_sapphire_ore.json
 1887396fd98f66f61352ee979da6fe02838ee70d data/testmod/loot_tables/blocks/launch_block.json
 f5f48ea8d42a9cd0a1ce51912e0c564e191bda88 data/testmod/loot_tables/blocks/nether_sapphire_ore.json

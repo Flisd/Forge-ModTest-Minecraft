@@ -1,6 +1,7 @@
 package net.agent.testmod.block;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.block.custom.EnderBlock;
 import net.agent.testmod.block.custom.LaunchYou1000BlocksInTheAirBlock;
 import net.agent.testmod.block.custom.SoundBlock;
 import net.agent.testmod.item.ModItems;
@@ -81,6 +82,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAPPHIRE_TRAP_DOOR = registerBlock("sapphire_trap_door",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion()));
+
+    public static final RegistryObject<Block> ENDER_BLOCK = registerBlock("ender_block",
+            () -> new EnderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

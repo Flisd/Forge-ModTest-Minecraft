@@ -1,9 +1,9 @@
-// 1.20.4	2024-07-15T12:09:55.0762077	Tags for minecraft:block mod id testmod
+// 1.20.4	2024-07-24T19:43:37.1293386	Tags for minecraft:block mod id testmod
 b85046767f584eb7ccbed010710df11a01ab5bd1 data/forge/tags/blocks/needs_netherite_tool.json
 d2cb4152db1555239e9ace83b849f15f1d29d957 data/minecraft/tags/blocks/fences.json
 e04ff04f08abfc48e4d0b44a686fa28fe4360bc2 data/minecraft/tags/blocks/fence_gates.json
 a6d3028ef5411e055055b07ee35e724ff3b752e5 data/minecraft/tags/blocks/mineable/pickaxe.json
-cc6c7b18132c48ef487a0064e0efbcb9f8d00dc7 data/minecraft/tags/blocks/needs_diamond_tool.json
+666778fbe0a36e84c05ce05d8fc413364a7ab62d data/minecraft/tags/blocks/needs_diamond_tool.json
 5af8831bad791343bef9423575256f1e8280c626 data/minecraft/tags/blocks/needs_iron_tool.json
 889eb0245fa7890e8faba7f86de16884ab763110 data/minecraft/tags/blocks/needs_stone_tool.json
 fbcc4375da21473d130bfb5bd26bbf95639020da data/minecraft/tags/blocks/walls.json

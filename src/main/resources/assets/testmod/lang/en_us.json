@@ -55,5 +55,7 @@
   "item.testmod.potion_sword" : "Potion Sword",
   "item.testmod.lighting_sword" : "Lighting Sword",
 
-  "item.testmod.ore_pickaxe" : "Ore Pickaxe"
+  "item.testmod.ore_pickaxe" : "Ore Pickaxe",
+
+  "block.testmod.ender_block" : "Ender Block"
 }

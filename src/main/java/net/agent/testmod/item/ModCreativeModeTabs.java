@@ -67,6 +67,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LIGHTNING_SWORD.get());
 
                         output.accept(ModItems.ORE_PICKAXE.get());
+                        output.accept(ModBlocks.ENDER_BLOCK.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })
