@@ -16,15 +16,16 @@ import java.util.List;
 public class EnderBlock extends Block {
     boolean msgSent;
     private boolean teleported = false; // Add this line
+    private int teleportDelay = 0;
     public EnderBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     public void stepOn(Level world, BlockPos pos, BlockState p_152433_, Entity entity) {
-        if (teleported) { // Add this line
-            return; // Add this line
-        } // Add this line
+        if (teleported) {
+            return;
+        }
 
         int radius = 25;
         BlockPos blockPos = null;
@@ -47,14 +48,19 @@ public class EnderBlock extends Block {
             return;
         }
         entity.teleportTo(blockPos.getX(), blockPos.getY(), blockPos.getZ());
-        teleported = true; // Add this line
+        teleported = true;
+        teleportDelay = 20;
         super.stepOn(world, pos, p_152433_, entity);
     }
 
     @Override
     public void entityInside(BlockState state, Level world, BlockPos pos, Entity entity) {
         if (!world.isClientSide) {
-            teleported = false; // Add this line
+            if (teleportDelay > 0) {
+                teleportDelay--;
+            } else {
+                teleported = false;
+            }
         }
         super.entityInside(state, world, pos, entity);
     }
