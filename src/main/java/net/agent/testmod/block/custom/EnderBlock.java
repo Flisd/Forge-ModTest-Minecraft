@@ -14,19 +14,21 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class EnderBlock extends Block {
-    boolean msgSent;
-    private boolean teleported = false; // Add this line
-    private int teleportDelay = 0;
+    private boolean teleported = false;
+    private int teleportDelay = 3;
+
     public EnderBlock(Properties properties) {
         super(properties);
     }
 
-    @Override
     public void stepOn(Level world, BlockPos pos, BlockState p_152433_, Entity entity) {
-        if (teleported) {
-            return;
+        if(teleportDelay != 0){
+            if (teleported) {
+                teleportDelay--;
+                return;
+            }
         }
-
+        teleportDelay = 3;
         int radius = 25;
         BlockPos blockPos = null;
 
@@ -42,32 +44,19 @@ public class EnderBlock extends Block {
                 }
             }
         }
-        if (blockPos == null && !msgSent) {
+        if (blockPos == null) {
             entity.sendSystemMessage(Component.literal("No other ender block found in the given radius of: " + radius));
-            msgSent = true;
             return;
         }
-        entity.teleportTo(blockPos.getX(), blockPos.getY(), blockPos.getZ());
+        entity.teleportTo(blockPos.getX(), blockPos.getY()+1, blockPos.getZ());
         teleported = true;
         teleportDelay = 20;
         super.stepOn(world, pos, p_152433_, entity);
     }
 
     @Override
-    public void entityInside(BlockState state, Level world, BlockPos pos, Entity entity) {
-        if (!world.isClientSide) {
-            if (teleportDelay > 0) {
-                teleportDelay--;
-            } else {
-                teleported = false;
-            }
-        }
-        super.entityInside(state, world, pos, entity);
-    }
-
-    @Override
     public void appendHoverText(ItemStack p_49816_, @Nullable BlockGetter p_49817_, List<Component> p_49818_, TooltipFlag p_49819_) {
-        p_49818_.add(Component.literal("Stand to teleport"));
+        p_49818_.add(Component.literal("Jump to teleport"));
         super.appendHoverText(p_49816_, p_49817_, p_49818_, p_49819_);
     }
 }

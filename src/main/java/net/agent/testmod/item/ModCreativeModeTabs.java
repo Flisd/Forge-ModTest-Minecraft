@@ -68,6 +68,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ORE_PICKAXE.get());
                         output.accept(ModBlocks.ENDER_BLOCK.get());
+
+                        output.accept(ModBlocks.ORE_LUCK_BLOCK.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

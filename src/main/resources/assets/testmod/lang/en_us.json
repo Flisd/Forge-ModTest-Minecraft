@@ -57,5 +57,7 @@
 
   "item.testmod.ore_pickaxe" : "Ore Pickaxe",
 
-  "block.testmod.ender_block" : "Ender Block"
+  "block.testmod.ender_block" : "Ender Block",
+
+  "block.testmod.ore_luck_block" : "Ore Luck Block"
 }
