@@ -30,6 +30,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ENDER_BLOCK.get());
         this.dropSelf(ModBlocks.ORE_LUCK_BLOCK.get());
 
+
+        this.add(ModBlocks.ORE_LUCK_BLOCK.get(), block -> LootTable.lootTable());
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
         this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),

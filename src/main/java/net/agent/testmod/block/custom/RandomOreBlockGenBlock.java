@@ -45,7 +45,7 @@ public class RandomOreBlockGenBlock extends Block {
 
     @Override
     public void appendHoverText(ItemStack p_49816_, @Nullable BlockGetter p_49817_, List<Component> p_49818_, TooltipFlag p_49819_) {
-        p_49818_.add(Component.literal("like a note block, only different..."));
+        p_49818_.add(Component.literal("LUCK"));
         super.appendHoverText(p_49816_, p_49817_, p_49818_, p_49819_);
     }
 }
