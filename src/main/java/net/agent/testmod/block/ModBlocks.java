@@ -1,10 +1,7 @@
 package net.agent.testmod.block;
 
 import net.agent.testmod.TestMod;
-import net.agent.testmod.block.custom.EnderBlock;
-import net.agent.testmod.block.custom.LaunchYou1000BlocksInTheAirBlock;
-import net.agent.testmod.block.custom.RandomOreBlockGenBlock;
-import net.agent.testmod.block.custom.SoundBlock;
+import net.agent.testmod.block.custom.*;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -89,6 +86,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ORE_LUCK_BLOCK = registerBlock("ore_luck_block",
             () -> new RandomOreBlockGenBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> CAMO_BLOCK = registerBlock("camouflage_block",
+            () -> new CamouflageBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

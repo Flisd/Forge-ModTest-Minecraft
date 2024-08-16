@@ -59,5 +59,7 @@
 
   "block.testmod.ender_block" : "Ender Block",
 
-  "block.testmod.ore_luck_block" : "Ore Luck Block"
+  "block.testmod.ore_luck_block" : "Ore Luck Block",
+
+  "block.testmod.camouflage_block" : "Camo Block"
 }
