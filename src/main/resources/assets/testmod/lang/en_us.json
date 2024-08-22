@@ -67,5 +67,6 @@
 
   "enchantment.testmod.lightning_striker" : "Lightning Striker",
   "enchantment.testmod.double_trouble" : "Double Trouble",
-  "enchantment.testmod.strip_mining" : "Strip Miner"
+  "enchantment.testmod.strip_mining" : "Strip Miner",
+  "enchantment.testmod.there_goes_gravity" : "Gravity"
 }

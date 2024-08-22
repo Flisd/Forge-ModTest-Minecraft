@@ -20,7 +20,11 @@ public class ModEnchantments {
             ()-> new DoubleTrouble(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
     public static RegistryObject<Enchantment> STRIP_MINING = ENCHANTMENTS.register("strip_mining",
-            ()-> new StripMining(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+            ()-> new StripMining());
+
+    public static RegistryObject<Enchantment> THERE_GOES_GRAVITY = ENCHANTMENTS.register("there_goes_gravity",
+            ()-> new ThereGoesGravity(Enchantment.Rarity.RARE, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.CHEST}));
+
 
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
