@@ -65,5 +65,7 @@
 
   "block.testmod.diamond_tnt" : "Diamond TNT",
 
-  "enchantment.testmod.lightning_striker" : "Lightning Striker"
+  "enchantment.testmod.lightning_striker" : "Lightning Striker",
+  "enchantment.testmod.double_trouble" : "Double Trouble",
+  "enchantment.testmod.strip_mining" : "Strip Miner"
 }

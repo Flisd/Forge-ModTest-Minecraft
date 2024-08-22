@@ -16,6 +16,12 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> LIGHTING_STRIKER = ENCHANTMENTS.register("lightning_striker",
             ()-> new LighthingStrikerEnchantment(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
 
+    public static RegistryObject<Enchantment> DOUBLE_TROUBLE = ENCHANTMENTS.register("double_trouble",
+            ()-> new DoubleTrouble(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+
+    public static RegistryObject<Enchantment> STRIP_MINING = ENCHANTMENTS.register("strip_mining",
+            ()-> new StripMining(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
