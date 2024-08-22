@@ -27,11 +27,13 @@ public class TotemOfMagnet extends Item {
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         Player player = event.player;
         ItemStack mainHand = player.getMainHandItem();
-        ItemStack offHand = player.getOffhandItem();
 
-        boolean hasTotem = mainHand.getItem() instanceof TotemOfMagnet || offHand.getItem() instanceof TotemOfMagnet;
+        if (mainHand.getItem() instanceof TotemOfMagnet) {
+            // Reduce durability by 1 every second
+            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 20 == 0) {
+                mainHand.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(InteractionHand.MAIN_HAND));
+            }
 
-        if (hasTotem) {
             Level world = player.level();
             List<Entity> entities = world.getEntities(player, player.getBoundingBox().inflate(5)); // 5-block radius
 
@@ -59,6 +61,7 @@ public class TotemOfMagnet extends Item {
         }
         return InteractionResult.SUCCESS;
     }
+
     private static void pullEntityTowardsPlayer(ItemEntity itemEntity, Player player) {
         double speed = 0.05; // Pull speed
         double dx = player.getX() - itemEntity.getX();
