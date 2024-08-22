@@ -79,6 +79,9 @@ public class ModItems {
     public static final RegistryObject<Item> ORE_PICKAXE = ITEMS.register("ore_pickaxe",
             () -> new OreDestroyer(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(101)));
 
+    public static final RegistryObject<Item> TOTEM_OF_MAGNET = ITEMS.register("totem_of_magnet",
+            () -> new TotemOfMagnet(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
