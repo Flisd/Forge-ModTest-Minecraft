@@ -61,5 +61,9 @@
 
   "block.testmod.ore_luck_block" : "Ore Luck Block",
 
-  "block.testmod.camouflage_block" : "Camo Block"
+  "block.testmod.camouflage_block" : "Camo Block",
+
+  "block.testmod.diamond_tnt" : "Diamond TNT",
+
+  "enchantment.testmod.lightning_striker" : "Lightning Striker"
 }

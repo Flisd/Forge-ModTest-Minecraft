@@ -90,6 +90,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> CAMO_BLOCK = registerBlock("camouflage_block",
             () -> new CamouflageBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> DIAMOND_TNT = registerBlock("diamond_tnt",
+            () -> new DiamondTNTBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);
         registerBlockItem(name, ret);

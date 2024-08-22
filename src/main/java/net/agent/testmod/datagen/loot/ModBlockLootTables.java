@@ -30,6 +30,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ENDER_BLOCK.get());
         this.dropSelf(ModBlocks.ORE_LUCK_BLOCK.get());
         this.dropSelf(ModBlocks.CAMO_BLOCK.get());
+        this.dropSelf(ModBlocks.DIAMOND_TNT.get());
 
 
         this.add(ModBlocks.ORE_LUCK_BLOCK.get(), block -> LootTable.lootTable());

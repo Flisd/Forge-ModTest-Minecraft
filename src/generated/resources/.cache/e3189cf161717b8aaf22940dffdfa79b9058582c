@@ -1,6 +1,7 @@
-// 1.20.4	2024-08-14T19:54:30.2071605	Block States: testmod
+// 1.20.4	2024-08-20T19:45:05.7516418	Block States: testmod
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
 592a016a6656dcb60b662bf79098e9f53191b013 assets/testmod/blockstates/deepslate_sapphire_ore.json
+3f00ffa82fe212d2d9812412a5db8701b60e00a2 assets/testmod/blockstates/diamond_tnt.json
 ce75376a060968498b7b9c856c2e93932d768f23 assets/testmod/blockstates/ender_block.json
 647c80f0c44c2ce8f7cd7347ca1f256b2c37b3de assets/testmod/blockstates/end_sapphire_ore.json
 cad4c41650952ea399b181ff08367437ad54e0f1 assets/testmod/blockstates/launch_block.json
@@ -21,6 +22,7 @@ c40bd2a83c3ade7e0fab23c0bbecad2babdc8959 assets/testmod/blockstates/sapphire_wal
 ca468d346fe6f72dc5c6b14dfff70dd298ed49af assets/testmod/blockstates/sound_block.json
 8428f8865a991799b9774e5bc07f72a0f0998404 assets/testmod/models/block/camouflage_block.json
 5f9a33e160a169fbfdba568ada7fbfc002ce5750 assets/testmod/models/block/deepslate_sapphire_ore.json
+36f8272f0af9c5174414b11ea29cd4eba7be34af assets/testmod/models/block/diamond_tnt.json
 8dc8b822b163d592852fbe9918196ad7f0b01ba6 assets/testmod/models/block/ender_block.json
 d66ae1fe9d455b40b9379ba815a65d2fd4186f4a assets/testmod/models/block/end_sapphire_ore.json
 a85fcf7f0c1ff9ff4538b9e397ac9d402226ae33 assets/testmod/models/block/launch_block.json
@@ -61,6 +63,7 @@ e9f8526a09b42c86c67c7c80f26752989e15ac9b assets/testmod/models/block/sapphire_tr
 ccce52e5b930faa3f9fdb458932384af33cdc03c assets/testmod/models/block/sound_block.json
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 c23d2d2420331faa243e4ded59e359ead84fa756 assets/testmod/models/item/deepslate_sapphire_ore.json
+57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
 6edd4b3fa5fc45f50d55ed2dab001c4ea899d749 assets/testmod/models/item/ender_block.json
 d7af242e8e730f789902f06814e466427e347bef assets/testmod/models/item/end_sapphire_ore.json
 72c0c492b08e037220e3d76a9a5fbe67b7872b22 assets/testmod/models/item/launch_block.json

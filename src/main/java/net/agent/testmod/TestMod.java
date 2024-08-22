@@ -2,6 +2,7 @@ package net.agent.testmod;
 
 import com.mojang.logging.LogUtils;
 import net.agent.testmod.block.ModBlocks;
+import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -35,6 +36,8 @@ public class TestMod {
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        ModEnchantments.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
