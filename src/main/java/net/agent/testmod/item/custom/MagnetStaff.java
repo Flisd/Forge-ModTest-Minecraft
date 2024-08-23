@@ -12,14 +12,11 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber
-public class TotemOfMagnet extends Item {
-
-    public TotemOfMagnet(Properties properties) {
+public class MagnetStaff extends Item {
+    public MagnetStaff(Properties properties) {
         super(properties);
     }
 
@@ -28,9 +25,9 @@ public class TotemOfMagnet extends Item {
         Player player = event.player;
         ItemStack mainHand = player.getMainHandItem();
 
-        if (mainHand.getItem() instanceof TotemOfMagnet) {
-             //Reduce durability by 1 every second
-            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 20 == 0) {
+        if (mainHand.getItem() instanceof MagnetStaff) {
+            // Reduce durability by 1 every second
+            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 50 == 0) {
                 mainHand.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(InteractionHand.MAIN_HAND));
             }
 
@@ -43,23 +40,6 @@ public class TotemOfMagnet extends Item {
                 }
             }
         }
-    }
-
-    @Override
-    public InteractionResult useOn(UseOnContext context) {
-        Player player = context.getPlayer();
-        InteractionHand hand = context.getHand();
-        Level world = context.getLevel();
-        BlockPos blockPos = context.getClickedPos();
-
-        if (player != null) {
-            ItemStack stack = player.getItemInHand(hand);
-            // Break the item completely
-            stack.hurtAndBreak(50, player, (p) -> p.broadcastBreakEvent(hand));
-            // Trigger an explosion
-            world.explode(null, blockPos.getX(), blockPos.getY(), blockPos.getZ(), 3.0F, Level.ExplosionInteraction.TNT);
-        }
-        return InteractionResult.SUCCESS;
     }
 
     private static void pullEntityTowardsPlayer(ItemEntity itemEntity, Player player) {

@@ -1,10 +1,11 @@
-// 1.20.4	2024-08-22T14:59:02.5583762	Item Models: testmod
+// 1.20.4	2024-08-22T22:23:20.697001	Item Models: testmod
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
 d571d12468e729aa11596000e997a3eaf4481526 assets/testmod/models/item/drill.json
 6edd4b3fa5fc45f50d55ed2dab001c4ea899d749 assets/testmod/models/item/ender_block.json
 650f0b951d99c7aa1f713829fb330673ffbdab69 assets/testmod/models/item/ivy_sword.json
 2bba9dc2f87b7962681b8b7e306b030fae0a0575 assets/testmod/models/item/lighting_sword.json
+a8dc73ce3f075c538b8b1976598d74efab45c315 assets/testmod/models/item/magnet_staff.json
 d89ed460e9c5a6a8a06b154ab143e4a5a06307a4 assets/testmod/models/item/metal_detector.json
 45339b03ae331581526e6a10baf13d40dca9c343 assets/testmod/models/item/ore_luck_block.json
 f9e465d8738b1b97c10900afc44a085e821c4bc3 assets/testmod/models/item/ore_pickaxe.json

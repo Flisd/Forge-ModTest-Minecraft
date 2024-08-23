@@ -86,6 +86,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
 
         simpleItem(ModItems.TOTEM_OF_MAGNET);
+        simpleItem(ModItems.MAGNET_STAFF);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

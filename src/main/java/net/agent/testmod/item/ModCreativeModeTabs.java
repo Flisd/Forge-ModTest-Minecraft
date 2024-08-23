@@ -2,10 +2,12 @@ package net.agent.testmod.item;
 
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.ModBlocks;
+import net.agent.testmod.enchantment.ModEnchantments;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -72,6 +74,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ORE_LUCK_BLOCK.get());
 
                         output.accept(ModBlocks.CAMO_BLOCK.get());
+
+                        output.accept(ModBlocks.DIAMOND_TNT.get());
+
+                        output.accept(ModItems.TOTEM_OF_MAGNET.get());
+                        output.accept(ModItems.MAGNET_STAFF.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

@@ -70,5 +70,6 @@
   "enchantment.testmod.strip_mining" : "Strip Miner",
   "enchantment.testmod.there_goes_gravity" : "Gravity",
 
-  "item.testmod.totem_of_magnet" : "Magnet Totem"
+  "item.testmod.totem_of_magnet" : "Magnet Totem",
+  "item.testmod.magnet_staff" : "Magnet Staff"
 }

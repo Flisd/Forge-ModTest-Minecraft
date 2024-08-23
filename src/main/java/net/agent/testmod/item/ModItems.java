@@ -80,7 +80,10 @@ public class ModItems {
             () -> new OreDestroyer(1, 2, Tiers.DIAMOND, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties().durability(101)));
 
     public static final RegistryObject<Item> TOTEM_OF_MAGNET = ITEMS.register("totem_of_magnet",
-            () -> new TotemOfMagnet(new Item.Properties().durability(100)));
+            () -> new TotemOfMagnet(new Item.Properties().durability(60)));
+
+    public static final RegistryObject<Item> MAGNET_STAFF = ITEMS.register("magnet_staff",
+            () -> new MagnetStaff(new Item.Properties().durability(200)));
 
 
     public static void register(IEventBus eventBus) {
