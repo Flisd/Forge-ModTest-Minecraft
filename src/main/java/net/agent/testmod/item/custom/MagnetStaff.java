@@ -12,9 +12,11 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
+@Mod.EventBusSubscriber
 public class MagnetStaff extends Item {
     public MagnetStaff(Properties properties) {
         super(properties);
@@ -27,7 +29,7 @@ public class MagnetStaff extends Item {
 
         if (mainHand.getItem() instanceof MagnetStaff) {
             // Reduce durability by 1 every second
-            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 50 == 0) {
+            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 20 == 0) {
                 mainHand.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(InteractionHand.MAIN_HAND));
             }
 
