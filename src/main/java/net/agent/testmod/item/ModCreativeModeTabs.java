@@ -79,6 +79,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TOTEM_OF_MAGNET.get());
                         output.accept(ModItems.MAGNET_STAFF.get());
+
+                        output.accept(ModItems.PLACE_STAFF.get());
+                        output.accept(ModItems.RADIUS_BALL.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);
                     })

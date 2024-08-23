@@ -1,48 +1,32 @@
 package net.agent.testmod.datagen;
 
-import com.mojang.blaze3d.shaders.Effect;
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.item.ModItems;
-import net.agent.testmod.item.custom.PosionSwordItem;
-import net.agent.testmod.item.custom.PotionSwordItem;
-import net.minecraft.core.NonNullList;
+import net.agent.testmod.item.custom.PlaceStaff;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.PotionItem;
-import net.minecraft.world.item.alchemy.Potion;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.get(),
             ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(),
             ModBlocks.END_SAPPHIRE_ORE.get());
 
-
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 
-    protected List<Potion> PotionsList = new ArrayList<>(ForgeRegistries.POTIONS.getValues());
-
     @Override
     protected void buildRecipes(RecipeOutput p_297267_) {
-        oreSmelting(p_297267_, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(),2f, 200, "sapphire");
-        oreBlasting(p_297267_, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(),2f, 100, "sapphire");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get());
+        oreSmelting(p_297267_, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 2f, 200, "sapphire");
+        oreBlasting(p_297267_, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 2f, 100, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
@@ -93,19 +77,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('`', ModItems.METAL_DETECTOR.get())
                 .unlockedBy(getHasName(ModItems.METAL_DETECTOR.get()), has(Blocks.NETHERITE_BLOCK))
                 .save(p_297267_);
-
-//        for (Potion potion : PotionsList) {
-//            ItemStack potionStack = PotionUtils.setPotion(new ItemStack(Items.LINGERING_POTION), potion);
-//            PotionSwordItem potionSword = (PotionSwordItem) ModItems.POTION_SWORD.get();
-//            MobEffectInstance strengthEffect = new MobEffectInstance(getEffectFromPotion(potionStack), 600, 1);
-//            potionSword.addPotionEffect(strengthEffect);
-//            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, potionSword, 1)
-//                    .requires(ModItems.POTION_SWORD.get())
-//                    .requires(Ingredient.of(potionStack.getItem()))
-//                    .unlockedBy(getHasName(ModItems.POTION_SWORD.get()), has(Items.LINGERING_POTION))
-//                    .save(p_297267_, "potion_sword_" + ForgeRegistries.POTIONS.getKey(potion));
-//        }
     }
+
     protected static void oreSmelting(RecipeOutput p_300202_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {
         oreCooking(p_300202_, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, p_250172_, p_250588_, p_251868_, p_250789_, p_252144_, p_251687_, "_from_smelting");
     }
@@ -120,14 +93,4 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .save(p_297621_, TestMod.MOD_ID + ":" + getItemName(p_250066_) + p_249236_ + "_" + getItemName(itemlike));
         }
     }
-//    public MobEffect getEffectFromPotion(ItemStack potionStack) {
-//        if (potionStack.getItem() instanceof PotionItem) {
-//            Potion potion = PotionUtils.getPotion(potionStack);
-//            List<MobEffectInstance> effects = potion.getEffects();
-//            if (!effects.isEmpty()) {
-//                return effects.get(0).getEffect();
-//            }
-//        }
-//        return null;
-//    }
 }

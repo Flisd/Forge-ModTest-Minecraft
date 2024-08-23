@@ -79,6 +79,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.POTION_SWORD);
         handheldItem(ModItems.LIGHTNING_SWORD);
         handheldItem(ModItems.ORE_PICKAXE);
+        handheldItem(ModItems.PLACE_STAFF);
 
         trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
@@ -87,6 +88,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.TOTEM_OF_MAGNET);
         simpleItem(ModItems.MAGNET_STAFF);
+        simpleItem(ModItems.RADIUS_BALL);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

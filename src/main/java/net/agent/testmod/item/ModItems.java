@@ -85,6 +85,11 @@ public class ModItems {
     public static final RegistryObject<Item> MAGNET_STAFF = ITEMS.register("magnet_staff",
             () -> new MagnetStaff(new Item.Properties().durability(200)));
 
+    public static final RegistryObject<Item> RADIUS_BALL = ITEMS.register("radius_ball",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PLACE_STAFF = ITEMS.register("place_staff",
+            () -> new PlaceStaff(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
