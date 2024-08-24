@@ -89,6 +89,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TOTEM_OF_MAGNET);
         simpleItem(ModItems.MAGNET_STAFF);
         simpleItem(ModItems.RADIUS_BALL);
+        simpleItem(ModItems.DICE);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

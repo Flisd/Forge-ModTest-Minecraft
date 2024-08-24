@@ -3,10 +3,14 @@ package net.agent.testmod;
 import com.mojang.logging.LogUtils;
 import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.enchantment.ModEnchantments;
+import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModEventHandler;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,6 +44,8 @@ public class TestMod {
 
         ModEnchantments.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
@@ -64,6 +70,8 @@ public class TestMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }

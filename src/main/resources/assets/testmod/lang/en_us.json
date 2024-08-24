@@ -74,5 +74,8 @@
   "item.testmod.magnet_staff" : "Magnet Staff",
 
   "item.testmod.radius_ball" : "Radius Ball",
-  "item.testmod.place_staff" : "Place Staff"
+  "item.testmod.place_staff" : "Place Staff",
+
+  "item.testmod.dice" : "Dice",
+  "block.testmod.dice_block" : "Dice Block"
 }
