@@ -4,6 +4,7 @@ import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.block.custom.DiceBlock;
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModItems;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
@@ -35,6 +36,11 @@ public class TntOrbProjectileEntity extends ThrowableItemProjectile {
     protected void onHitBlock(BlockHitResult p_37258_) {
         if(!this.level().isClientSide()){
             this.level().broadcastEntityEvent(this, ((byte) 3));
+            int blockPosX = blockPosition().getX();
+            int blockPosY = blockPosition().getY();
+            int blockPosZ = blockPosition().getZ();
+            BlockPos newBlockPos = blockPosition().offset(blockPosX,blockPosY+1,blockPosZ);
+            this.level().setBlock(newBlockPos,Blocks.FIRE.defaultBlockState(), 3);
             this.level().setBlock(blockPosition(), Blocks.TNT.defaultBlockState(), 3);
         }
         super.onHitBlock(p_37258_);
