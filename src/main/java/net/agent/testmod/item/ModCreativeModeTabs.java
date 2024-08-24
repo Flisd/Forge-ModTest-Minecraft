@@ -83,6 +83,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PLACE_STAFF.get());
                         output.accept(ModItems.RADIUS_BALL.get());
                         output.accept(ModItems.DICE.get());
+                        output.accept(ModItems.TNT_ORB.get());
                         //output.accept(ModBlocks.DICE_BLOCK.get());
                         // if you want to add an item already in the game
                         // output.accept(Items.BEACON);

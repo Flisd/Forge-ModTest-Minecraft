@@ -3,6 +3,7 @@ package net.agent.testmod.entity;
 import net.agent.testmod.TestMod;
 
 import net.agent.testmod.entity.custom.DiceProjectileEntity;
+import net.agent.testmod.entity.custom.TntOrbProjectileEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -22,6 +23,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<DiceProjectileEntity>> DICE_PROJECTILE =
             ENTITIES.register("dice_projectile", () -> EntityType.Builder.<DiceProjectileEntity>of(DiceProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("dice_projectile"));
+
+    public static final RegistryObject<EntityType<TntOrbProjectileEntity>> TNT_ORB_PROJECTILE =
+            ENTITIES.register("tnt_orb_projectile", () -> EntityType.Builder.<TntOrbProjectileEntity>of(TntOrbProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("tnt_orb_projectile"));
 
 
     public static void register(IEventBus eventBus) {
