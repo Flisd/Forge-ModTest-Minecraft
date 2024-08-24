@@ -7,6 +7,7 @@ import net.agent.testmod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
@@ -34,14 +35,12 @@ public class TntOrbProjectileEntity extends ThrowableItemProjectile {
 
     @Override
     protected void onHitBlock(BlockHitResult p_37258_) {
-        if(!this.level().isClientSide()){
+        if (!this.level().isClientSide()) {
             this.level().broadcastEntityEvent(this, ((byte) 3));
-            int blockPosX = blockPosition().getX();
-            int blockPosY = blockPosition().getY();
-            int blockPosZ = blockPosition().getZ();
-            BlockPos newBlockPos = blockPosition().offset(blockPosX,blockPosY+1,blockPosZ);
-            this.level().setBlock(newBlockPos,Blocks.FIRE.defaultBlockState(), 3);
-            this.level().setBlock(blockPosition(), Blocks.TNT.defaultBlockState(), 3);
+            BlockPos blockPos = blockPosition();
+            this.level().removeBlock(blockPos, false); // Remove the block at the hit position
+            PrimedTnt primedTnt = new PrimedTnt(this.level(), blockPos.getX() + 0.5, blockPos.getY(), blockPos.getZ() + 0.5, null);
+            this.level().addFreshEntity(primedTnt);
         }
         super.onHitBlock(p_37258_);
     }
