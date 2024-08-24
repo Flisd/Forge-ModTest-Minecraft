@@ -72,6 +72,7 @@ public class TestMod {
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
             EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.TNT_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }
