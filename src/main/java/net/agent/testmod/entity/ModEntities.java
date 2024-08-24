@@ -3,10 +3,12 @@ package net.agent.testmod.entity;
 import net.agent.testmod.TestMod;
 
 import net.agent.testmod.entity.custom.DiceProjectileEntity;
+import net.agent.testmod.entity.custom.FoodOrbProjectileEntity;
 import net.agent.testmod.entity.custom.TntOrbProjectileEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.food.FoodData;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +30,9 @@ public class ModEntities {
             ENTITIES.register("tnt_orb_projectile", () -> EntityType.Builder.<TntOrbProjectileEntity>of(TntOrbProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("tnt_orb_projectile"));
 
+    public static final RegistryObject<EntityType<FoodOrbProjectileEntity>> FOOD_ORB_PROJECTILE =
+            ENTITIES.register("food_orb_projectile", () -> EntityType.Builder.<FoodOrbProjectileEntity>of(FoodOrbProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("food_orb_projectile"));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

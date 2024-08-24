@@ -97,6 +97,9 @@ public class ModItems {
     public static final RegistryObject<Item> TNT_ORB = ITEMS.register("tnt_orb",
             () -> new TntOrbItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> FOOD_ORB = ITEMS.register("food_orb",
+            () -> new FoodOrbItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

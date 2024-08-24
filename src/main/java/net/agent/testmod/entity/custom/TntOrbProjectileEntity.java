@@ -38,7 +38,6 @@ public class TntOrbProjectileEntity extends ThrowableItemProjectile {
         if (!this.level().isClientSide()) {
             this.level().broadcastEntityEvent(this, ((byte) 3));
             BlockPos blockPos = blockPosition().above(); // Get the position above the hit block
-            this.level().removeBlock(blockPos.below(), false); // Remove the block at the hit position
             PrimedTnt primedTnt = new PrimedTnt(this.level(), blockPos.getX() + 0.5, blockPos.getY(), blockPos.getZ() + 0.5, null);
             this.level().addFreshEntity(primedTnt);
         }
