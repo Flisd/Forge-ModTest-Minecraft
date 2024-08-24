@@ -1,7 +1,8 @@
-// 1.20.4	2024-08-22T22:04:09.3896774	Loot Tables
+// 1.20.4	2024-08-23T22:10:52.6386974	Loot Tables
 d37e74e45fcf893d0ea42f43e838a19397aafdef data/testmod/loot_tables/blocks/camouflage_block.json
 30e721c94b74507aa37af640875dbff4d9840983 data/testmod/loot_tables/blocks/deepslate_sapphire_ore.json
 fc1d87d2ffe41343e909a051ca24669eb240e0b0 data/testmod/loot_tables/blocks/diamond_tnt.json
+61e174e053cbd7a8cbbadd84e2a5201dd38e8fcd data/testmod/loot_tables/blocks/dice_block.json
 06b49d0bf05fb45f9ee42033003ff86b8940e165 data/testmod/loot_tables/blocks/ender_block.json
 198b1eee9eb16d0c0ffe2fa8e712382a1cf5782a data/testmod/loot_tables/blocks/end_sapphire_ore.json
 1887396fd98f66f61352ee979da6fe02838ee70d data/testmod/loot_tables/blocks/launch_block.json

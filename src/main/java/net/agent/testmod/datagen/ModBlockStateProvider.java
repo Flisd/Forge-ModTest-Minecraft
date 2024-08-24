@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.CAMO_BLOCK);
         blockWithItem(ModBlocks.DIAMOND_TNT);
+//        blockWithItem(ModBlocks.DICE_BLOCK);
 
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
