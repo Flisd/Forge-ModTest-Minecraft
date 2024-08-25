@@ -23,6 +23,8 @@ import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.BlockHitResult;
@@ -73,7 +75,11 @@ public class GodOrbProjectileEntity extends ThrowableItemProjectile {
                 skeleton.setPos(hitPos.getX(), hitPos.getY(), hitPos.getZ());
                 ItemStack poisonArrow = new ItemStack(Items.TIPPED_ARROW);
                 poisonArrow.getOrCreateTag().putString("Potion", "minecraft:poison");
-                skeleton.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));
+                ItemStack bow = new ItemStack(Items.BOW);
+                bow.enchant(Enchantments.PUNCH_ARROWS, 2);
+                bow.enchant(Enchantments.POWER_ARROWS, 5);
+                bow.enchant(Enchantments.FLAMING_ARROWS, 1);
+                skeleton.setItemSlot(EquipmentSlot.MAINHAND, bow);
                 skeleton.setItemSlot(EquipmentSlot.OFFHAND, poisonArrow);
                 level.addFreshEntity(skeleton);
             }
