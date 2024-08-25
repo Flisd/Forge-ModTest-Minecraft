@@ -3,10 +3,12 @@ package net.agent.testmod.item.custom;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.SlotAccess;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.ClickAction;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -70,5 +72,25 @@ public class PlaceStaff extends Item {
     public Component getName(ItemStack stack) {
         return Component.literal(super.getName(stack).getString() + " (Radius: " + radiusBallObjects + ", Block: " + placeBlock.getName().getString() + ")")
                 .withStyle(ChatFormatting.AQUA);
+    }
+
+    @Override
+    public boolean overrideOtherStackedOnMe(ItemStack p_150892_, ItemStack p_150893_, Slot p_150894_, ClickAction p_150895_, Player p_150896_, SlotAccess p_150897_) {
+        Player player = p_150896_;
+        ItemStack currentStack = p_150892_;
+        ItemStack nextStack = p_150893_;
+
+        if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() == ModItems.RADIUS_BALL.get()) {
+            increaseRadius();
+            nextStack.shrink(1);
+            return true;
+        } else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() instanceof BlockItem) {
+            Block newBlock = ((BlockItem) nextStack.getItem()).getBlock();
+            setPlaceBlock(newBlock);
+            nextStack.shrink(1);
+            return true;
+        }
+
+        return super.overrideOtherStackedOnMe(p_150892_, p_150893_, p_150894_, p_150895_, p_150896_, p_150897_);
     }
 }

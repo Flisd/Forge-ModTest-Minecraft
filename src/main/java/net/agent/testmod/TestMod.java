@@ -5,7 +5,6 @@ import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModCreativeModeTabs;
-import net.agent.testmod.item.ModEventHandler;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRenderer;
