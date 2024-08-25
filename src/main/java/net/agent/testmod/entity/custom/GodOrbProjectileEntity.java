@@ -2,29 +2,17 @@ package net.agent.testmod.entity.custom;
 
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModItems;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.stats.Stats;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.Skeleton;
+import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.BlockHitResult;
@@ -57,31 +45,24 @@ public class GodOrbProjectileEntity extends ThrowableItemProjectile {
         BlockPos hitPos = hitResult.getBlockPos();
 
         if (!level.isClientSide) {
-            // Summon cobwebs without destroying blocks below
+            // Summon cobwebs
             for (int x = -1; x <= 1; x++) {
                 for (int z = -1; z <= 1; z++) {
                     BlockPos cobwebPos = hitPos.offset(x, 0, z);
-                    if (level.getBlockState(cobwebPos).isAir()) {
-                        level.setBlock(cobwebPos, Blocks.COBWEB.defaultBlockState(), 3);
-                    }
+                    level.setBlock(cobwebPos, Blocks.COBWEB.defaultBlockState(), 3);
                 }
             }
 
-            // Summon skeletons with poison arrows
+            // Summon blazes
             Random random = new Random();
-            int skeletonCount = 7 + random.nextInt(4);
-            for (int i = 0; i < skeletonCount; i++) {
-                Skeleton skeleton = new Skeleton(EntityType.SKELETON, level);
-                skeleton.setPos(hitPos.getX(), hitPos.getY(), hitPos.getZ());
-                ItemStack poisonArrow = new ItemStack(Items.TIPPED_ARROW);
-                poisonArrow.getOrCreateTag().putString("Potion", "minecraft:poison");
-                ItemStack bow = new ItemStack(Items.BOW);
-                bow.enchant(Enchantments.PUNCH_ARROWS, 2);
-                bow.enchant(Enchantments.POWER_ARROWS, 5);
-                bow.enchant(Enchantments.FLAMING_ARROWS, 1);
-                skeleton.setItemSlot(EquipmentSlot.MAINHAND, bow);
-                skeleton.setItemSlot(EquipmentSlot.OFFHAND, poisonArrow);
-                level.addFreshEntity(skeleton);
+            int blazeCount = 7 + random.nextInt(4);
+            for (int i = 0; i < blazeCount; i++) {
+                int offsetX = random.nextInt(3) - 1;
+                int offsetZ = random.nextInt(3) - 1;
+                BlockPos blazePos = hitPos.offset(offsetX, 0, offsetZ);
+                Blaze blaze = new Blaze(EntityType.BLAZE, level);
+                blaze.setPos(blazePos.getX(), blazePos.getY(), blazePos.getZ());
+                level.addFreshEntity(blaze);
             }
 
             // Apply slowness effect to player if hit

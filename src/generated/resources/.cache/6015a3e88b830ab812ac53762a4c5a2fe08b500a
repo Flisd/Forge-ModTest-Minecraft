@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-24T18:56:51.327556	Item Models: testmod
+// 1.20.4	2024-08-24T22:21:05.519448	Item Models: testmod
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
 08667aee0860bbf25e653eefe95c4cc9ced01d0c assets/testmod/models/item/dice.json
@@ -14,6 +14,7 @@ d89ed460e9c5a6a8a06b154ab143e4a5a06307a4 assets/testmod/models/item/metal_detect
 f9e465d8738b1b97c10900afc44a085e821c4bc3 assets/testmod/models/item/ore_pickaxe.json
 4aec79de5dc4ce9b6a9997bddb9f8cf3b80e82c9 assets/testmod/models/item/pine_cone.json
 c2d8be41109bbf2e58b26d3530c6bdcb5649ae67 assets/testmod/models/item/place_staff.json
+e2b59462ccd6ff34be6f58f460e20c9f8a3fa494 assets/testmod/models/item/portal_orb.json
 30bb35fee43d9e8618f9458df51f91e3cc99e244 assets/testmod/models/item/potion_sword.json
 3864652a502838828bbff6f618badcff8cfb340b assets/testmod/models/item/radius_ball.json
 2f41f2b970d351507c3598ede3a24acfda5acc78 assets/testmod/models/item/raw_sapphire.json

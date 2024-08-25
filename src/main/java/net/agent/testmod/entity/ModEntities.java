@@ -2,10 +2,7 @@ package net.agent.testmod.entity;
 
 import net.agent.testmod.TestMod;
 
-import net.agent.testmod.entity.custom.DiceProjectileEntity;
-import net.agent.testmod.entity.custom.FoodOrbProjectileEntity;
-import net.agent.testmod.entity.custom.GodOrbProjectileEntity;
-import net.agent.testmod.entity.custom.TntOrbProjectileEntity;
+import net.agent.testmod.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -38,6 +35,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<GodOrbProjectileEntity>> GOD_ORB_PROJECTILE =
             ENTITIES.register("god_orb_projectile", () -> EntityType.Builder.<GodOrbProjectileEntity>of(GodOrbProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("god_orb_projectile"));
+
+    public static final RegistryObject<EntityType<PortalOrbProjectileEntity>> PORTAL_ORB_PROJECTILE =
+            ENTITIES.register("portal_orb_projectile", () -> EntityType.Builder.<PortalOrbProjectileEntity>of(PortalOrbProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("portal_orb_projectile"));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
