@@ -74,6 +74,7 @@ public class TestMod {
             EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.TNT_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.FOOD_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.GOD_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }

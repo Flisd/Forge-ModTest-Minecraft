@@ -100,6 +100,9 @@ public class ModItems {
     public static final RegistryObject<Item> FOOD_ORB = ITEMS.register("food_orb",
             () -> new FoodOrbItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> GOD_ORB = ITEMS.register("god_orb",
+            () -> new GodOrbItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

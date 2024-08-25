@@ -80,5 +80,6 @@
   "block.testmod.dice_block" : "Dice Block",
 
   "block.testmod.tnt_orb" : "TNT orb",
-  "item.testmod.food_orb" : "Food Orb"
+  "item.testmod.food_orb" : "Food Orb",
+  "item.testmod.god_orb" : "GOD Orb"
 }
