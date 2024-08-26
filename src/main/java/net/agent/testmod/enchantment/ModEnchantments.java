@@ -34,6 +34,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> BOW_BOOM = ENCHANTMENTS.register("bow_boom",
             ()-> new BoomBow());
 
+    public static RegistryObject<Enchantment> SHOCKWAVE = ENCHANTMENTS.register("shockwave",
+            ()-> new ShockWave());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
