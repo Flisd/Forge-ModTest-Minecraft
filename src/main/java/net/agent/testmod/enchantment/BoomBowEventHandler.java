@@ -32,6 +32,9 @@ public class BoomBowEventHandler {
                     // Create an explosion at the arrow's impact position with size based on enchantment level
                     float explosionSize = enchantmentLevel == 1 ? 2.0F : 4.0F;
                     level.explode(null, pos.getX(), pos.getY(), pos.getZ(), explosionSize, Level.ExplosionInteraction.BLOCK);
+
+                    // Destroy the arrow after the explosion
+                    event.getProjectile().discard();
                 }
             }
         }
