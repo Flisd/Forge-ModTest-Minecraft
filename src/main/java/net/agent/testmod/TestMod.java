@@ -76,6 +76,7 @@ public class TestMod {
             EntityRenderers.register(ModEntities.GOD_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.PORTAL_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.STEEL_BALL_PROJECTILE.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.WATER_LAVA_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }

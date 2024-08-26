@@ -109,6 +109,9 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_BALL = ITEMS.register("steel_ball",
             () -> new SteelBall(new Item.Properties()));
 
+    public static final RegistryObject<Item> WATER_LAVA = ITEMS.register("water_lava",
+            () -> new WaterLavaOrb(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

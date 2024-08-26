@@ -86,6 +86,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.GOD_ORB.get(), 1));
                         output.accept(new ItemStack(ModItems.PORTAL_ORB.get(), 1));
                         output.accept(new ItemStack(ModItems.STEEL_BALL.get(), 1));
+                        output.accept(new ItemStack(ModItems.WATER_LAVA.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));
                         // if you want to add an item already in the game
                         // output.accept(new ItemStack(Items.BEACON, 1));

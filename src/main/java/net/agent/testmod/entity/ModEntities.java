@@ -44,6 +44,10 @@ public class ModEntities {
             ENTITIES.register("steel_ball_projectile", () -> EntityType.Builder.<SteelBallProjectileEntity>of(SteelBallProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("steel_ball_projectile"));
 
+    public static final RegistryObject<EntityType<WaterLavaProjectileEntity>> WATER_LAVA_PROJECTILE =
+            ENTITIES.register("water_lava_projectile", () -> EntityType.Builder.<WaterLavaProjectileEntity>of(WaterLavaProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("water_lava_projectile"));
+
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }
