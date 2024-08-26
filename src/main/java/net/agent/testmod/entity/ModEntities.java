@@ -40,6 +40,10 @@ public class ModEntities {
             ENTITIES.register("portal_orb_projectile", () -> EntityType.Builder.<PortalOrbProjectileEntity>of(PortalOrbProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("portal_orb_projectile"));
 
+    public static final RegistryObject<EntityType<SteelBallProjectileEntity>> STEEL_BALL_PROJECTILE =
+            ENTITIES.register("steel_ball_projectile", () -> EntityType.Builder.<SteelBallProjectileEntity>of(SteelBallProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("steel_ball_projectile"));
+
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }

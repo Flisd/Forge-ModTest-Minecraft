@@ -106,6 +106,9 @@ public class ModItems {
     public static final RegistryObject<Item> PORTAL_ORB = ITEMS.register("portal_orb",
             () -> new PortalOrbItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> STEEL_BALL = ITEMS.register("steel_ball",
+            () -> new SteelBall(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

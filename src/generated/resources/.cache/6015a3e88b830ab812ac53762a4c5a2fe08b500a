@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-24T22:21:05.519448	Item Models: testmod
+// 1.20.4	2024-08-26T15:29:45.6364782	Item Models: testmod
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
 08667aee0860bbf25e653eefe95c4cc9ced01d0c assets/testmod/models/item/dice.json
@@ -78,6 +78,7 @@ fb33b86d47175d99e0d17f91511eacba77d40934 assets/testmod/models/item/sapphire_sta
 2d75a7b61507292457f198ed3b4c9e9f16748660 assets/testmod/models/item/sapphire_trap_door.json
 5d9a5be3a4877354861c81feb3adcf4459b96aec assets/testmod/models/item/sapphire_wall.json
 50dc83cb69377e2f83e4ad1a510a394ea5c18dac assets/testmod/models/item/spawner_detector.json
+84f969d6ed4508d5adc15e299168ad3e8fdc1648 assets/testmod/models/item/steel_ball.json
 1a5f3e51550489650781874fac762f6c92b626d4 assets/testmod/models/item/strawberry.json
 0c5cf827142abc0c6e885d4e7168bb035e2e9a47 assets/testmod/models/item/tnt_orb.json
 63066433885421c0983c2751f8a0ea9cf379aa0b assets/testmod/models/item/tnt_sword.json

@@ -89,5 +89,7 @@
   "enchantment.testmod.fire_trail" : "Fire Trail",
   "enchantment.testmod.thunder_clap" : "Thunder Clap",
   "enchantment.testmod.bow_boom" : "Bow Boom =)",
-  "enchantment.testmod.shockwave" : "Shockwave"
+  "enchantment.testmod.shockwave" : "Shockwave",
+
+  "item.testmod.steel_ball" : "Steel Ball"
 }
