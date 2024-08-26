@@ -31,6 +31,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> THUNDER_CLAP = ENCHANTMENTS.register("thunder_clap",
             ()-> new ThunderClap());
 
+    public static RegistryObject<Enchantment> BOW_BOOM = ENCHANTMENTS.register("bow_boom",
+            ()-> new BoomBow());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
