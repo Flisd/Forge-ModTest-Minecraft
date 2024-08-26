@@ -11,6 +11,10 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
 public class BoomBow extends Enchantment {
 
+    private static final ChatFormatting[] COLORS = {
+            ChatFormatting.RED, ChatFormatting.GOLD, ChatFormatting.YELLOW
+    };
+
     public BoomBow() {
         super(Rarity.RARE, EnchantmentCategory.BOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
@@ -27,10 +31,20 @@ public class BoomBow extends Enchantment {
 
     @Override
     public Component getFullname(int level) {
-        MutableComponent name = Component.translatable(this.getDescriptionId());
-        if (level > 1 || this.getMaxLevel() > 1) {
-            name.append(" ").append(Component.translatable("enchantment.level." + level));
+        String name = "Boom Bow";
+        MutableComponent coloredName = Component.literal("");
+
+        long time = System.currentTimeMillis() / 100; // Adjust the speed of color change
+        for (int i = 0; i < name.length(); i++) {
+            char letter = name.charAt(i);
+            ChatFormatting color = COLORS[(i + (int) time) % COLORS.length];
+            coloredName.append(Component.literal(String.valueOf(letter)).withStyle(color));
         }
-        return name.withStyle(ChatFormatting.RED);
+
+        if (level > 1 || this.getMaxLevel() > 1) {
+            coloredName.append(" ").append(Component.translatable("enchantment.level." + level));
+        }
+
+        return coloredName;
     }
 }
