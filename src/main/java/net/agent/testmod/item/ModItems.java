@@ -89,7 +89,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PLACE_STAFF = ITEMS.register("place_staff",
-            () -> new PlaceStaff(new Item.Properties()));
+            () -> new PlaceStaff(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
             () -> new DiceItem(new Item.Properties()));
