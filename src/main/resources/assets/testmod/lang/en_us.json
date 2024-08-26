@@ -84,5 +84,7 @@
   "item.testmod.god_orb" : "GOD Orb",
   "item.testmod.portal_orb" : "Portal Orb",
 
-  "blocks.testmod.fog_block" : "Fog Block"
+  "blocks.testmod.fog_block" : "Fog Block",
+
+  "enchantment.testmod.fire_trail" : "Fire Trail"
 }

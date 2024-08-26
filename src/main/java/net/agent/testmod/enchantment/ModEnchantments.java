@@ -25,6 +25,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> THERE_GOES_GRAVITY = ENCHANTMENTS.register("there_goes_gravity",
             ()-> new ThereGoesGravity(Enchantment.Rarity.RARE, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.CHEST}));
 
+    public static RegistryObject<Enchantment> FIRE_TRAIL = ENCHANTMENTS.register("fire_trail",
+            ()-> new FireTrail());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
