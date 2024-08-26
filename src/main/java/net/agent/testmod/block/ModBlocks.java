@@ -99,6 +99,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> FOG_BLOCK = BLOCKS.register("fog_block",
             () -> new FogBlock(Block.Properties.ofFullCopy(Blocks.AIR).noLootTable()));
 
+    public static final RegistryObject<Block> PROJECTILE_SHOOTER_BLOCK = BLOCKS.register("projectile_shooter_block",
+            () -> new ProjectileShooter(Block.Properties.ofFullCopy(Blocks.DISPENSER)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

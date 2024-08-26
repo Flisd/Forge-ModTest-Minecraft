@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ENDER_BLOCK);
 
         blockWithItem(ModBlocks.FOG_BLOCK);
+        blockWithItem(ModBlocks.PROJECTILE_SHOOTER_BLOCK);
 
         blockWithItem(ModBlocks.ORE_LUCK_BLOCK);
 

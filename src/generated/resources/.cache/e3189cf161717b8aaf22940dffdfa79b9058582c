@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-26T08:53:47.6852109	Block States: testmod
+// 1.20.4	2024-08-26T16:15:50.4239779	Block States: testmod
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
 592a016a6656dcb60b662bf79098e9f53191b013 assets/testmod/blockstates/deepslate_sapphire_ore.json
 3f00ffa82fe212d2d9812412a5db8701b60e00a2 assets/testmod/blockstates/diamond_tnt.json
@@ -8,6 +8,7 @@ dbd38f9b74c448b390960ea96e74df6b486118d8 assets/testmod/blockstates/fog_block.js
 cad4c41650952ea399b181ff08367437ad54e0f1 assets/testmod/blockstates/launch_block.json
 b8283618095f416197c4f68848cc8209216e13be assets/testmod/blockstates/nether_sapphire_ore.json
 4727cf59aed848ecd1e14442839617031d0f0f0e assets/testmod/blockstates/ore_luck_block.json
+23dc21f7e0838c002143c7d0c20de5d43e6aed4b assets/testmod/blockstates/projectile_shooter_block.json
 b810fd3b14345b89a2e2b009eecef16b278b57cc assets/testmod/blockstates/raw_sapphire_block.json
 60f23667bc72bfed232efe04f1189c2601411145 assets/testmod/blockstates/sapphire_block.json
 dd037fc91de0b384fbf05c0e7132c424b1965660 assets/testmod/blockstates/sapphire_button.json
@@ -30,6 +31,7 @@ f0c8447ee21350e1cd97ebd4f3fdf0eed49f3e4b assets/testmod/models/block/fog_block.j
 a85fcf7f0c1ff9ff4538b9e397ac9d402226ae33 assets/testmod/models/block/launch_block.json
 0df38c2f40b54f9b2431b35e93d1af459c38050d assets/testmod/models/block/nether_sapphire_ore.json
 de538a53a4a49376cb8438b7b2f304636fdad8ed assets/testmod/models/block/ore_luck_block.json
+c1c9b2de717edc837929bb6110552e3f55b92fb6 assets/testmod/models/block/projectile_shooter_block.json
 04fe6e2d2309798eb39d50845a3ea773bc501cd5 assets/testmod/models/block/raw_sapphire_block.json
 b428e5d13f39dac6a157b5a45eb18696a4449c22 assets/testmod/models/block/sapphire_block.json
 f47c961fa567599ccb625c053987f68ec4878848 assets/testmod/models/block/sapphire_button.json
@@ -72,6 +74,7 @@ d7af242e8e730f789902f06814e466427e347bef assets/testmod/models/item/end_sapphire
 72c0c492b08e037220e3d76a9a5fbe67b7872b22 assets/testmod/models/item/launch_block.json
 184d3a254b16a6674455f8cc081edf7aaa05c15d assets/testmod/models/item/nether_sapphire_ore.json
 45339b03ae331581526e6a10baf13d40dca9c343 assets/testmod/models/item/ore_luck_block.json
+5096f38e71610ff9a5c8f4f7366be3071d567e53 assets/testmod/models/item/projectile_shooter_block.json
 b77629de33473b0109f0cc25a6432fafe6ee192d assets/testmod/models/item/raw_sapphire_block.json
 8c9a6abc5cda1cfc833a9ccbaaa07e7927bdb082 assets/testmod/models/item/sapphire_block.json
 a95b11804b67e53163e1c240b8e092bf2cdda3d9 assets/testmod/models/item/sapphire_ore.json

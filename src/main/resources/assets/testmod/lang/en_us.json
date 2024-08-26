@@ -91,5 +91,6 @@
   "enchantment.testmod.bow_boom" : "Bow Boom =)",
   "enchantment.testmod.shockwave" : "Shockwave",
 
-  "item.testmod.steel_ball" : "Steel Ball"
+  "item.testmod.steel_ball" : "Steel Ball",
+  "blocks.testmod.projectile_shooter_block" : "Projectile Shooter"
 }

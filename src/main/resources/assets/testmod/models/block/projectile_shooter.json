@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testmod:block/projectile_shooter_side",
+    "up": "testmod:block/projectile_shooter_side",
+    "north": "testmod:block/projectile_shooter_front",
+    "south": "testmod:block/projectile_shooter_side",
+    "west": "testmod:block/projectile_shooter_side",
+    "east": "testmod:block/projectile_shooter_side"
+  }
+}
