@@ -28,6 +28,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> FIRE_TRAIL = ENCHANTMENTS.register("fire_trail",
             ()-> new FireTrail());
 
+    public static RegistryObject<Enchantment> THUNDER_CLAP = ENCHANTMENTS.register("thunder_clap",
+            ()-> new ThunderClap());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }

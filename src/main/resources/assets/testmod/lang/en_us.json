@@ -86,5 +86,6 @@
 
   "blocks.testmod.fog_block" : "Fog Block",
 
-  "enchantment.testmod.fire_trail" : "Fire Trail"
+  "enchantment.testmod.fire_trail" : "Fire Trail",
+  "enchantment.testmod.thunder_clap" : "Thunder Clap"
 }

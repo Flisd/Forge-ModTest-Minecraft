@@ -21,7 +21,7 @@ import net.minecraft.world.level.block.Blocks;
 public class PlaceStaff extends Item {
     private Block placeBlock = Blocks.DIRT;
     private int radiusBallObjects = 1;
-    private static final int MAX_RADIUS = 10;
+    private static final int MAX_RADIUS = 20;
     private boolean is3D = true; // New property to toggle between 3D and 2D
 
     public PlaceStaff(Properties properties) {

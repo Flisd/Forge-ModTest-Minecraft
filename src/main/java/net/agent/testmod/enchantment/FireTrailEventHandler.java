@@ -28,9 +28,9 @@ public class FireTrailEventHandler {
                 ServerLevel level = (ServerLevel) player.level();
                 BlockPos pos = player.blockPosition();
 
-                // Set the block below the player to fire
+                // Set the block the player has walked over (y+1) to fire
                 BlockState fireState = Blocks.FIRE.defaultBlockState();
-                level.setBlockAndUpdate(pos.below(), fireState);
+                level.setBlockAndUpdate(pos.atY((int)player.getY()), fireState);
 
                 // Give the player fire resistance
                 player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0, false, false));
