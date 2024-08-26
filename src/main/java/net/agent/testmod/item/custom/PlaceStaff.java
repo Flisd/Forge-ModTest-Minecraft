@@ -12,6 +12,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -21,6 +22,7 @@ public class PlaceStaff extends Item {
     private Block placeBlock = Blocks.DIRT;
     private int radiusBallObjects = 1;
     private static final int MAX_RADIUS = 10;
+    private boolean is3D = true; // New property to toggle between 3D and 2D
 
     public PlaceStaff(Properties properties) {
         super(properties);
@@ -46,7 +48,7 @@ public class PlaceStaff extends Item {
         } else {
             // Place blocks in a radius around the clicked position
             for (int x = -radiusBallObjects; x <= radiusBallObjects; x++) {
-                for (int y = -radiusBallObjects; y <= radiusBallObjects; y++) {
+                for (int y = is3D ? -radiusBallObjects : 0; y <= (is3D ? radiusBallObjects : 0); y++) {
                     for (int z = -radiusBallObjects; z <= radiusBallObjects; z++) {
                         if (Math.sqrt(x * x + y * y + z * z) <= radiusBallObjects) {
                             level.setBlock(context.getClickedPos().offset(x, y, z), placeBlock.defaultBlockState(), 3);
@@ -68,9 +70,13 @@ public class PlaceStaff extends Item {
         this.placeBlock = block;
     }
 
+    public void toggleMode() {
+        is3D = !is3D;
+    }
+
     @Override
     public Component getName(ItemStack stack) {
-        return Component.literal(super.getName(stack).getString() + " (Radius: " + radiusBallObjects + ", Block: " + placeBlock.getName().getString() + ")")
+        return Component.literal(super.getName(stack).getString() + " (Radius: " + radiusBallObjects + ", Block: " + placeBlock.getName().getString() + ", Mode: " + (is3D ? "3D" : "2D") + ")")
                 .withStyle(ChatFormatting.AQUA);
     }
 
@@ -84,12 +90,17 @@ public class PlaceStaff extends Item {
             increaseRadius();
             nextStack.shrink(1);
             return true;
+        }
+        else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() == Items.REDSTONE) {
+            toggleMode();
+            nextStack.shrink(1);
+            return true;
         } else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() instanceof BlockItem) {
             Block newBlock = ((BlockItem) nextStack.getItem()).getBlock();
             setPlaceBlock(newBlock);
             nextStack.shrink(1);
             return true;
-        }
+        } 
 
         return super.overrideOtherStackedOnMe(p_150892_, p_150893_, p_150894_, p_150895_, p_150896_, p_150897_);
     }
