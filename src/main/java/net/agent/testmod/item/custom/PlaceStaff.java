@@ -100,7 +100,7 @@ public class PlaceStaff extends Item {
             setPlaceBlock(newBlock);
             nextStack.shrink(1);
             return true;
-        } 
+        }
 
         return super.overrideOtherStackedOnMe(p_150892_, p_150893_, p_150894_, p_150895_, p_150896_, p_150897_);
     }

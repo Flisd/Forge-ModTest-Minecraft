@@ -19,6 +19,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.ENDER_BLOCK);
 
+        blockWithItem(ModBlocks.FOG_BLOCK);
+
         blockWithItem(ModBlocks.ORE_LUCK_BLOCK);
 
         blockWithItem(ModBlocks.CAMO_BLOCK);

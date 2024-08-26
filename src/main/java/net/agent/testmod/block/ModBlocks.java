@@ -96,6 +96,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> DICE_BLOCK = BLOCKS.register("dice_block",
             () -> new DiceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noLootTable()));
 
+    public static final RegistryObject<Block> FOG_BLOCK = BLOCKS.register("fog_block",
+            () -> new FogBlock(Block.Properties.ofFullCopy(Blocks.AIR).noLootTable()));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);
