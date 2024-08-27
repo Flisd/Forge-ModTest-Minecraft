@@ -77,6 +77,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('`', ModItems.METAL_DETECTOR.get())
                 .unlockedBy(getHasName(ModItems.METAL_DETECTOR.get()), has(Blocks.NETHERITE_BLOCK))
                 .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DIAMOND_TNT.get(),4)
+                .pattern("ddd")
+                .pattern("dtd")
+                .pattern("ddd")
+                .define('d', Items.DIAMOND)
+                .define('t', Blocks.TNT)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Blocks.TNT))
+                .save(p_297267_);
     }
 
     protected static void oreSmelting(RecipeOutput p_300202_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

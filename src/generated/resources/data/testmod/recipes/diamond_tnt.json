@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "t": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "dtd",
+    "ddd"
+  ],
+  "result": {
+    "count": 4,
+    "item": "testmod:diamond_tnt"
+  }
+}

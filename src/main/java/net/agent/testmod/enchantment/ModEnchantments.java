@@ -37,6 +37,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> SHOCKWAVE = ENCHANTMENTS.register("shockwave",
             ()-> new ShockWave());
 
+    public static RegistryObject<Enchantment> QUICK_DRAW = ENCHANTMENTS.register("quick_draw",
+            ()-> new QuickDraw());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }

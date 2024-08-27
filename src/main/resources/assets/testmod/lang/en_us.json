@@ -83,6 +83,7 @@
   "item.testmod.food_orb" : "Food Orb",
   "item.testmod.god_orb" : "GOD Orb",
   "item.testmod.portal_orb" : "Portal Orb",
+  "item.testmod.water_lava_orb" : "Water Lava Orb",
 
   "blocks.testmod.fog_block" : "Fog Block",
 
@@ -92,5 +93,7 @@
   "enchantment.testmod.shockwave" : "Shockwave",
 
   "item.testmod.steel_ball" : "Steel Ball",
-  "blocks.testmod.projectile_shooter_block" : "Projectile Shooter"
+  "blocks.testmod.projectile_shooter_block" : "Projectile Shooter",
+
+  "enchantment.testmod.quick_draw" : "Quick Draw"
 }
