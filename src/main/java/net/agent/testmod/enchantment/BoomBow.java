@@ -26,7 +26,7 @@ public class BoomBow extends Enchantment {
 
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        return stack.getItem() == Items.BOW || super.canApplyAtEnchantingTable(stack);
+        return stack.getItem() == Items.BOW || stack.getItem() == Items.CROSSBOW || super.canApplyAtEnchantingTable(stack);
     }
 
     @Override

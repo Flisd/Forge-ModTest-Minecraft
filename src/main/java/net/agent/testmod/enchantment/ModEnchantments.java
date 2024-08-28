@@ -40,6 +40,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> QUICK_DRAW = ENCHANTMENTS.register("quick_draw",
             ()-> new QuickDraw());
 
+    public static RegistryObject<Enchantment> REJUVENATION = ENCHANTMENTS.register("rejuvenation",
+            ()-> new Rejuvenation());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }

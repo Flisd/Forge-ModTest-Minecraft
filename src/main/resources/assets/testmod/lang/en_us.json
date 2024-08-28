@@ -83,7 +83,7 @@
   "item.testmod.food_orb" : "Food Orb",
   "item.testmod.god_orb" : "GOD Orb",
   "item.testmod.portal_orb" : "Portal Orb",
-  "item.testmod.water_lava_orb" : "Water Lava Orb",
+  "item.testmod.water_lava" : "Water Lava Orb",
 
   "blocks.testmod.fog_block" : "Fog Block",
 
