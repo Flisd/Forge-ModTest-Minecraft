@@ -21,12 +21,12 @@ public class Rejuvenation extends Enchantment {
 
     @Override
     public Component getFullname(int level) {
-        String name = "RejuvenationRejuvenation";
+        String name = "Rejuvenation";
         MutableComponent rainbowName = Component.literal("");
 
         for (int i = 0; i < name.length(); i++) {
             char letter = name.charAt(i);
-            ChatFormatting color = RAINBOW_COLORS[(i + (int) (System.currentTimeMillis() / 200)) % RAINBOW_COLORS.length];
+            ChatFormatting color = RAINBOW_COLORS[(i + (int) (System.currentTimeMillis() / 150)) % RAINBOW_COLORS.length];
             rainbowName.append(Component.literal(String.valueOf(letter)).withStyle(color));
         }
 
