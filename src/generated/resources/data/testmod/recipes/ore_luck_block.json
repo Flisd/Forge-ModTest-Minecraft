@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:diamond_block"
+    },
+    "2": {
+      "item": "minecraft:coal_block"
+    },
+    "3": {
+      "item": "minecraft:copper_block"
+    },
+    "4": {
+      "item": "minecraft:gold_block"
+    },
+    "5": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "6": {
+      "item": "minecraft:lapis_block"
+    },
+    "7": {
+      "item": "minecraft:redstone_block"
+    },
+    "8": {
+      "item": "minecraft:emerald_block"
+    },
+    "9": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    "123",
+    "456",
+    "789"
+  ],
+  "result": {
+    "count": 2,
+    "item": "testmod:ore_luck_block"
+  }
+}

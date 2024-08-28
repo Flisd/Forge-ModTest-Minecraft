@@ -112,6 +112,9 @@ public class ModItems {
     public static final RegistryObject<Item> WATER_LAVA = ITEMS.register("water_lava",
             () -> new WaterLavaOrb(new Item.Properties()));
 
+    public static final RegistryObject<Item> COMPACT_BOTTLE = ITEMS.register("compact_enchanting_bottle",
+            () -> new CompactBottleItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

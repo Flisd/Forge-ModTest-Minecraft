@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "m": {
+      "item": "testmod:totem_of_magnet"
+    },
+    "t": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "pattern": [
+    "mtm",
+    "mtm",
+    "mtm"
+  ],
+  "result": {
+    "item": "testmod:magnet_staff"
+  }
+}

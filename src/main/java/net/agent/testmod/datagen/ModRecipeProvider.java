@@ -150,18 +150,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.ROTTEN_FLESH), has(Items.ENDER_PEARL))
                 .save(p_297267_);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FOOD_ORB.get(),2)
-                .pattern("gag")
-                .pattern("fef")
-                .pattern("gag")
-                .define('g', Items.GOLDEN_CARROT)
-                .define('a', Items.APPLE)
-                .define('f', Items.ROTTEN_FLESH)
-                .define('e', Items.ENDER_PEARL)
-                .unlockedBy(getHasName(Items.GOLDEN_CARROT), has(Items.APPLE))
-                .unlockedBy(getHasName(Items.ROTTEN_FLESH), has(Items.ENDER_PEARL))
-                .save(p_297267_);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOD_ORB.get(),1)
                 .pattern("nbc")
                 .pattern("beb")
@@ -249,6 +237,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('i', Items.IRON_INGOT)
                 .unlockedBy(getHasName(Items.ENDER_PEARL), has(Items.ENDER_PEARL))
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COMPACT_BOTTLE.get(),1)
+                .pattern("iii")
+                .pattern("iei")
+                .pattern("iii")
+                .define('e', Items.DIAMOND)
+                .define('i', Items.EXPERIENCE_BOTTLE)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .unlockedBy(getHasName(Items.EXPERIENCE_BOTTLE), has(Items.EXPERIENCE_BOTTLE))
                 .save(p_297267_);
     }
 

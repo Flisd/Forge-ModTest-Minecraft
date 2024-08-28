@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "testmod:diamond_tnt"
+    },
+    "s": {
+      "item": "minecraft:diamond_sword"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "dsd",
+    "dsd",
+    " x "
+  ],
+  "result": {
+    "item": "testmod:tnt_sword"
+  }
+}

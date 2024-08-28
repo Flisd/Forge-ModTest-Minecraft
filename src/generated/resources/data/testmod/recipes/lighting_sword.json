@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond_sword"
+    },
+    "f": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "n": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "pattern": [
+    "fnf",
+    "fnf",
+    " d "
+  ],
+  "result": {
+    "item": "testmod:lighting_sword"
+  }
+}

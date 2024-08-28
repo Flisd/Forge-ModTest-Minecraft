@@ -85,6 +85,7 @@
   "item.testmod.portal_orb" : "Portal Orb",
   "item.testmod.water_lava" : "Water Lava Orb",
 
+
   "blocks.testmod.fog_block" : "Fog Block",
 
   "enchantment.testmod.fire_trail" : "Fire Trail",
@@ -95,5 +96,6 @@
   "item.testmod.steel_ball" : "Steel Ball",
   "blocks.testmod.projectile_shooter_block" : "Projectile Shooter",
 
-  "enchantment.testmod.quick_draw" : "Quick Draw"
+  "enchantment.testmod.quick_draw" : "Quick Draw",
+  "item.testmod.compact_enchanting_bottle" : "Compact Bottle O'Enchanting"
 }

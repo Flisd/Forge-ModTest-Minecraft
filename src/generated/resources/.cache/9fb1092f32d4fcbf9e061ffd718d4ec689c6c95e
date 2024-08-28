@@ -1,6 +1,15 @@
-// 1.20.4	2024-08-27T17:52:05.5416634	Recipes
+// 1.20.4	2024-08-28T09:49:32.3673757	Recipes
 a381ecaccf60ac6745e236ec2b543da5bdd8cbb8 data/testmod/advancements/recipes/misc/diamond_tnt.json
+ec075a3ba79937a2cae8e0ced534d661391f1641 data/testmod/advancements/recipes/misc/drill.json
+acf080893166c99630f51be2a741a8cdbe4fdb63 data/testmod/advancements/recipes/misc/ender_block.json
+a9c130a1677fdb0e1d96df9efaafafa0fc52e577 data/testmod/advancements/recipes/misc/food_orb.json
+7d52d90a70d1d434675e5ac2bbd44658a99f89f8 data/testmod/advancements/recipes/misc/god_orb.json
+cce9cb9650539aef35a8bad168226f373855e9bb data/testmod/advancements/recipes/misc/ivy_sword.json
+5647b00679bc5ded3fdf71cf8695850b65ea59fc data/testmod/advancements/recipes/misc/lighting_sword.json
+e3d4b5416b2a19fe9639395d741d126fd5a9d265 data/testmod/advancements/recipes/misc/magnet_staff.json
 5334c550790722c4ebd2820c3a61a454daf1e862 data/testmod/advancements/recipes/misc/metal_detector.json
+e8581749ba4d8d076b8c36833811d246c0cfc422 data/testmod/advancements/recipes/misc/ore_luck_block.json
+d4f1042b1e297579ae10cd3b4ad2a44ac43ab3fb data/testmod/advancements/recipes/misc/portal_orb.json
 39b966082f44d11dad8e557c3cd7b80c868cdb90 data/testmod/advancements/recipes/misc/raw_sapphire_block.json
 20f9e671d10513c0baa1e4bde68cd2ed75fdedd9 data/testmod/advancements/recipes/misc/sapphire.json
 533fd249dfce37e7591975f1b858345be8c55e6e data/testmod/advancements/recipes/misc/sapphire_block.json
@@ -16,8 +25,21 @@ a5e4eb00e4fd6f3498c3e3f0c69dfcc34205b827 data/testmod/advancements/recipes/misc/
 a15972695542d9b6992220a37614e9cda80dfe1a data/testmod/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
 422501d3c1d577c09ca82a41e197aca87721ed1f data/testmod/advancements/recipes/misc/sound_block.json
 3518881a41c4e185db98261c307620e758009681 data/testmod/advancements/recipes/misc/spawner_detector.json
+16124aee0a4ed8ca0a8863b41a13eec988c16345 data/testmod/advancements/recipes/misc/steel_ball.json
+e390b337d4e4a39eaf6f01cb0a75e2843909922f data/testmod/advancements/recipes/misc/tnt_orb.json
+8eed8cf3ccc2bcc4eb4d2e789fe64bbc40aca008 data/testmod/advancements/recipes/misc/tnt_sword.json
+8d40bed7056557b87a454d8e78e4208a824e64a0 data/testmod/advancements/recipes/misc/totem_of_magnet.json
 81998ad957597dba922c1ff645662fb1f22422fa data/testmod/recipes/diamond_tnt.json
+40ff1c94ad268431461fc5de64fd389d8007387f data/testmod/recipes/drill.json
+e926baa6150876a02bce93d1ea3717f88ff625af data/testmod/recipes/ender_block.json
+c4aef8eca8d6494e02a8a9869bff19d186c2f07a data/testmod/recipes/food_orb.json
+de02953ceafc1ab86f5b794a26d74681411e9584 data/testmod/recipes/god_orb.json
+7cc16cbc2326e1d364d66a270eb022fa69ccd097 data/testmod/recipes/ivy_sword.json
+58b01d10a16ddd7ad6824f1294e6d6a6fe0fe9d3 data/testmod/recipes/lighting_sword.json
+308977a5e3e65219778f339b6889c71a20577a68 data/testmod/recipes/magnet_staff.json
 f6fac5cfe37672836870bf44fe405ff34cf456d8 data/testmod/recipes/metal_detector.json
+42543761cdd9fd7219dce23f2a297e463e3dd8ab data/testmod/recipes/ore_luck_block.json
+547bd14cbe99830fa7fbbb4bfdea2b2d3aa4deb2 data/testmod/recipes/portal_orb.json
 f4784de98f91f31150333d6812314f25cc5a169a data/testmod/recipes/raw_sapphire_block.json
 d7005ce934d5e41c035eeff934a53b19908e837a data/testmod/recipes/sapphire.json
 946b09062053205519b247791324624db456c2ab data/testmod/recipes/sapphire_block.json
@@ -33,3 +55,7 @@ f20b7f3f65d40ceb2cc335f44900389235b1dc9f data/testmod/recipes/sapphire_from_smel
 c7813c2cfbebbfa24521dcaad22a59811f87ac2b data/testmod/recipes/sapphire_from_smelting_sapphire_ore.json
 284759919c5563d3276a7d14cb6419b99cd67007 data/testmod/recipes/sound_block.json
 fc7a784712a58302674b0c7d461eea95fe33b31a data/testmod/recipes/spawner_detector.json
+dccbbebc7d050d6acbf4be5924b1a273b684e523 data/testmod/recipes/steel_ball.json
+c0ad8e797c605e97fa397d9194dd6187afb161f3 data/testmod/recipes/tnt_orb.json
+c461a99259f0e1f5338d385239faefe6ee6b8aae data/testmod/recipes/tnt_sword.json
+b33e2de40e7548d78455d7ed57ad4e1664085f61 data/testmod/recipes/totem_of_magnet.json

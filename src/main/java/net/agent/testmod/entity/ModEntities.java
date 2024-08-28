@@ -48,6 +48,10 @@ public class ModEntities {
             ENTITIES.register("water_lava_projectile", () -> EntityType.Builder.<WaterLavaProjectileEntity>of(WaterLavaProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("water_lava_projectile"));
 
+    public static final RegistryObject<EntityType<CompactBottleProjectileEntity>> COMPACT_BOTTLE_PROJECTILE =
+            ENTITIES.register("compact_enchanting_bottle_pro", () -> EntityType.Builder.<CompactBottleProjectileEntity>of(CompactBottleProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("compact_enchanting_bottle_pro"));
+
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }
