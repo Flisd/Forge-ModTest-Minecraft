@@ -12,7 +12,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory;
 public class Rejuvenation extends Enchantment {
 
     private static final ChatFormatting[] RAINBOW_COLORS = {
-            ChatFormatting.RED, ChatFormatting.LIGHT_PURPLE
+            ChatFormatting.WHITE, ChatFormatting.LIGHT_PURPLE
     };
 
     protected Rejuvenation() {
@@ -26,7 +26,7 @@ public class Rejuvenation extends Enchantment {
 
         for (int i = 0; i < name.length(); i++) {
             char letter = name.charAt(i);
-            ChatFormatting color = RAINBOW_COLORS[(i + (int) (System.currentTimeMillis() / 150)) % RAINBOW_COLORS.length];
+            ChatFormatting color = RAINBOW_COLORS[Math.floorMod((i + (int) (System.currentTimeMillis() / 100)), RAINBOW_COLORS.length)];
             rainbowName.append(Component.literal(String.valueOf(letter)).withStyle(color));
         }
 

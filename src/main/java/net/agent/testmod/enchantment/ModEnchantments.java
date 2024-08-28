@@ -43,6 +43,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> REJUVENATION = ENCHANTMENTS.register("rejuvenation",
             ()-> new Rejuvenation());
 
+    public static RegistryObject<Enchantment> ELEMENT_SHOT = ENCHANTMENTS.register("element_shot",
+            ()-> new ElementalShot());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }

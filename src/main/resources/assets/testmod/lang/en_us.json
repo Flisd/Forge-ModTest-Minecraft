@@ -97,5 +97,6 @@
   "blocks.testmod.projectile_shooter_block" : "Projectile Shooter",
 
   "enchantment.testmod.quick_draw" : "Quick Draw",
-  "item.testmod.compact_enchanting_bottle" : "Compact Bottle O'Enchanting"
+  "item.testmod.compact_enchanting_bottle" : "Compact Bottle O'Enchanting",
+  "enchantment.testmod.element_shot" : "Element Shot"
 }
