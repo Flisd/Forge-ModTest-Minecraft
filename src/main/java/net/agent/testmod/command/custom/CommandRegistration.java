@@ -11,6 +11,7 @@ public class CommandRegistration {
     @SubscribeEvent
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         GearMeUpMonkeyCommand.register(event);
+        IllegalTotemsCommand.register(event);
 
     }
 }

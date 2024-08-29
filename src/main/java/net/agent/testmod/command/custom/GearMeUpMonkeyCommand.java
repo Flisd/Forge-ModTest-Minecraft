@@ -1,14 +1,23 @@
 package net.agent.testmod.command.custom;
 
+import com.google.common.collect.Lists;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.commands.Commands;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.event.RegisterCommandsEvent;
+
+import java.util.List;
 
 public class GearMeUpMonkeyCommand {
     public static void register(RegisterCommandsEvent event) {
@@ -33,7 +42,7 @@ public class GearMeUpMonkeyCommand {
                     player.addItem(chestplate);
 
                     // leg
-                    ItemStack leggings = new ItemStack(ModItems.SAPPHIRE_BOOTS.get());
+                    ItemStack leggings = new ItemStack(ModItems.SAPPHIRE_LEGGINGS.get());
                     leggings.enchant(Enchantments.ALL_DAMAGE_PROTECTION, 4);
                     leggings.enchant(Enchantments.MENDING, 1);
                     leggings.enchant(Enchantments.UNBREAKING, 3);
@@ -74,7 +83,7 @@ public class GearMeUpMonkeyCommand {
                     player.addItem(axe);
 
                     // pickaxe
-                    ItemStack pickaxe = new ItemStack(ModItems.SAPPHIRE_AXE.get());
+                    ItemStack pickaxe = new ItemStack(ModItems.SAPPHIRE_PICKAXE.get());
                     pickaxe.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
                     pickaxe.enchant(Enchantments.MENDING, 1);
                     pickaxe.enchant(Enchantments.UNBREAKING, 3);
@@ -123,22 +132,32 @@ public class GearMeUpMonkeyCommand {
                     player.addItem(new ItemStack(Items.ARROW, 64));
 
                     // 5 strength 2 potions
-                    ItemStack strengthPotion = new ItemStack(Items.POTION);
-                    strengthPotion.getOrCreateTag().putString("Potion", "minecraft:strong_strength");
-                    player.addItem(new ItemStack(strengthPotion.getItem(), 5));
+                    ItemStack strengthPotion = new ItemStack(Items.SPLASH_POTION);
+                    PotionUtils.setPotion(strengthPotion, Potions.STRENGTH);
+
+                    List<MobEffectInstance> customEffects = Lists.newArrayList();
+                    customEffects.add(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 1)); // Strength II for 3 minutes
+
+                    PotionUtils.setCustomEffects(strengthPotion, customEffects);
+                    strengthPotion.setCount(3);
+                    player.addItem(strengthPotion);
+
 
                     // 1 shulker boxes (why not)
                     player.addItem(new ItemStack(Items.PURPLE_SHULKER_BOX, 1));
 
                     // 10 tots
-                    player.addItem(new ItemStack(Items.TOTEM_OF_UNDYING, 10));
+                    for (int i = 0; i < 10; i++) {
+                        player.addItem(new ItemStack(Items.TOTEM_OF_UNDYING));
+                    }
 
                     // magnet staff
                     player.addItem(new ItemStack(ModItems.TOTEM_OF_MAGNET.get(), 1));
 
                     // 3 stacks of pearls
-                    player.addItem(new ItemStack(Items.ENDER_PEARL, 48));
-
+                    for (int i = 0; i < 3; i++) {
+                        player.addItem(new ItemStack(Items.ENDER_PEARL, 16));
+                    }
                     // 1 stacks of god orbs
                     player.addItem(new ItemStack(ModItems.GOD_ORB.get(), 16));
 
@@ -147,6 +166,10 @@ public class GearMeUpMonkeyCommand {
 
                     // 1 stacks of crystals
                     player.addItem(new ItemStack(Items.END_CRYSTAL, 64));
+
+                    // 2 stacks of bottle o enchanting
+                    player.addItem(new ItemStack(ModItems.COMPACT_BOTTLE.get(), 64));
+                    player.addItem(new ItemStack(ModItems.COMPACT_BOTTLE.get(), 64));
 
                     return 1;
                 }));
