@@ -12,6 +12,8 @@ public class CommandRegistration {
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         GearMeUpMonkeyCommand.register(event);
         IllegalTotemsCommand.register(event);
+        HomeCommand.register(event);
+        SetHomeCommand.register(event);
 
     }
 }

@@ -1,4 +1,5 @@
-// 1.20.4	2024-08-28T09:49:32.3673757	Recipes
+// 1.20.4	2024-08-29T14:01:54.1341274	Recipes
+333de4601cd08f71d7d69c07e4c94245ebd66780 data/testmod/advancements/recipes/misc/compact_enchanting_bottle.json
 a381ecaccf60ac6745e236ec2b543da5bdd8cbb8 data/testmod/advancements/recipes/misc/diamond_tnt.json
 ec075a3ba79937a2cae8e0ced534d661391f1641 data/testmod/advancements/recipes/misc/drill.json
 acf080893166c99630f51be2a741a8cdbe4fdb63 data/testmod/advancements/recipes/misc/ender_block.json
@@ -29,6 +30,7 @@ a15972695542d9b6992220a37614e9cda80dfe1a data/testmod/advancements/recipes/misc/
 e390b337d4e4a39eaf6f01cb0a75e2843909922f data/testmod/advancements/recipes/misc/tnt_orb.json
 8eed8cf3ccc2bcc4eb4d2e789fe64bbc40aca008 data/testmod/advancements/recipes/misc/tnt_sword.json
 8d40bed7056557b87a454d8e78e4208a824e64a0 data/testmod/advancements/recipes/misc/totem_of_magnet.json
+0a80f2ee448aa15accd2dc0f9ddf188c710da190 data/testmod/recipes/compact_enchanting_bottle.json
 81998ad957597dba922c1ff645662fb1f22422fa data/testmod/recipes/diamond_tnt.json
 40ff1c94ad268431461fc5de64fd389d8007387f data/testmod/recipes/drill.json
 e926baa6150876a02bce93d1ea3717f88ff625af data/testmod/recipes/ender_block.json
