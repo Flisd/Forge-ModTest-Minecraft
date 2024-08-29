@@ -46,6 +46,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> ELEMENT_SHOT = ENCHANTMENTS.register("element_shot",
             ()-> new ElementalShot());
 
+    public static RegistryObject<Enchantment> SPEED_BOOTS = ENCHANTMENTS.register("speed_boots",
+            ()-> new ElementalShot());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
