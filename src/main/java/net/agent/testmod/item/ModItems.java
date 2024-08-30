@@ -115,6 +115,9 @@ public class ModItems {
     public static final RegistryObject<Item> COMPACT_BOTTLE = ITEMS.register("compact_enchanting_bottle",
             () -> new CompactBottleItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> TUNNEL_ORB = ITEMS.register("tunnel_orb",
+            () -> new TunnelOrbItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

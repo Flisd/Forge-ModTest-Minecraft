@@ -99,5 +99,7 @@
   "enchantment.testmod.quick_draw" : "Quick Draw",
   "item.testmod.compact_enchanting_bottle" : "Compact Bottle O'Enchanting",
   "enchantment.testmod.element_shot" : "Element Shot",
-  "enchantment.testmod.speed_boots" : "Speed"
+  "enchantment.testmod.speed_boots" : "Speed",
+
+  "item.testmod.tunnel_orb" : "Tunnel Orb"
 }

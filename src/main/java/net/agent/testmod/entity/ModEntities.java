@@ -52,6 +52,10 @@ public class ModEntities {
             ENTITIES.register("compact_enchanting_bottle_pro", () -> EntityType.Builder.<CompactBottleProjectileEntity>of(CompactBottleProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("compact_enchanting_bottle_pro"));
 
+    public static final RegistryObject<EntityType<TunnelOrbProjectileEntity>> TUNNEL_PROJECTILE =
+            ENTITIES.register("tunnel_projectile", () -> EntityType.Builder.<TunnelOrbProjectileEntity>of(TunnelOrbProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("tunnel_projectile"));
+
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }

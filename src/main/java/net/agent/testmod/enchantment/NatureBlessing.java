@@ -13,7 +13,6 @@ public class NatureBlessing extends Enchantment {
 
     private static final ChatFormatting[] RAINBOW_COLORS = {
             ChatFormatting.GREEN, ChatFormatting.DARK_GREEN
-
     };
 
     protected NatureBlessing() {
