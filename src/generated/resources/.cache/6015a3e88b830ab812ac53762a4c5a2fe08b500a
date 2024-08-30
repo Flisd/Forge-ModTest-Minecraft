@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-29T19:57:40.4908715	Item Models: testmod
+// 1.20.4	2024-08-30T11:26:05.1786206	Item Models: testmod
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 3203eded0bbcb97febb392fa0462351ae7804a06 assets/testmod/models/item/compact_enchanting_bottle.json
 57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
@@ -84,5 +84,6 @@ fb33b86d47175d99e0d17f91511eacba77d40934 assets/testmod/models/item/sapphire_sta
 0c5cf827142abc0c6e885d4e7168bb035e2e9a47 assets/testmod/models/item/tnt_orb.json
 63066433885421c0983c2751f8a0ea9cf379aa0b assets/testmod/models/item/tnt_sword.json
 5b2f07c3a161b641343e17a915c1326964dea5c9 assets/testmod/models/item/totem_of_magnet.json
+9dd4fadf960ecedfb3e1885267e0fb99d6b443ea assets/testmod/models/item/totem_of_techno.json
 c4df938a799a5e9054cee69623368a42e8e2a5dd assets/testmod/models/item/tunnel_orb.json
 47a8b118048c597a819fc964aca60959ed662af3 assets/testmod/models/item/water_lava.json

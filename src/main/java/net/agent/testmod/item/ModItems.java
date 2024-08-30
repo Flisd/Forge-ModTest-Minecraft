@@ -118,6 +118,9 @@ public class ModItems {
     public static final RegistryObject<Item> TUNNEL_ORB = ITEMS.register("tunnel_orb",
             () -> new TunnelOrbItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> TOTEM_OF_TECHNO = ITEMS.register("totem_of_techno",
+            () -> new TotemOfTechno(new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

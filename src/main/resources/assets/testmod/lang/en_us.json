@@ -101,5 +101,6 @@
   "enchantment.testmod.element_shot" : "Element Shot",
   "enchantment.testmod.speed_boots" : "Speed",
 
-  "item.testmod.tunnel_orb" : "Tunnel Orb"
+  "item.testmod.tunnel_orb" : "Tunnel Orb",
+  "item.testmod.totem_of_techno" : "Totem of Techno"
 }
