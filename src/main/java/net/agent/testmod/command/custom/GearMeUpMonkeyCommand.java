@@ -56,7 +56,6 @@ public class GearMeUpMonkeyCommand {
                     boots.enchant(Enchantments.UNBREAKING, 3);
                     boots.enchant(ModEnchantments.REJUVENATION.get(), 1);
                     boots.enchant(ModEnchantments.THUNDER_CLAP.get(), 1);
-                    boots.enchant(ModEnchantments.FIRE_TRAIL.get(), 1);
                     boots.enchant(ModEnchantments.SPEED_BOOTS.get(), 1);
                     player.addItem(boots);
 
@@ -114,6 +113,7 @@ public class GearMeUpMonkeyCommand {
                     bow.enchant(Enchantments.FLAMING_ARROWS, 1);
                     bow.enchant(ModEnchantments.BOW_BOOM.get(), 2);
                     bow.enchant(ModEnchantments.ELEMENT_SHOT.get(), 1);
+                    bow.enchant(ModEnchantments.FLY.get(), 1);
                     bow.enchant(ModEnchantments.REJUVENATION.get(), 1);
                     player.addItem(bow);
 
@@ -125,6 +125,7 @@ public class GearMeUpMonkeyCommand {
                     crossbow.enchant(Enchantments.MULTISHOT, 1);
                     crossbow.enchant(ModEnchantments.BOW_BOOM.get(), 2);
                     crossbow.enchant(ModEnchantments.ELEMENT_SHOT.get(), 1);
+                    crossbow.enchant(ModEnchantments.FLY.get(), 1);
                     crossbow.enchant(ModEnchantments.REJUVENATION.get(), 1);
                     player.addItem(crossbow);
 
