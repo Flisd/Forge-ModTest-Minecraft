@@ -23,6 +23,7 @@ public class PlaceStaff extends Item {
     private int radiusBallObjects = 1;
     private static final int MAX_RADIUS = 20;
     private boolean is3D = true; // New property to toggle between 3D and 2D
+    private boolean hollow = true;
 
     public PlaceStaff(Properties properties) {
         super(properties);
@@ -56,6 +57,19 @@ public class PlaceStaff extends Item {
                     }
                 }
             }
+
+            if (hollow) {
+                for (int x = -radiusBallObjects + 1; x <= radiusBallObjects - 1; x++) {
+                    for (int y = is3D ? -radiusBallObjects + 1 : 0; y <= (is3D ? radiusBallObjects - 1 : 0); y++) {
+                        for (int z = -radiusBallObjects + 1; z <= radiusBallObjects - 1; z++) {
+                            if (Math.sqrt(x * x + y * y + z * z) <= radiusBallObjects - 1) {
+                                level.setBlock(context.getClickedPos().offset(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+                            }
+                        }
+                    }
+                }
+            }
+
             return InteractionResult.SUCCESS;
         }
     }
@@ -74,9 +88,13 @@ public class PlaceStaff extends Item {
         is3D = !is3D;
     }
 
+    public void toggleHollow() {
+        hollow = !hollow;
+    }
+
     @Override
     public Component getName(ItemStack stack) {
-        return Component.literal(super.getName(stack).getString() + " (Radius: " + radiusBallObjects + ", Block: " + placeBlock.getName().getString() + ", Mode: " + (is3D ? "3D" : "2D") + ")")
+        return Component.literal(super.getName(stack).getString() + " (Radius: " + radiusBallObjects + ", Block: " + placeBlock.getName().getString() + ", Mode: " + (is3D ? "3D" : "2D") + ")" + " Hollow: " + hollow)
                 .withStyle(ChatFormatting.AQUA);
     }
 
@@ -95,7 +113,11 @@ public class PlaceStaff extends Item {
             toggleMode();
             nextStack.shrink(1);
             return true;
-        } else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() instanceof BlockItem) {
+        }else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() == Items.COMMAND_BLOCK) {
+            toggleHollow();
+            nextStack.shrink(1);
+            return true;
+        }else if (currentStack.getItem() instanceof PlaceStaff && nextStack.getItem() instanceof BlockItem) {
             Block newBlock = ((BlockItem) nextStack.getItem()).getBlock();
             setPlaceBlock(newBlock);
             nextStack.shrink(1);

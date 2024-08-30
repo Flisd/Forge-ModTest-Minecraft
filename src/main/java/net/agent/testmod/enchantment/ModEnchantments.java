@@ -47,7 +47,7 @@ public class ModEnchantments {
             ()-> new ElementalShot());
 
     public static RegistryObject<Enchantment> SPEED_BOOTS = ENCHANTMENTS.register("speed_boots",
-            ()-> new ElementalShot());
+            ()-> new SpeedBoots());
 
     public static RegistryObject<Enchantment> NATURE = ENCHANTMENTS.register("nature",
             ()-> new NatureBlessing());

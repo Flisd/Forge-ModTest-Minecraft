@@ -20,7 +20,7 @@
   "block.testmod.sapphire_fence_gate": "Sapphire Fence Gate",
   "block.testmod.sapphire_wall": "Sapphire Wall",
   "block.testmod.sapphire_door": "Sapphire Door",
-  "block.testmod.sapphire_trapdoor": "Sapphire Trapdoor",
+  "block.testmod.sapphire_trap_door": "Sapphire Trapdoor",
 
   "item.testmod.metal_detector" : "Metal Detector",
 
