@@ -97,6 +97,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STEEL_BALL);
         simpleItem(ModItems.WATER_LAVA);
         simpleItem(ModItems.COMPACT_BOTTLE);
+        simpleItem(ModItems.TUNNEL_ORB);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

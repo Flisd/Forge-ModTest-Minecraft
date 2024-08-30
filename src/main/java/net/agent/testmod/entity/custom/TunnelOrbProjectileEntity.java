@@ -38,12 +38,10 @@ public class TunnelOrbProjectileEntity extends ThrowableItemProjectile {
         super.onHit(p_37406_);
         if (!this.level().isClientSide) {
             BlockPos pos = new BlockPos((int)p_37406_.getLocation().x,(int) p_37406_.getLocation().y,(int) p_37406_.getLocation().z);
-            if (random.nextBoolean()) {
-                // 50% chance to summon water
-                this.level().setBlock(pos, Blocks.WATER.defaultBlockState(), 3);
-            } else {
-                // 50% chance to summon lava
-                this.level().setBlock(pos, Blocks.LAVA.defaultBlockState(), 3);
+            while (pos.getY() > this.level().getMinBuildHeight() && this.level().getBlockState(pos).getBlock() != Blocks.BEDROCK) {
+                // Replace the block with air
+                this.level().setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                pos = pos.below();
             }
             this.level().broadcastEntityEvent(this, (byte)3);
             this.discard();
