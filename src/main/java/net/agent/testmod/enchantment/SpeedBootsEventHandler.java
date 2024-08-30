@@ -25,7 +25,7 @@ public class SpeedBootsEventHandler {
         // Check if the player is wearing boots with the FireTrail enchantment
         if (EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.FIRE_TRAIL.get(), boots) > 0) {
             if (!player.level().isClientSide) {
-                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false));
             }
         }
     }
