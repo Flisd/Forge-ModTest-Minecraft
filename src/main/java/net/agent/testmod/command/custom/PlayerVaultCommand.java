@@ -5,6 +5,7 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -27,7 +28,8 @@ public class PlayerVaultCommand {
                         @Nullable
                         @Override
                         public AbstractContainerMenu createMenu(int id, Inventory playerInventory, Player playerEntity) {
-                            return ChestMenu.sixRows(id, playerInventory, player.getEnderChestInventory());
+                            SimpleContainer vaultInventory = new SimpleContainer(54); // 6 rows * 9 slots per row
+                            return ChestMenu.sixRows(id, playerInventory, vaultInventory);
                         }
                     });
                     player.addItem(new ItemStack(ModItems.COMPACT_BOTTLE.get(), 64));
@@ -46,7 +48,8 @@ public class PlayerVaultCommand {
                         @Nullable
                         @Override
                         public AbstractContainerMenu createMenu(int id, Inventory playerInventory, Player playerEntity) {
-                            return ChestMenu.sixRows(id, playerInventory, player.getEnderChestInventory());
+                            SimpleContainer vaultInventory = new SimpleContainer(54); // 6 rows * 9 slots per row
+                            return ChestMenu.sixRows(id, playerInventory, vaultInventory);
                         }
                     });
                     return 1;
