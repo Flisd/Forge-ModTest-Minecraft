@@ -14,6 +14,9 @@ public class CommandRegistration {
         IllegalTotemsCommand.register(event);
         HomeCommand.register(event);
         SetHomeCommand.register(event);
+        CraftCommand.register(event);
+        EnderChestCommand.register(event);
+        AnvilCommand.register(event);
 
     }
 }
