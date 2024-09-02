@@ -102,6 +102,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> PROJECTILE_SHOOTER_BLOCK = BLOCKS.register("projectile_shooter_block",
             () -> new ProjectileShooter(Block.Properties.ofFullCopy(Blocks.DISPENSER)));
 
+    public static final RegistryObject<Block> BEACON_POW = BLOCKS.register("beacon_pow",
+            () -> new BeaconSquareBlock(Block.Properties.ofFullCopy(Blocks.BEACON)));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

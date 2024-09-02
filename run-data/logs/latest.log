@@ -1,27 +1,27 @@
-[30Aug2024 16:19:44.175] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 12, --assetsDir, C:\Users\Tijil\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, testmod, --all, --output, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\generated\resources, --existing, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\main\resources]
-[30Aug2024 16:19:44.177] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.8+7
-[30Aug2024 16:19:44.179] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[30Aug2024 16:19:44.262] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[30Aug2024 16:19:44.354] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/Tijil/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[30Aug2024 16:19:45.109] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[30Aug2024 16:19:46.011] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Tijil\.gradle\caches\forge_gradle\assets, --assetIndex, 12, --mod, testmod, --all, --output, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\generated\resources, --existing, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\main\resources]
-[30Aug2024 16:19:50.442] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.1.0, for MC 1.20.4 with MCP 20231207.112700
-[30Aug2024 16:19:50.444] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.1.0 Initialized
-[30Aug2024 16:19:50.503] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[30Aug2024 16:19:50.974] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [testmod]
-[30Aug2024 16:19:51.039] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Tijil/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.0_mapped_official_1.20.4/forge-1.20.4-49.1.0_mapped_official_1.20.4-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[30Aug2024 16:19:51.039] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Tijil/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.0_mapped_official_1.20.4/forge-1.20.4-49.1.0_mapped_official_1.20.4-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[30Aug2024 16:19:51.236] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[30Aug2024 16:19:51.347] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 110 ms
-[30Aug2024 16:19:51.347] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[30Aug2024 16:19:51.392] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 43 ms
-[30Aug2024 16:19:51.392] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: testmod
-[30Aug2024 16:19:51.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: testmod finished after 205 ms
-[30Aug2024 16:19:51.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: testmod
-[30Aug2024 16:19:51.650] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: testmod finished after 51 ms
-[30Aug2024 16:19:51.651] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id testmod
-[30Aug2024 16:19:51.664] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id testmod finished after 12 ms
-[30Aug2024 16:19:51.664] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id testmod
-[30Aug2024 16:19:51.667] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id testmod finished after 2 ms
-[30Aug2024 16:19:51.667] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 431 ms
-[30Aug2024 16:19:51.686] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 259, old count: 263, new count: 260, removed stale: 0, written: 0
+[01Sep2024 13:49:51.814] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 12, --assetsDir, C:\Users\Tijil\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, testmod, --all, --output, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\generated\resources, --existing, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\main\resources]
+[01Sep2024 13:49:51.817] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.8+7
+[01Sep2024 13:49:51.817] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[01Sep2024 13:49:51.945] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[01Sep2024 13:49:52.062] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/Tijil/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
+[01Sep2024 13:49:53.013] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[01Sep2024 13:49:54.298] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Tijil\.gradle\caches\forge_gradle\assets, --assetIndex, 12, --mod, testmod, --all, --output, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\generated\resources, --existing, C:\Users\Tijil\OneDrive\Desktop\Java projects\Forge-ModTest-Minecraft\src\main\resources]
+[01Sep2024 13:49:59.535] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.1.0, for MC 1.20.4 with MCP 20231207.112700
+[01Sep2024 13:49:59.537] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.1.0 Initialized
+[01Sep2024 13:49:59.590] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[01Sep2024 13:49:59.994] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [testmod]
+[01Sep2024 13:50:00.121] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Tijil/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.0_mapped_official_1.20.4/forge-1.20.4-49.1.0_mapped_official_1.20.4-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[01Sep2024 13:50:00.122] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Tijil/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.1.0_mapped_official_1.20.4/forge-1.20.4-49.1.0_mapped_official_1.20.4-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[01Sep2024 13:50:00.379] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[01Sep2024 13:50:00.524] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 144 ms
+[01Sep2024 13:50:00.525] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[01Sep2024 13:50:00.578] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 51 ms
+[01Sep2024 13:50:00.578] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: testmod
+[01Sep2024 13:50:00.787] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: testmod finished after 208 ms
+[01Sep2024 13:50:00.787] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: testmod
+[01Sep2024 13:50:00.813] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: testmod finished after 26 ms
+[01Sep2024 13:50:00.813] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id testmod
+[01Sep2024 13:50:00.825] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id testmod finished after 11 ms
+[01Sep2024 13:50:00.825] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id testmod
+[01Sep2024 13:50:00.827] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id testmod finished after 1 ms
+[01Sep2024 13:50:00.827] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 448 ms
+[01Sep2024 13:50:00.839] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 263, old count: 267, new count: 264, removed stale: 0, written: 0
