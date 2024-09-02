@@ -1,11 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "down": "testmod:block/beacon_square_side",
-    "up": "testmod:block/beacon_square_top",
-    "north": "testmod:block/beacon_square_side",
-    "south": "testmod:block/beacon_square_side",
-    "west": "testmod:block/beacon_square_side",
-    "east": "testmod:block/beacon_square_side"
+    "all": "testmod:block/beacon_pow"
   }
 }
