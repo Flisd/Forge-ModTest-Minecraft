@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "testmod:beacon_pow"
         }
       ],
       "rolls": 1.0

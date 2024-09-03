@@ -2,11 +2,14 @@ package net.agent.testmod;
 
 import com.mojang.logging.LogUtils;
 import net.agent.testmod.block.ModBlocks;
+import net.agent.testmod.block.entity.ModBlockEntities;
+import net.agent.testmod.block.entity.renderer.BeaconSquareBlockEntityRenderer;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -45,6 +48,8 @@ public class TestMod {
 
         ModEntities.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
@@ -79,6 +84,7 @@ public class TestMod {
             EntityRenderers.register(ModEntities.WATER_LAVA_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.COMPACT_BOTTLE_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.TUNNEL_PROJECTILE.get(), ThrownItemRenderer::new);
+            BlockEntityRenderers.register(ModBlockEntities.BEACON_SQUARE.get(), BeaconSquareBlockEntityRenderer::new);
         }
     }
 }

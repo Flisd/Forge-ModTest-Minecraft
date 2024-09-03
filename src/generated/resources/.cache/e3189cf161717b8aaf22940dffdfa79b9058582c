@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-02T15:37:18.5045707	Block States: testmod
+// 1.20.4	2024-09-03T11:05:20.7326602	Block States: testmod
 1c2b3084723bff5823ca497784c503b2b206427e assets/testmod/blockstates/beacon_pow.json
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
 592a016a6656dcb60b662bf79098e9f53191b013 assets/testmod/blockstates/deepslate_sapphire_ore.json
@@ -23,7 +23,6 @@ be7d6dbc2a828fae7575f94a52da1ba8c19b3a55 assets/testmod/blockstates/sapphire_sta
 08021bb1ade8012762b13a7d1741d50361b2d9f3 assets/testmod/blockstates/sapphire_trap_door.json
 c40bd2a83c3ade7e0fab23c0bbecad2babdc8959 assets/testmod/blockstates/sapphire_wall.json
 ca468d346fe6f72dc5c6b14dfff70dd298ed49af assets/testmod/blockstates/sound_block.json
-2e85287d08ce67fc564e74c9bce68f04f490a39b assets/testmod/models/block/beacon_pow.json
 8428f8865a991799b9774e5bc07f72a0f0998404 assets/testmod/models/block/camouflage_block.json
 5f9a33e160a169fbfdba568ada7fbfc002ce5750 assets/testmod/models/block/deepslate_sapphire_ore.json
 36f8272f0af9c5174414b11ea29cd4eba7be34af assets/testmod/models/block/diamond_tnt.json

@@ -5,6 +5,7 @@ import net.agent.testmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -35,7 +36,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SOUND_BLOCK);
         blockWithItem(ModBlocks.LAUNCH_BLOCK);
-        blockWithItem(ModBlocks.BEACON_POW);
+        simpleBlockWithItem(ModBlocks.BEACON_POW.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/beacon_pow")));
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.SAPPHIRE_SLAB.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));

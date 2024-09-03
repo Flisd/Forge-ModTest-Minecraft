@@ -91,7 +91,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.TUNNEL_ORB.get(), 1));
                         output.accept(new ItemStack(ModItems.TOTEM_OF_TECHNO.get(), 1));
 
-                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
+//                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));
                         // if you want to add an item already in the game
