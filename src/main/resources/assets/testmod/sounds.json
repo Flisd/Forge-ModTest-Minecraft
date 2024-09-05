@@ -4,5 +4,14 @@
     "sounds": [
       "testmod:techno_never_dies"
     ]
+  },
+  "wide_putin" : {
+    "subtitle" : "sound.testmod.wide_putin",
+    "sounds": [
+      {
+        "name": "testmod:wide_putin",
+        "stream" : true
+      }
+    ]
   }
 }

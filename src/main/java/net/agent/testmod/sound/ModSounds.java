@@ -18,6 +18,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> WIDE_PUTIN = registerSoundEvents("wide_putin");
 
+    public static final RegistryObject<SoundEvent> DEV_SOUND = registerSoundEvents("dev_disk");
+
     // .Ogg sound type in MONO nor stereo
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {

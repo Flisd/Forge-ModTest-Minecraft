@@ -107,5 +107,13 @@
 
   "sound.testmod.techno_never_dies" : "TECHNOBLADE BABY",
 
-  "entity.minecraft.villager.testmod.oreluckmaster": "Ore Master"
+  "entity.minecraft.villager.testmod.oreluckmaster": "Ore Master",
+
+  "sound.testmod:wide_putin" : "Wide Putin",
+
+  "item.testmod:wide_putin_music_disk" : "Wide Putin Disk",
+  "item.testmod:wide_putin_music_disk.desc" : "Wide Putin (CC0)",
+
+  "item.testmod:dev_disk_music_disk" : "Nice man",
+  "item.testmod:dev_disk_music_disk.desc" : "Caden T. - Nice man (NAN)"
 }

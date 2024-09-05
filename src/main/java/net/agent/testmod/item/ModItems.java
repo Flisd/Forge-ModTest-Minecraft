@@ -3,6 +3,7 @@ package net.agent.testmod.item;
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.FuelItem;
 import net.agent.testmod.item.custom.*;
+import net.agent.testmod.sound.ModSounds;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -120,6 +121,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOTEM_OF_TECHNO = ITEMS.register("totem_of_techno",
             () -> new TotemOfTechno(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> WIDE_PUTIN_DISK = ITEMS.register("wide_putin_disk",
+            () -> new RecordItem(6, ModSounds.WIDE_PUTIN, new Item.Properties().stacksTo(1),1400));
+
+    public static final RegistryObject<Item> DEV_DISK_ITEM = ITEMS.register("dev_disk_item",
+            () -> new RecordItem(6, ModSounds.DEV_SOUND, new Item.Properties().stacksTo(1),1800));
 
 
     public static void register(IEventBus eventBus) {

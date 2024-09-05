@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import javax.annotation.Nullable;
@@ -26,6 +27,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.SAPPHIRE_LEGGINGS.get(),
                         ModItems.SAPPHIRE_BOOTS.get());
 
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.WIDE_PUTIN_DISK.get(),
+                        ModItems.DEV_DISK_ITEM.get()
+                        );
+
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.WIDE_PUTIN_DISK.get());
 
     }
 }
