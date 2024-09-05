@@ -105,5 +105,7 @@
   "item.testmod.totem_of_techno" : "Totem of Techno",
   "block.testmod.beacon_pow" : "Beacon²",
 
-  "sound.testmod.techno_never_dies" : "TECHNOBLADE BABY"
+  "sound.testmod.techno_never_dies" : "TECHNOBLADE BABY",
+
+  "entity.minecraft.villager.testmod.oreluckmaster": "Ore Master"
 }
