@@ -65,12 +65,12 @@ public class TotemOfTechno extends Item {
                             player.getInventory().armor.set(i, savedArmor[i]);
                         }
                         player.sendSystemMessage(Component.literal("TECHNOBLADE NEVER DIES").withStyle(Style.EMPTY.withColor(0xFFD700)));
+                        level.playSeededSound(null, player.getX(), player.getY(),player.getZ(),
+                                ModSounds.TECHNO_NEVER_DIES.get(), SoundSource.PLAYERS,1f,1f,0);
                         break;
                     }
                 }
             }
-            level.playSeededSound(null, player.getX(), player.getY(),player.getZ(),
-                    ModSounds.TECHNO_NEVER_DIES.get(), SoundSource.PLAYERS,1f,1f,0);
         }
     }
 }
