@@ -8,6 +8,7 @@ import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
+import net.agent.testmod.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderer;
@@ -49,6 +50,8 @@ public class TestMod {
         ModEntities.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

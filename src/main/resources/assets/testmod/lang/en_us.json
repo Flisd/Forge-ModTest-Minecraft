@@ -103,5 +103,7 @@
 
   "item.testmod.tunnel_orb" : "Tunnel Orb",
   "item.testmod.totem_of_techno" : "Totem of Techno",
-  "block.testmod.beacon_pow" : "Beacon²"
+  "block.testmod.beacon_pow" : "Beacon²",
+
+  "sound.testmod.techno_never_dies" : "TECHNOBLADE BABY"
 }

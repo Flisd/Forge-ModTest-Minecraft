@@ -1,8 +1,10 @@
 package net.agent.testmod.item.custom;
 
+import net.agent.testmod.sound.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -67,6 +69,8 @@ public class TotemOfTechno extends Item {
                     }
                 }
             }
+            level.playSeededSound(null, player.getX(), player.getY(),player.getZ(),
+                    ModSounds.TECHNO_NEVER_DIES.get(), SoundSource.PLAYERS,1f,1f,0);
         }
     }
 }

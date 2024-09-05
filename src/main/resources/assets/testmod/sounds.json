@@ -1,0 +1,8 @@
+{
+  "techno_never_dies" : {
+    "subtitle" : "sound.testmod.techno_never_dies",
+    "sounds": [
+      "testmod:techno_never_dies"
+    ]
+  }
+}
