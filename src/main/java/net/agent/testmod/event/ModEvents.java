@@ -5,6 +5,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.agent.testmod.TestMod;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.item.ModItems;
+import net.agent.testmod.villager.ModVillagers;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.EnchantedBookItem;
@@ -64,6 +65,15 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 64),
                     lightingStriker3,
                     1, 170,0.32f));
+        }
+
+        if(event.getType() == ModVillagers.ORE_LUCK_MASTER.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            trades.get(1).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 1),
+                    10, 20,0.2f));
+
         }
 
     }
