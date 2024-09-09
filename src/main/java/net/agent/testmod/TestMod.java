@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.block.entity.ModBlockEntities;
 import net.agent.testmod.block.entity.renderer.BeaconSquareBlockEntityRenderer;
+import net.agent.testmod.effect.ModEffects;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.item.ModCreativeModeTabs;
@@ -54,6 +55,8 @@ public class TestMod {
         ModSounds.register(modEventBus);
 
         ModVillagers.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

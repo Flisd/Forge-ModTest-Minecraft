@@ -117,5 +117,7 @@
   "item.testmod:dev_disk_music_disk" : "Nice man",
   "item.testmod:dev_disk_music_disk.desc" : "Caden T. - Nice man (NAN)",
 
-  "item.testmod.magic_dust" : "Magic Dust"
+  "item.testmod.magic_dust" : "Magic Dust",
+
+  "effect.testmod.curse" : "Curse"
 }
