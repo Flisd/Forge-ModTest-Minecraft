@@ -17,7 +17,10 @@ public class CommandRegistration {
         CraftCommand.register(event);
         EnderChestCommand.register(event);
         AnvilCommand.register(event);
-        PlayerVaultCommand.register(event);
+
+        // WIP
+        // PlayerVaultCommand.register(event);
+
         ClearHomeCommand.register(event);
 
     }
