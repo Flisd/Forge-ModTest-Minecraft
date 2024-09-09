@@ -115,5 +115,7 @@
   "item.testmod:wide_putin_music_disk.desc" : "Wide Putin (CC0)",
 
   "item.testmod:dev_disk_music_disk" : "Nice man",
-  "item.testmod:dev_disk_music_disk.desc" : "Caden T. - Nice man (NAN)"
+  "item.testmod:dev_disk_music_disk.desc" : "Caden T. - Nice man (NAN)",
+
+  "item.testmod.magic_dust" : "Magic Dust"
 }

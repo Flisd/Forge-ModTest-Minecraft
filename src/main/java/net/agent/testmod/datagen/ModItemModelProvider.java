@@ -102,6 +102,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.WIDE_PUTIN_DISK);
         simpleItem(ModItems.DEV_DISK_ITEM);
+
+        simpleItem(ModItems.MAGIC_DUST);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

@@ -128,6 +128,9 @@ public class ModItems {
     public static final RegistryObject<Item> DEV_DISK_ITEM = ITEMS.register("dev_disk_item",
             () -> new RecordItem(6, ModSounds.DEV_SOUND, new Item.Properties().stacksTo(1),1800));
 
+    public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register("magic_dust",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
