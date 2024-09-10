@@ -134,6 +134,9 @@ public class ModItems {
     public static final RegistryObject<Item> TOTEM_OF_FIRE = ITEMS.register("totem_of_fire",
             () -> new TotemOfFire(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> TOTEM_OF_BEAST = ITEMS.register("totem_of_beast",
+            () -> new TotemOfTheBeastmaster(new Item.Properties().stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

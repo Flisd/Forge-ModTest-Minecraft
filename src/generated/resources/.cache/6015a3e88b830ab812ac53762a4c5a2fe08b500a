@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-09T20:10:37.6569999	Item Models: testmod
+// 1.20.4	2024-09-10T12:32:23.4084693	Item Models: testmod
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 3203eded0bbcb97febb392fa0462351ae7804a06 assets/testmod/models/item/compact_enchanting_bottle.json
 429d002224e523f0b3b70d4cea7b074dc61421ff assets/testmod/models/item/dev_disk_item.json
@@ -85,6 +85,7 @@ fb33b86d47175d99e0d17f91511eacba77d40934 assets/testmod/models/item/sapphire_sta
 1a5f3e51550489650781874fac762f6c92b626d4 assets/testmod/models/item/strawberry.json
 0c5cf827142abc0c6e885d4e7168bb035e2e9a47 assets/testmod/models/item/tnt_orb.json
 63066433885421c0983c2751f8a0ea9cf379aa0b assets/testmod/models/item/tnt_sword.json
+17640b3a013095a273493d70a926a1cb81069a06 assets/testmod/models/item/totem_of_beast.json
 4508bb8771283f32506f2ecc0f5e2ec3289bd860 assets/testmod/models/item/totem_of_fire.json
 5b2f07c3a161b641343e17a915c1326964dea5c9 assets/testmod/models/item/totem_of_magnet.json
 9dd4fadf960ecedfb3e1885267e0fb99d6b443ea assets/testmod/models/item/totem_of_techno.json

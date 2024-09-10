@@ -121,5 +121,7 @@
 
   "item.testmod.totem_of_fire" : "Totem of Fire",
 
-  "effect.testmod.curse" : "Curse"
+  "effect.testmod.curse" : "Curse",
+
+  "item.testmod.totem_of_beast" : "Totem of Beast"
 }

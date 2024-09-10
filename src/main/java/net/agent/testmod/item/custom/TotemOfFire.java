@@ -68,8 +68,6 @@ public class TotemOfFire extends Item {
                     for (int i = 0; i < savedArmor.length; i++) {
                         player.getInventory().armor.set(i, savedArmor[i]);
                     }
-                    player.sendSystemMessage(Component.literal("TOTEM OF FIRE ACTIVATED").withStyle(Style.EMPTY.withColor(0xFF4500)));
-                    // Throw fireballs in all directions
                     for (int i = 0; i < 8; i++) {
                         LargeFireball fireball = new LargeFireball(level, player, Math.cos(i * Math.PI / 4), 0, Math.sin(i * Math.PI / 4), 1);
                         fireball.setPos(player.getX(), player.getY() + 1.5, player.getZ());
