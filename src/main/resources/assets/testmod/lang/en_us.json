@@ -119,5 +119,7 @@
 
   "item.testmod.magic_dust" : "Magic Dust",
 
+  "item.testmod.totem_of_fire" : "Totem of Fire",
+
   "effect.testmod.curse" : "Curse"
 }
