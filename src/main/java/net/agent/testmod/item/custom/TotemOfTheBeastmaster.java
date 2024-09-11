@@ -139,9 +139,13 @@ public class TotemOfTheBeastmaster extends Item {
 
         level.addFreshEntity(zombie);
 
+
         // Custom goal to prevent zombies from attacking the player
         zombie.targetSelector.addGoal(0, new NearestAttackableTargetGoal<>(zombie, Mob.class, 10, true, false, (entity) -> entity.getMobType() != MobType.UNDEAD && !(entity instanceof Player)));
         zombie.targetSelector.addGoal(1, new HurtByTargetGoal(zombie).setAlertOthers(Zombie.class));
+
+        // Custom goal to prevent zombies from attacking the player
+        zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, Player.class, 10, true, false, (entity) -> false));
 
     }
 }

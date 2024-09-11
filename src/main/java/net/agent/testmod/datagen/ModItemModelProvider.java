@@ -107,6 +107,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MAGIC_DUST);
         simpleItem(ModItems.TOTEM_OF_FIRE);
         simpleItem(ModItems.TOTEM_OF_BEAST);
+        simpleItem(ModItems.CHANCE_ORB);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

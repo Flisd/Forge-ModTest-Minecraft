@@ -6,6 +6,7 @@ import net.agent.testmod.item.custom.*;
 import net.agent.testmod.sound.ModSounds;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -136,6 +137,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOTEM_OF_BEAST = ITEMS.register("totem_of_beast",
             () -> new TotemOfTheBeastmaster(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> CHANCE_ORB = ITEMS.register("chance_orb",
+            () -> new ChanceOrb(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
