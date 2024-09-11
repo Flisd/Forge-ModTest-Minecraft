@@ -15,4 +15,9 @@ public class ModFoods {
             .effect(()->new MobEffectInstance(MobEffects.ABSORPTION,400), 1f)
             .alwaysEat()
             .build();
+
+    public static final FoodProperties CHANCE_ORB_FOOD = new FoodProperties.Builder().nutrition(2).fast()
+            .saturationMod(0.5f)
+            .alwaysEat()
+            .build();
 }

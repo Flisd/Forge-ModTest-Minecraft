@@ -108,6 +108,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TOTEM_OF_FIRE);
         simpleItem(ModItems.TOTEM_OF_BEAST);
         simpleItem(ModItems.CHANCE_ORB);
+
+//        handheldItem(ModItems.ELEMENT_GAUNTLET);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

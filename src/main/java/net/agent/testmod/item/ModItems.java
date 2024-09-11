@@ -139,7 +139,7 @@ public class ModItems {
             () -> new TotemOfTheBeastmaster(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> CHANCE_ORB = ITEMS.register("chance_orb",
-            () -> new ChanceOrb(new Item.Properties().stacksTo(1)));
+            () -> new ChanceOrb(new Item.Properties().food(ModFoods.CHANCE_ORB_FOOD)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
