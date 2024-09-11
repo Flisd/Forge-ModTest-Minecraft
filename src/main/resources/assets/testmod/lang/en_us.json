@@ -123,5 +123,8 @@
 
   "effect.testmod.curse" : "Curse",
 
-  "item.testmod.totem_of_beast" : "Totem of Beast"
+  "item.testmod.totem_of_beast" : "Totem of Beast",
+
+  "item.testmod.chance_orb" : "Chance Orb",
+  "block.testmod.ore_gen_block" : "Skyblock??"
 }

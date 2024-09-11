@@ -34,6 +34,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
 
+
         blockWithItem(ModBlocks.SOUND_BLOCK);
         blockWithItem(ModBlocks.LAUNCH_BLOCK);
         simpleBlockWithItem(ModBlocks.BEACON_POW.get(),
@@ -51,6 +52,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.SAPPHIRE_DOOR.get()), modLoc("block/sapphire_door_bottom"), modLoc("block/sapphire_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAP_DOOR.get()), modLoc("block/sapphire_trapdoor"),true, "cutout");
+
+        blockWithItem(ModBlocks.ORE_GEN_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

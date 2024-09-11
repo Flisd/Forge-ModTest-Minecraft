@@ -33,6 +33,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DIAMOND_TNT.get());
         this.dropSelf(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get());
         this.dropSelf(ModBlocks.BEACON_POW.get());
+        this.dropSelf(ModBlocks.ORE_GEN_BLOCK.get());
 //        this.dropSelf(ModBlocks.DICE_BLOCK.get());
 
 

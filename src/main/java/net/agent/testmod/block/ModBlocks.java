@@ -2,6 +2,7 @@ package net.agent.testmod.block;
 
 import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.*;
+import net.agent.testmod.block.custom.OreGenBlock;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -104,6 +105,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BEACON_POW = registerBlock("beacon_pow",
             () -> new BeaconSquareBlock(Block.Properties.ofFullCopy(Blocks.BEACON)));
+
+    public static final RegistryObject<Block> ORE_GEN_BLOCK = registerBlock("ore_gen_block",
+            () -> new OreGenBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
 
 

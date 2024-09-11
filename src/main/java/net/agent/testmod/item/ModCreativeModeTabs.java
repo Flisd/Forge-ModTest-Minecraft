@@ -96,6 +96,8 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.TOTEM_OF_BEAST.get(), 1));
                         output.accept(new ItemStack(ModItems.CHANCE_ORB.get(), 1));
 
+                        output.accept(new ItemStack(ModBlocks.ORE_GEN_BLOCK.get(), 1));
+
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

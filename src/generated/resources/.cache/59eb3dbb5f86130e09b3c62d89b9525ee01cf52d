@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-09T13:54:55.7950764	Loot Tables
+// 1.20.4	2024-09-11T16:00:10.9140923	Loot Tables
 1ecc570e3a96586bacaaa0bf5cbe5735dcdbf85c data/testmod/loot_tables/blocks/beacon_pow.json
 d37e74e45fcf893d0ea42f43e838a19397aafdef data/testmod/loot_tables/blocks/camouflage_block.json
 30e721c94b74507aa37af640875dbff4d9840983 data/testmod/loot_tables/blocks/deepslate_sapphire_ore.json
@@ -7,6 +7,7 @@ fc1d87d2ffe41343e909a051ca24669eb240e0b0 data/testmod/loot_tables/blocks/diamond
 198b1eee9eb16d0c0ffe2fa8e712382a1cf5782a data/testmod/loot_tables/blocks/end_sapphire_ore.json
 1887396fd98f66f61352ee979da6fe02838ee70d data/testmod/loot_tables/blocks/launch_block.json
 f5f48ea8d42a9cd0a1ce51912e0c564e191bda88 data/testmod/loot_tables/blocks/nether_sapphire_ore.json
+a56f380c13754a102f0935d846120be1410bdfa9 data/testmod/loot_tables/blocks/ore_gen_block.json
 8c870ab4fc65fe38fc4a0a69d4ccbcdde464bfde data/testmod/loot_tables/blocks/ore_luck_block.json
 3983b57ded4688a3add2d30a922cffce9ad663e7 data/testmod/loot_tables/blocks/projectile_shooter_block.json
 eadd000c86731fc59ed7520d336a1a0e5fdfcda7 data/testmod/loot_tables/blocks/raw_sapphire_block.json

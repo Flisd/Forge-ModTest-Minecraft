@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testmod:block/ore_gen_block"
+    }
+  }
+}
