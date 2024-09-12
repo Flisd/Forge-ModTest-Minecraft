@@ -119,8 +119,12 @@ public class ChatGameCommand {
         }
 
         public void readFileAddQuestions() throws FileNotFoundException {
-            String fileName = "QuestionFile.txt";
-            Scanner scan = new Scanner(new File(fileName));
+            String fileName = "res/Questions.txt";
+            File file = new File(fileName);
+            if (!file.exists()) {
+                throw new FileNotFoundException("File not found: " + fileName);
+            }
+            Scanner scan = new Scanner(file);
             while (scan.hasNext()) {
                 String line = scan.nextLine();
                 String[] brokenList = line.split("~");
