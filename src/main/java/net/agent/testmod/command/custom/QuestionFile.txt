@@ -1,0 +1,143 @@
+E~What is 5 + 3?~8
+E~Who was the first President of the United States?~George Washington
+E~What is the chemical symbol for water?~H2O
+E~What mob drops bones in Minecraft?~Skeleton
+M~Solve for x: 2x + 5 = 15~5
+E~What color is the sky on a clear day?~Blue
+E~What is the name of the block used to craft bread in Minecraft?~Wheat
+E~What is the boiling point of water in Celsius?~100
+E~How many legs does a spider have?~8
+E~What is the capital of France?~Paris
+M~What is the powerhouse of the cell?~Mitochondria
+M~In Minecraft, how many iron ingots are needed to make a bucket?~3
+E~What is the largest planet in our solar system?~Jupiter
+E~Who wrote “Romeo and Juliet”?~William Shakespeare
+E~What is 9 x 6?~54
+E~What mob explodes in Minecraft?~Creeper
+E~What is the main ingredient in chocolate?~Cocoa
+M~Solve for y: 3y - 9 = 12.~7
+E~How many continents are there?~7
+E~What animal is known as the King of the Jungle?~Lion
+E~What gas do plants breathe in?~Carbon Dioxide
+E~In Minecraft, what do cows drop?~Leather and Beef
+E~Who painted the Mona Lisa?~Leonardo da Vinci
+M~What is the square root of 49?~7
+E~How many hours are in a day?~24
+E~What organ pumps blood in the human body?~Heart
+E~In Minecraft, what tool is used to mine stone blocks faster?~Pickaxe
+M~What is 15% of 200?~30
+E~What planet is known as the Red Planet?~Mars
+E~Who was the 16th President of the United States?~Abraham Lincoln
+E~What animal is known for its black and white stripes?~Zebra
+E~What color is the Ender Dragon’s health bar?~Purple
+E~What is the capital of Japan?~Tokyo
+E~What is the freezing point of water in Fahrenheit?~32
+E~What Minecraft block is used to craft glass?~Sand
+E~What is the tallest animal in the world?~Giraffe
+M~Simplify: 4x + 2x.~6x
+E~What does DNA stand for?~Deoxyribonucleic Acid
+E~What Minecraft item is used to set things on fire?~Flint and Steel
+E~How many letters are in the English alphabet?~26
+E~What is the most common blood type?~O
+E~Who discovered gravity?~Isaac Newton
+M~Solve for x: x/4 = 6.~24
+E~What is the most abundant gas in Earth’s atmosphere?~Nitrogen
+E~How many hearts does a player have in Minecraft?~10
+E~Which planet is closest to the sun?~Mercury
+E~What is the square root of 64?~8
+E~What Minecraft block can be used to smelt items?~Furnace
+E~How many sides does a hexagon have?~6
+E~What year did World War II end?~1945
+E~In Minecraft, what tool is used to till soil?~Hoe
+E~How many bones are in the adult human body?~206
+E~What is the name of the largest ocean on Earth?~Pacific Ocean
+M~What is the slope of the line y = 3x + 2?~3
+E~What is the square of 5?~25
+E~Who is the Greek god of the sea?~Poseidon
+E~In Minecraft, what is the primary material needed to make a bed?~Wool
+E~What is the capital of Italy?~Rome
+E~Which element is represented by the symbol O?~Oxygen
+E~How many players are on a soccer team?~11
+M~What Minecraft enchantment increases mining speed?~Efficiency
+E~Who painted the Sistine Chapel ceiling?~Michelangelo
+E~What is the smallest prime number?~2
+E~In Minecraft, what do chickens drop?~Feathers and Eggs
+E~What is the longest river in the world?~Nile
+E~How many colors are in a rainbow?~7
+E~What is the result of 4 cubed?~64
+E~What is the most populous country in the world?~China
+E~What type of animal is a dolphin?~Mammal
+E~In Minecraft, what block is used to craft an Enchantment Table?~Obsidian
+E~What is the atomic number of carbon?~6
+E~Who is known as the father of modern physics?~Albert Einstein
+E~What is 12 divided by 4?~3
+E~What is the common term for sodium chloride?~Salt
+E~In Minecraft, what is the name of the dimension with lava oceans?~Nether
+E~What instrument measures earthquakes?~Seismograph
+E~How many rings are on the Olympic flag?~5
+E~Who was the first person to walk on the moon?~Neil Armstrong
+E~What shape has four equal sides?~Square
+E~In Minecraft, what tool is used to shear sheep?~Shears
+E~What is the largest mammal in the world?~Blue Whale
+M~Solve: 2x - 3 = 9.~6
+E~How many strings does a standard guitar have?~6
+E~In Minecraft, what is the name of the final boss?~Ender Dragon
+E~What is the term for an animal that only eats plants?~Herbivore
+E~What Minecraft block explodes when ignited?~TNT
+E~What country has the most volcanoes?~Indonesia
+E~What color is chlorophyll?~Green
+M~What is 7 squared?~49
+E~How many hearts does a horse have in Minecraft?~15
+E~What is the most popular social media platform?~Facebook
+E~What gas do humans exhale?~Carbon Dioxide
+M~What Minecraft enchantment lets you walk on water?~Frost Walker
+E~How many moons does Earth have?~1
+E~What is the main ingredient in sushi?~Rice
+E~Who was the main author of the Declaration of Independence?~Thomas Jefferson
+E~What Minecraft item is used to light a nether portal?~Flint and Steel
+E~What is the currency of the United States?~Dollar
+E~How many planets are in our solar system?~8
+E~What is the term for water changing from liquid to gas?~Evaporation
+M~What enchantment lets you breathe underwater in Minecraft?~Respiration
+E~What is the main gas in the sun?~Hydrogen
+E~What is the name of the force that keeps us on the ground?~Gravity
+E~What is the square root of 100?~10
+E~What is the Minecraft material used to create a portal to the Nether?~Obsidian
+E~How many teeth does an adult human usually have?~32
+E~What organ is responsible for filtering blood?~Kidney
+M~What Minecraft enchantment increases your underwater mining speed?~Aqua Affinity
+E~What is the smallest country in the world?~Vatican City
+E~What is the primary gas in Earth's atmosphere?~Nitrogen
+E~How many degrees are in a circle?~360
+E~What does a compass point to?~North
+E~In Minecraft, what is used to tame a wolf?~Bone
+E~What is the capital of Canada?~Ottawa
+E~What is the atomic number of hydrogen?~1
+E~What Minecraft mob is known for teleporting?~Enderman
+H~Solve for x: 5x - 7 = 3x + 9.~8
+H~What is the derivative of x²?~2x
+H~In Minecraft, what is the rarest ore in the Overworld?~Emerald
+H~What is the powerhouse of the cell?~Mitochondria
+H~Who developed the theory of relativity?~Albert Einstein
+H~In Minecraft, which block can be used to craft an observer?~Cobblestone and Nether Quartz
+H~What is the function of red blood cells?~Transport oxygen
+H~In Minecraft, what is the effect of the Potion of Turtle Master?~Slowness and Resistance
+H~What is the largest organ in the human body?~Skin
+H~Which amendment abolished slavery in the U.S.?~13th Amendment
+H~What is the term for organisms that make their own food using sunlight?~Autotrophs
+H~Who was the main opponent of the Allies in World War II?~Axis Powers
+H~What Minecraft enchantment reduces damage from explosions?~Blast Protection
+SH~What is the derivative of sin(x)?~cos(x)
+SH~What Minecraft mob was removed from the game in early versions?~Giant
+SH~What is the process by which DNA is copied?~Replication
+SH~What Minecraft block is required to summon the Wither?~Soul Sand
+SH~What is the name of the process where plants release oxygen?~Photosynthesis
+SH~In Minecraft, what is the maximum enchantment level for Sharpness using commands?~32767
+SH~What is the square root of 121?~11
+SH~Who was the last Pharaoh of Egypt?~Cleopatra
+H~What Minecraft enchantment increases arrow damage?~Power
+SH~What is the atomic mass of Carbon?~12.01
+H~What is the value of π (pi) to two decimal places?~3.14
+SH~What is the most abundant element in the universe?~Hydrogen
+SH~Which Minecraft update introduced the End dimension?~Beta 1.9
+H~What is the longest bone in the human body?~Femur

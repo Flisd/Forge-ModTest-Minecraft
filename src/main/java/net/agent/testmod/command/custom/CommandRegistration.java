@@ -23,5 +23,6 @@ public class CommandRegistration {
 
         ClearHomeCommand.register(event);
 
+        ChatGameCommand.register(event);
     }
 }
