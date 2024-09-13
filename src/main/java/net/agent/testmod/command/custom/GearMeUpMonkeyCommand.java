@@ -4,9 +4,11 @@ import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.item.ModItems;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -28,7 +30,6 @@ public class GearMeUpMonkeyCommand {
         event.getDispatcher().register(Commands.literal("GearMeUpMonkey")
                 .executes(context -> {
                     ServerPlayer player = context.getSource().getPlayerOrException();
-
                     // Sapphire Helmet
                     ItemStack helmet = new ItemStack(ModItems.SAPPHIRE_HELMET.get());
                     helmet.enchant(Enchantments.ALL_DAMAGE_PROTECTION, 4);
@@ -82,6 +83,7 @@ public class GearMeUpMonkeyCommand {
                     axe.enchant(Enchantments.MENDING, 1);
                     axe.enchant(Enchantments.UNBREAKING, 3);
                     axe.enchant(ModEnchantments.REJUVENATION.get(), 1);
+                    axe.enchant(ModEnchantments.TREE_BYE.get(), 1);
                     axe.enchant(ModEnchantments.SHOCKWAVE.get(), 1);
                     addItemOrDrop(player, axe);
 
@@ -151,15 +153,19 @@ public class GearMeUpMonkeyCommand {
                     addItemOrDrop(player, new ItemStack(Items.PURPLE_SHULKER_BOX, 1));
 
                     // 10 totems of undying
-                    for (int i = 0; i < 10; i++) {
-                        addItemOrDrop(player, new ItemStack(Items.TOTEM_OF_UNDYING));
+                    for (int i = 0; i < 5; i++) {
+                        addItemOrDrop(player, new ItemStack(ModItems.TOTEM_OF_FIRE.get()));
+                    }
+                    // 5 totems of undying
+                    for (int i = 0; i < 5; i++) {
+                        addItemOrDrop(player, new ItemStack(ModItems.TOTEM_OF_TECHNO.get()));
                     }
 
                     // Magnet staff
                     addItemOrDrop(player, new ItemStack(ModItems.TOTEM_OF_MAGNET.get(), 1));
 
-                    // 3 stacks of ender pearls
-                    for (int i = 0; i < 3; i++) {
+                    // 4 stacks of ender pearls
+                    for (int i = 0; i < 4; i++) {
                         addItemOrDrop(player, new ItemStack(Items.ENDER_PEARL, 16));
                     }
 
@@ -175,6 +181,7 @@ public class GearMeUpMonkeyCommand {
                     // 2 stacks of bottle o' enchanting
                     addItemOrDrop(player, new ItemStack(ModItems.COMPACT_BOTTLE.get(), 64));
                     addItemOrDrop(player, new ItemStack(ModItems.COMPACT_BOTTLE.get(), 64));
+
 
                     return 1;
                 }));

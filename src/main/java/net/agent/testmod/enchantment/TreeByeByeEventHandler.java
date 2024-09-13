@@ -19,6 +19,8 @@ import java.util.Random;
 @Mod.EventBusSubscriber
 public class TreeByeByeEventHandler {
 
+    private static final int MAX_BLOCKS = 120;
+
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
@@ -30,8 +32,8 @@ public class TreeByeByeEventHandler {
                 BlockPos pos = event.getPos();
                 ServerLevel world = (ServerLevel) event.getLevel();
 
-                // Check and break adjacent wood blocks
-                breakAdjacentWood(world, pos, player, tool);
+                // Check and break adjacent wood blocks with a limit
+                breakAdjacentWood(world, pos, player, tool, 0);
 
                 // Random chance to grant Haste 3 effect
                 Random random = new Random();
@@ -42,16 +44,20 @@ public class TreeByeByeEventHandler {
         }
     }
 
-    private static void breakAdjacentWood(ServerLevel world, BlockPos pos, Player player, ItemStack tool) {
+    private static void breakAdjacentWood(ServerLevel world, BlockPos pos, Player player, ItemStack tool, int count) {
+        if (count >= MAX_BLOCKS) {
+            return;
+        }
+
         BlockState state = world.getBlockState(pos);
         if (state.is(BlockTags.LOGS)) {
             Block.dropResources(state, world, pos, null, player, tool);
             world.destroyBlock(pos, false); // false to prevent default drops
 
-            // Recursively break adjacent wood blocks
+            // Recursively break adjacent wood blocks with a limit
             for (BlockPos adjacentPos : new BlockPos[]{pos.above(), pos.below(), pos.north(), pos.south(), pos.east(), pos.west()}) {
                 if (world.getBlockState(adjacentPos).is(BlockTags.LOGS)) {
-                    breakAdjacentWood(world, adjacentPos, player, tool);
+                    breakAdjacentWood(world, adjacentPos, player, tool, count + 1);
                 }
             }
         }
