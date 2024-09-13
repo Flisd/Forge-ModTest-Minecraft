@@ -7,6 +7,7 @@ import net.agent.testmod.block.entity.renderer.BeaconSquareBlockEntityRenderer;
 import net.agent.testmod.effect.ModEffects;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
+import net.agent.testmod.event.RandomSoundEventHandler;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
 import net.agent.testmod.sound.ModSounds;
@@ -34,45 +35,36 @@ public class TestMod {
     public static final String MOD_ID = "testmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
-
         ModBlocks.register(modEventBus);
-
         modEventBus.addListener(this::commonSetup);
-
         ModEnchantments.register(modEventBus);
-
         ModEntities.register(modEventBus);
-
         ModBlockEntities.register(modEventBus);
-
         ModSounds.register(modEventBus);
-
         ModVillagers.register(modEventBus);
-
         ModEffects.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
+        //MinecraftForge.EVENT_BUS.register(RandomSoundEventHandler.class);
+
         modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        // Some preinit code
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event){
-        if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS){
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
-
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

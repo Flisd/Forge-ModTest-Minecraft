@@ -18,6 +18,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> WIDE_PUTIN = registerSoundEvents("wide_putin");
 
+    public static final RegistryObject<SoundEvent> DISCORD_PING = registerSoundEvents("discord_ping");
+
     public static final RegistryObject<SoundEvent> DEV_SOUND = registerSoundEvents("dev_disk");
 
     // .Ogg sound type in MONO nor stereo

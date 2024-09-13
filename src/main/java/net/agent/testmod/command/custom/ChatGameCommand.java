@@ -119,7 +119,7 @@ public class ChatGameCommand {
         }
 
         public void readFileAddQuestions() throws FileNotFoundException {
-            String fileName = "res/Questions.txt";
+            String fileName = "C:\\Users\\Tijil\\OneDrive\\Desktop\\Java projects\\Forge-ModTest-Minecraft\\res\\Questions.txt";
             File file = new File(fileName);
             if (!file.exists()) {
                 throw new FileNotFoundException("File not found: " + fileName);
