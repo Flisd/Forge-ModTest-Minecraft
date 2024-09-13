@@ -23,7 +23,7 @@ public class RandomSoundEventHandler {
 
         if (event.phase == TickEvent.Phase.END && player.level().isClientSide) {
             if (random.nextInt(TICK_INTERVAL) == 0) {
-                player.level().playSound(player, player.blockPosition(), ModSounds.WIDE_PUTIN.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
+                //player.level().playSound(player, player.blockPosition(), ModSounds.WIDE_PUTIN.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
             }
         }
     }

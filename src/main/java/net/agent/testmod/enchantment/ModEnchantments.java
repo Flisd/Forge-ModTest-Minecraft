@@ -55,6 +55,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> FLY = ENCHANTMENTS.register("fly",
             ()-> new Fly());
 
+    public static RegistryObject<Enchantment> TREE_BYE = ENCHANTMENTS.register("tree_bye",
+            ()-> new TreeByeBye());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
