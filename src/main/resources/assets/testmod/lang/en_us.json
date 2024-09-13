@@ -126,5 +126,7 @@
   "item.testmod.totem_of_beast" : "Totem of Beast",
 
   "item.testmod.chance_orb" : "Chance Orb",
-  "block.testmod.ore_gen_block" : "Skyblock??"
+  "block.testmod.ore_gen_block" : "Skyblock??",
+
+  "block.testmod.green_light_block" : "Green Light"
 }

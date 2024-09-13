@@ -109,6 +109,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORE_GEN_BLOCK = registerBlock("ore_gen_block",
             () -> new OreGenBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> GREEN_LIGHT_BLOCK = registerBlock("green_light_block",
+            () -> new GreenLightBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
 
 

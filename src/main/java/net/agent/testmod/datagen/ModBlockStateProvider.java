@@ -54,6 +54,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAP_DOOR.get()), modLoc("block/sapphire_trapdoor"),true, "cutout");
 
         blockWithItem(ModBlocks.ORE_GEN_BLOCK);
+        blockWithItem(ModBlocks.GREEN_LIGHT_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
