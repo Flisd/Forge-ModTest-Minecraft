@@ -144,8 +144,34 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_TOOL_CRATE_KEY = ITEMS.register("sapphire_tool_crate_key",
             () -> new SapphireToolCrateKeyItem(new Item.Properties()));
 
+
     public static final RegistryObject<Item> BYE_BYE_DISK = ITEMS.register("bye_bye_disk",
             () -> new RecordItem(6, ModSounds.WIDE_PUTIN, new Item.Properties().stacksTo(1),1400));
+
+    public static final RegistryObject<Item> KIT_CRATE_KEY = ITEMS.register("kit_crate_key",
+            () -> new KitCrateKeyItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ADVANCED_KIT_ITEM = ITEMS.register("advanced_kit_item",
+            () -> new AdvancedKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FOOD_KIT_ITEM = ITEMS.register("food_kit_item",
+            () -> new FoodKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOD_KIT_ITEM = ITEMS.register("god_kit_item",
+            () -> new GodKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MONKEY_KIT_ITEM = ITEMS.register("monkey_kit_item",
+            () -> new MonkeyKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> PREMIUM_KIT_ITEM = ITEMS.register("premium_kit_item",
+            () -> new PremiumKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> STARTER_KIT_ITEM = ITEMS.register("starter_kit_item",
+            () -> new StarterKitItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> TOTEM_KIT_ITEM = ITEMS.register("totem_kit_item",
+            () -> new TotemKitItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

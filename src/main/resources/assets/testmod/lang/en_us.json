@@ -131,5 +131,8 @@
   "block.testmod.green_light_block" : "Green Light",
 
   "block.testmod.sapphire_tool_crate_block" : "Sapphire Tool Crate",
-  "item.testmod.sapphire_tool_crate_key" : "Sapphire Tool Key"
+  "item.testmod.sapphire_tool_crate_key" : "Sapphire Tool Key",
+
+  "block.testmod.kit_crate_block" : "Kit Crate",
+  "item.testmod.kit_crate_key" : "Kit Crate Key"
 }

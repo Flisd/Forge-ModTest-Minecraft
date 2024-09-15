@@ -102,6 +102,15 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(), 1));
 
+                        output.accept(new ItemStack(ModBlocks.KIT_CRATE_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModItems.KIT_CRATE_KEY.get(), 1));
+                        output.accept(new ItemStack(ModItems.ADVANCED_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.FOOD_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.GOD_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.MONKEY_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.PREMIUM_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.STARTER_KIT_ITEM.get(), 1));
+                        output.accept(new ItemStack(ModItems.TOTEM_KIT_ITEM.get(), 1));
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

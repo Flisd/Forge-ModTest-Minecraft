@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-14T23:11:48.0494197	Block States: testmod
+// 1.20.4	2024-09-15T14:18:03.6490003	Block States: testmod
 1c2b3084723bff5823ca497784c503b2b206427e assets/testmod/blockstates/beacon_pow.json
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
 592a016a6656dcb60b662bf79098e9f53191b013 assets/testmod/blockstates/deepslate_sapphire_ore.json
@@ -7,6 +7,7 @@ ce75376a060968498b7b9c856c2e93932d768f23 assets/testmod/blockstates/ender_block.
 647c80f0c44c2ce8f7cd7347ca1f256b2c37b3de assets/testmod/blockstates/end_sapphire_ore.json
 dbd38f9b74c448b390960ea96e74df6b486118d8 assets/testmod/blockstates/fog_block.json
 575b793d240eb3072f4f15277665d518ca52b293 assets/testmod/blockstates/green_light_block.json
+b50ba1975c4656a8c74d402c6b73612c4ee6d9dd assets/testmod/blockstates/kit_crate_block.json
 cad4c41650952ea399b181ff08367437ad54e0f1 assets/testmod/blockstates/launch_block.json
 b8283618095f416197c4f68848cc8209216e13be assets/testmod/blockstates/nether_sapphire_ore.json
 e33f43cc0a635541df2eb4bdad2d53d59cea54b4 assets/testmod/blockstates/ore_gen_block.json
@@ -33,6 +34,7 @@ ca468d346fe6f72dc5c6b14dfff70dd298ed49af assets/testmod/blockstates/sound_block.
 d66ae1fe9d455b40b9379ba815a65d2fd4186f4a assets/testmod/models/block/end_sapphire_ore.json
 f0c8447ee21350e1cd97ebd4f3fdf0eed49f3e4b assets/testmod/models/block/fog_block.json
 04667cb45f876a957484d8cf3fe92f65dffcd330 assets/testmod/models/block/green_light_block.json
+f72e0e672de65d42b89f696da37261f1e88328fb assets/testmod/models/block/kit_crate_block.json
 a85fcf7f0c1ff9ff4538b9e397ac9d402226ae33 assets/testmod/models/block/launch_block.json
 0df38c2f40b54f9b2431b35e93d1af459c38050d assets/testmod/models/block/nether_sapphire_ore.json
 d30092453551746505512a99b447813315cf8325 assets/testmod/models/block/ore_gen_block.json
@@ -80,6 +82,7 @@ c23d2d2420331faa243e4ded59e359ead84fa756 assets/testmod/models/item/deepslate_sa
 d7af242e8e730f789902f06814e466427e347bef assets/testmod/models/item/end_sapphire_ore.json
 954a7fd65f130b63e075478954bc16de654b1c1f assets/testmod/models/item/fog_block.json
 abeadef6001c7c463d372e42d24186a3a3c87d37 assets/testmod/models/item/green_light_block.json
+3c974698dce3873fc5d1869b843c8143326ed9d0 assets/testmod/models/item/kit_crate_block.json
 72c0c492b08e037220e3d76a9a5fbe67b7872b22 assets/testmod/models/item/launch_block.json
 184d3a254b16a6674455f8cc081edf7aaa05c15d assets/testmod/models/item/nether_sapphire_ore.json
 1890b2f0de2e19e0c25f99610ac23fd79b33d125 assets/testmod/models/item/ore_gen_block.json

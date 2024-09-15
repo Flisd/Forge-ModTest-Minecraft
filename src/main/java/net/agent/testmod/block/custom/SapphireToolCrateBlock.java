@@ -41,6 +41,7 @@ public class SapphireToolCrateBlock extends Block {
         ItemStack itemStack = player.getItemInHand(hand);
 
         if (itemStack.getItem() instanceof SapphireToolCrateKeyItem) {
+            itemStack.setCount(itemStack.getCount()-1);
             // Open the crate
             world.setBlock(pos, state.setValue(OPEN, true), 3);
             ItemStack randomTool = getRandomMaxedTool();
