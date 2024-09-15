@@ -29,7 +29,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.WIDE_PUTIN_DISK.get(),
-                        ModItems.DEV_DISK_ITEM.get()
+                        ModItems.DEV_DISK_ITEM.get(),
+                        ModItems.BYE_BYE_DISK.get()
                         );
 
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)

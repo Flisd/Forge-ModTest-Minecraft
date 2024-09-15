@@ -111,6 +111,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.SAPPHIRE_TOOL_CRATE_KEY);
 
+        simpleItem(ModItems.BYE_BYE_DISK);
 //        handheldItem(ModItems.ELEMENT_GAUNTLET);
     }
 
