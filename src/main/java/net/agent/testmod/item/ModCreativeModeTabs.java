@@ -99,6 +99,9 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.ORE_GEN_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.GREEN_LIGHT_BLOCK.get(), 1));
 
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(), 1));
+
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

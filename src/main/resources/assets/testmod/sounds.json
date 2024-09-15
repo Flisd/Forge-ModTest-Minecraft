@@ -13,5 +13,23 @@
         "stream" : true
       }
     ]
+  },
+  "dev_disk" : {
+    "subtitle" : "sound.testmod.dev_disk",
+    "sounds": [
+      {
+        "name": "testmod:dev_disk",
+        "stream" : true
+      }
+    ]
+  },
+  "bye_bye_bye" : {
+    "subtitle" : "sound.testmod.bye_bye_bye",
+    "sounds": [
+      {
+        "name": "testmod:bye_bye_bye",
+        "stream" : true
+      }
+    ]
   }
 }

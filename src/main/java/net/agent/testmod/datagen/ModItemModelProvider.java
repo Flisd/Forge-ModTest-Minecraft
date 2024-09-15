@@ -109,6 +109,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TOTEM_OF_BEAST);
         simpleItem(ModItems.CHANCE_ORB);
 
+        simpleItem(ModItems.SAPPHIRE_TOOL_CRATE_KEY);
+
 //        handheldItem(ModItems.ELEMENT_GAUNTLET);
     }
 

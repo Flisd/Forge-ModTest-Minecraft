@@ -112,6 +112,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> GREEN_LIGHT_BLOCK = registerBlock("green_light_block",
             () -> new GreenLightBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> SAPPHIRE_TOOL_CRATE_BLOCK= registerBlock("sapphire_tool_crate_block",
+            () -> new SapphireToolCrateBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
 
 

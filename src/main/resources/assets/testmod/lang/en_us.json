@@ -128,5 +128,8 @@
   "item.testmod.chance_orb" : "Chance Orb",
   "block.testmod.ore_gen_block" : "Skyblock??",
 
-  "block.testmod.green_light_block" : "Green Light"
+  "block.testmod.green_light_block" : "Green Light",
+
+  "block.testmod.sapphire_tool_crate_block" : "Sapphire Tool Crate",
+  "item.testmod.sapphire_tool_crate_key" : "Sapphire Tool Key"
 }

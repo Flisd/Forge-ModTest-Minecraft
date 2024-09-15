@@ -141,6 +141,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHANCE_ORB = ITEMS.register("chance_orb",
             () -> new ChanceOrb(new Item.Properties().food(ModFoods.CHANCE_ORB_FOOD)));
 
+    public static final RegistryObject<Item> SAPPHIRE_TOOL_CRATE_KEY = ITEMS.register("sapphire_tool_crate_key",
+            () -> new SapphireToolCrateKeyItem(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

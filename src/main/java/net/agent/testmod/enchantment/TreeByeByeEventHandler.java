@@ -1,7 +1,9 @@
 package net.agent.testmod.enchantment;
 
+import net.agent.testmod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -34,7 +36,7 @@ public class TreeByeByeEventHandler {
 
                 // Check and break adjacent wood blocks with a limit
                 breakAdjacentWood(world, pos, player, tool, 0);
-
+                player.level().playSound(player, player.blockPosition(), ModSounds.BYE_BYE_BYE.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
                 // Random chance to grant Haste 3 effect
                 Random random = new Random();
                 if (random.nextInt(100) < 10) { // 10% chance to give Haste 3
