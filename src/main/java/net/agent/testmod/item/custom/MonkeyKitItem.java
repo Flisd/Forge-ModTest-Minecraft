@@ -79,11 +79,11 @@ public class MonkeyKitItem extends Item {
             pickaxe.enchant(ModEnchantments.STRIP_MINING.get(), 1);
 
             ItemStack drill = new ItemStack(ModItems.DRILL.get());
-            pickaxe.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
-            pickaxe.enchant(Enchantments.MENDING, 1);
-            pickaxe.enchant(Enchantments.UNBREAKING, 3);
-            pickaxe.enchant(Enchantments.BLOCK_FORTUNE, 3);
-            pickaxe.enchant(ModEnchantments.REJUVENATION.get(), 1);
+            drill.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
+            drill.enchant(Enchantments.MENDING, 1);
+            drill.enchant(Enchantments.UNBREAKING, 3);
+            drill.enchant(Enchantments.BLOCK_FORTUNE, 3);
+            drill.enchant(ModEnchantments.REJUVENATION.get(), 1);
 
             ItemStack shovel = new ItemStack(ModItems.SAPPHIRE_SHOVEL.get());
             shovel.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
@@ -128,12 +128,11 @@ public class MonkeyKitItem extends Item {
     }
 
     public static void addItemOrDrop(ServerPlayer player, ItemStack itemStack) {
-        if (player.getInventory().add(itemStack)) {
-            // Item successfully added to inventory
-        } else {
+        if (!player.getInventory().add(itemStack)) {
             Level world = player.level();
             BlockPos pos = player.blockPosition();
-            world.addFreshEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), itemStack));
+            ItemEntity itemEntity = new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), itemStack);
+            world.addFreshEntity(itemEntity);
         }
     }
 }

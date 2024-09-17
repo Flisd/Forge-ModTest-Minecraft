@@ -134,5 +134,13 @@
   "item.testmod.sapphire_tool_crate_key" : "Sapphire Tool Key",
 
   "block.testmod.kit_crate_block" : "Kit Crate",
-  "item.testmod.kit_crate_key" : "Kit Crate Key"
+  "item.testmod.kit_crate_key": "Kit Crate Key",
+  "item.testmod.advanced_kit_item": "Advanced Kit",
+  "item.testmod.food_kit_item": "Food Kit",
+  "item.testmod.god_kit_item": "God Kit",
+  "item.testmod.monkey_kit_item": "Monkey Kit",
+  "item.testmod.premium_kit_item": "Premium Kit",
+  "item.testmod.starter_kit_item": "Starter Kit",
+  "item.testmod.totem_kit_item": "Totem Kit"
+
 }

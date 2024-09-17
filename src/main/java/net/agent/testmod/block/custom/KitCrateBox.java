@@ -12,7 +12,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -43,17 +42,19 @@ public class KitCrateBox extends Block {
         ItemStack itemStack = player.getItemInHand(hand);
 
         if (itemStack.getItem() instanceof KitCrateKeyItem) {
-            itemStack.setCount(itemStack.getCount() - 1);
-            // Open the crate
-            world.setBlock(pos, state.setValue(OPEN, true), 3);
+            if (!world.isClientSide) {
+                ServerPlayer serverPlayer = (ServerPlayer) player;
+                itemStack.setCount(itemStack.getCount() - 1);
+                // Open the crate
+                world.setBlock(pos, state.setValue(OPEN, true), 3);
 
-            // Give random kit item
-            ItemStack kitItem = getRandomKitItem();
-            kitItem.enchant(Enchantments.UNBREAKING,1);
-            addItemOrDrop((ServerPlayer) player, kitItem);
+                // Give random kit item
+                ItemStack kitItem = getRandomKitItem();
+                kitItem.enchant(Enchantments.UNBREAKING,1);
+                addItemOrDrop(serverPlayer, kitItem);
 
-            world.scheduleTick(pos, this, 20);
-
+                world.scheduleTick(pos, this, 20);
+            }
             return InteractionResult.SUCCESS;
         } else {
             // Throw the player back a couple of blocks
