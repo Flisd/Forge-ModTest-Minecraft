@@ -3,6 +3,7 @@ package net.agent.testmod.event;
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.agent.testmod.TestMod;
+import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.item.ModItems;
 import net.agent.testmod.villager.ModVillagers;
@@ -73,7 +74,34 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 16),
                     new ItemStack(ModItems.SAPPHIRE.get(), 1),
                     10, 20,0.2f));
-
+            trades.get(1).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 1),
+                    10, 20,0.2f));
+            trades.get(1).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModItems.RAW_SAPPHIRE.get(), 5),
+                    10, 20,0.2f));
+            trades.get(2).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 64),
+                    new ItemStack(ModBlocks.ORE_LUCK_BLOCK.get(), 1),
+                    10, 20,0.2f));
+            trades.get(2).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.DIAMOND, 32),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 5),
+                    10, 20,0.2f));
+            trades.get(3).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get(), 16),
+                    new ItemStack(Items.NETHERITE_INGOT, 1),
+                    10, 20,0.2f));
+            trades.get(4).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(Items.DIAMOND_BLOCK, 12),
+                    new ItemStack(ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(), 1),
+                    10, 20,0.2f));
+            trades.get(5).add((p_219693_, p_219694_) -> new MerchantOffer(
+                    new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get(), 22),
+                    new ItemStack(Items.NETHER_STAR, 2),
+                    10, 20,0.2f));
         }
 
     }
