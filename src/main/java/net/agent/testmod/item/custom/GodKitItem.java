@@ -79,11 +79,11 @@ public class GodKitItem extends Item {
             pickaxe.enchant(ModEnchantments.STRIP_MINING.get(), 1);
 
             ItemStack drill = new ItemStack(ModItems.DRILL.get());
-            pickaxe.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
-            pickaxe.enchant(Enchantments.MENDING, 1);
-            pickaxe.enchant(Enchantments.UNBREAKING, 3);
-            pickaxe.enchant(Enchantments.BLOCK_FORTUNE, 3);
-            pickaxe.enchant(ModEnchantments.REJUVENATION.get(), 1);
+            drill.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
+            drill.enchant(Enchantments.MENDING, 1);
+            drill.enchant(Enchantments.UNBREAKING, 3);
+            drill.enchant(Enchantments.BLOCK_FORTUNE, 3);
+            drill.enchant(ModEnchantments.REJUVENATION.get(), 1);
 
             ItemStack shovel = new ItemStack(ModItems.SAPPHIRE_SHOVEL.get());
             shovel.enchant(Enchantments.BLOCK_EFFICIENCY, 5);
