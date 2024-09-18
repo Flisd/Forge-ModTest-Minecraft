@@ -144,9 +144,8 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_TOOL_CRATE_KEY = ITEMS.register("sapphire_tool_crate_key",
             () -> new SapphireToolCrateKeyItem(new Item.Properties()));
 
-
     public static final RegistryObject<Item> BYE_BYE_DISK = ITEMS.register("bye_bye_disk",
-            () -> new RecordItem(6, ModSounds.WIDE_PUTIN, new Item.Properties().stacksTo(1),1400));
+            () -> new RecordItem(6, ModSounds.BYE_BYE_BYE, new Item.Properties().stacksTo(1),1400));
 
     public static final RegistryObject<Item> KIT_CRATE_KEY = ITEMS.register("kit_crate_key",
             () -> new KitCrateKeyItem(new Item.Properties()));

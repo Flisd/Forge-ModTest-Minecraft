@@ -56,7 +56,6 @@ public class TreeByeByeEventHandler {
             Block.dropResources(state, world, pos, null, player, tool);
             world.destroyBlock(pos, false); // false to prevent default drops
 
-            // Recursively break adjacent wood blocks with a limit
             for (BlockPos adjacentPos : new BlockPos[]{pos.above(), pos.below(), pos.north(), pos.south(), pos.east(), pos.west()}) {
                 if (world.getBlockState(adjacentPos).is(BlockTags.LOGS)) {
                     breakAdjacentWood(world, adjacentPos, player, tool, count + 1);
