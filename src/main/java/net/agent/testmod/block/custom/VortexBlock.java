@@ -63,14 +63,17 @@ public class VortexBlock extends Block {
             if (entity instanceof LivingEntity) {
                 Vec3 entityPos = entity.position();
                 Vec3 pullVector = blockCenter.subtract(entityPos).normalize().scale(pullStrength * 0.45);  // Adjusted pull strength
-                
+
+                // Stronger pull for players and directly set motion
                 if (entity instanceof Player) {
-                    pullVector = pullVector.scale(1.2);  // 20% stronger pull for players
+                    Player player = (Player) entity;
+                    pullVector = blockCenter.subtract(player.position()).normalize().scale(pullStrength * 0.75); // Stronger for players
+                    player.setDeltaMovement(pullVector); // Override movement for players
+                } else {
+                    entity.setDeltaMovement(entity.getDeltaMovement().add(pullVector));
                 }
 
-                entity.setDeltaMovement(entity.getDeltaMovement().add(pullVector));
-
-                // Slow down the entities slightly to prevent overshooting
+                // Slow down entities slightly to prevent overshooting
                 entity.setDeltaMovement(entity.getDeltaMovement().scale(0.95));
             }
         }
