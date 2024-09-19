@@ -141,6 +141,7 @@
   "item.testmod.monkey_kit_item": "Monkey Kit",
   "item.testmod.premium_kit_item": "Premium Kit",
   "item.testmod.starter_kit_item": "Starter Kit",
-  "item.testmod.totem_kit_item": "Totem Kit"
+  "item.testmod.totem_kit_item": "Totem Kit",
 
+  "block.testmod.vortex_block": "Vortex Block"
 }

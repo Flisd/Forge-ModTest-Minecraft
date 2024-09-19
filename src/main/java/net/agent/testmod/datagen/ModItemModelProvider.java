@@ -66,6 +66,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
 
+
         evenSimplerBlockItem(ModBlocks.DIAMOND_TNT);
 
         trapdoorItem(ModBlocks.SAPPHIRE_TRAP_DOOR);

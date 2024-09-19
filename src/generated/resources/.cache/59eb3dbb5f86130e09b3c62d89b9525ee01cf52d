@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-15T14:18:03.6470071	Loot Tables
+// 1.20.4	2024-09-19T08:35:01.5979154	Loot Tables
 1ecc570e3a96586bacaaa0bf5cbe5735dcdbf85c data/testmod/loot_tables/blocks/beacon_pow.json
 d37e74e45fcf893d0ea42f43e838a19397aafdef data/testmod/loot_tables/blocks/camouflage_block.json
 30e721c94b74507aa37af640875dbff4d9840983 data/testmod/loot_tables/blocks/deepslate_sapphire_ore.json
@@ -26,3 +26,4 @@ fb1768bbac0797b518171b6d5a52d7d209e68113 data/testmod/loot_tables/blocks/sapphir
 1fdaf9876198e4addb478e74d3186f3394cdfc0c data/testmod/loot_tables/blocks/sapphire_trap_door.json
 6957b14d6ff9890650d299a4fdd1cddeefefc54b data/testmod/loot_tables/blocks/sapphire_wall.json
 26c8e5f0e5177a0abdcb57c0889b568c1c6fb50f data/testmod/loot_tables/blocks/sound_block.json
+0f6eb1d2fbcb0233715e3454854e06ae6b7cf976 data/testmod/loot_tables/blocks/vortex_block.json
