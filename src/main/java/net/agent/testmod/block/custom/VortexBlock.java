@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -61,7 +62,11 @@ public class VortexBlock extends Block {
         for (Entity entity : entities) {
             if (entity instanceof LivingEntity) {
                 Vec3 entityPos = entity.position();
-                Vec3 pullVector = blockCenter.subtract(entityPos).normalize().scale(pullStrength * 0.075);  // Adjusted pull strength to 0.75
+                Vec3 pullVector = blockCenter.subtract(entityPos).normalize().scale(pullStrength * 0.45);  // Adjusted pull strength
+                
+                if (entity instanceof Player) {
+                    pullVector = pullVector.scale(1.2);  // 20% stronger pull for players
+                }
 
                 entity.setDeltaMovement(entity.getDeltaMovement().add(pullVector));
 
