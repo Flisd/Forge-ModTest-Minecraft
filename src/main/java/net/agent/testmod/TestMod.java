@@ -2,6 +2,7 @@ package net.agent.testmod;
 
 import com.mojang.logging.LogUtils;
 import net.agent.testmod.block.ModBlocks;
+import net.agent.testmod.block.custom.VortexBlock;
 import net.agent.testmod.block.entity.ModBlockEntities;
 import net.agent.testmod.block.entity.renderer.BeaconSquareBlockEntityRenderer;
 import net.agent.testmod.effect.ModEffects;
@@ -48,6 +49,7 @@ public class TestMod {
         ModSounds.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModEffects.register(modEventBus);
+        MinecraftForge.EVENT_BUS.register(VortexBlock.class);
 
         MinecraftForge.EVENT_BUS.register(this);
         //MinecraftForge.EVENT_BUS.register(RandomSoundEventHandler.class);

@@ -6,7 +6,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,9 +14,13 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
+@Mod.EventBusSubscriber
 public class VortexBlock extends Block {
     public static final IntegerProperty PULL_STRENGTH = IntegerProperty.create("pull_strength", 0, 3);
     private static final int RADIUS = 10;  // Define the radius of the vortex
@@ -47,7 +50,7 @@ public class VortexBlock extends Block {
             world.setBlock(pos, state.setValue(PULL_STRENGTH, 0), 3);
         }
 
-        // Apply vortex effect to living entities only
+        // Apply vortex effect
         applyVortex(world, pos, pullStrength);
     }
 
@@ -60,21 +63,48 @@ public class VortexBlock extends Block {
 
         // Apply pulling force to each living entity
         for (Entity entity : entities) {
-            if (entity instanceof LivingEntity) {
                 Vec3 entityPos = entity.position();
-                Vec3 pullVector = blockCenter.subtract(entityPos).normalize().scale(pullStrength * 0.45);  // Adjusted pull strength
+                Vec3 pullVector = blockCenter.subtract(entityPos).normalize().scale(pullStrength * 0.95);
 
-                // Stronger pull for players and directly set motion
+                // Special case for players to ensure pull effect
                 if (entity instanceof Player) {
                     Player player = (Player) entity;
-                    pullVector = blockCenter.subtract(player.position()).normalize().scale(pullStrength * 0.75); // Stronger for players
-                    player.setDeltaMovement(pullVector); // Override movement for players
+
+                    // Check if the player is in survival or adventure mode
+                    if (!player.isCreative() && !player.isSpectator()) {
+                        // Apply the pull effect to the player
+                        player.setDeltaMovement(player.getDeltaMovement().add(pullVector));
+                        player.setDeltaMovement(player.getDeltaMovement().scale(0.95));
+                    }
                 } else {
                     entity.setDeltaMovement(entity.getDeltaMovement().add(pullVector));
+                    entity.setDeltaMovement(entity.getDeltaMovement().scale(0.95));
                 }
+        }
+    }
 
-                // Slow down entities slightly to prevent overshooting
-                entity.setDeltaMovement(entity.getDeltaMovement().scale(0.95));
+    @SubscribeEvent
+    public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+        Player player = event.player;
+        Level world = player.level();
+
+        // Check if the player is in survival or adventure mode
+        if (!player.isCreative() && !player.isSpectator()) {
+            BlockPos playerPos = player.blockPosition();
+
+            // Check for nearby VortexBlocks
+            for (BlockPos pos : BlockPos.betweenClosed(playerPos.offset(-10, -10, -10), playerPos.offset(10, 10, 10))) {
+                if (world.getBlockState(pos).getBlock() instanceof VortexBlock) {
+                    VortexBlock vortexBlock = (VortexBlock) world.getBlockState(pos).getBlock();
+                    int pullStrength = world.getBlockState(pos).getValue(VortexBlock.PULL_STRENGTH);
+
+                    Vec3 blockCenter = new Vec3(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5);
+                    Vec3 pullVector = blockCenter.subtract(player.position()).normalize().scale(pullStrength * 0.45);
+
+                    // Apply the pull effect to the player
+                    player.setDeltaMovement(player.getDeltaMovement().add(pullVector));
+                    player.setDeltaMovement(player.getDeltaMovement().scale(0.95));
+                }
             }
         }
     }
