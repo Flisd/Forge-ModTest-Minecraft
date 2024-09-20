@@ -248,6 +248,59 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                 .unlockedBy(getHasName(Items.EXPERIENCE_BOTTLE), has(Items.EXPERIENCE_BOTTLE))
                 .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK.get(),1)
+                .pattern("dbd")
+                .pattern("sns")
+                .pattern("dbd")
+                .define('d', Items.DISPENSER)
+                .define('s', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('b', Items.DIAMOND_BLOCK)
+                .define('n', Items.NETHERITE_BLOCK)
+                .unlockedBy(getHasName(Items.DIAMOND_BLOCK), has(Items.DISPENSER))
+                .unlockedBy(getHasName(Items.NETHERITE_BLOCK), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.KIT_CRATE_BLOCK.get(),1)
+                .pattern("hcl")
+                .pattern("bnh")
+                .pattern("clb")
+                .define('h', Items.NETHERITE_HELMET)
+                .define('c', Items.NETHERITE_CHESTPLATE)
+                .define('l', Items.NETHERITE_LEGGINGS)
+                .define('b', Items.NETHERITE_BOOTS)
+                .define('n', Items.NETHERITE_BLOCK)
+                .unlockedBy(getHasName(Items.NETHERITE_CHESTPLATE), has(Items.NETHERITE_LEGGINGS))
+                .unlockedBy(getHasName(Items.NETHERITE_BOOTS), has(Items.NETHERITE_BLOCK))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(),1)
+                .pattern("idi")
+                .pattern("dnd")
+                .pattern("idi")
+                .define('d', Items.DIAMOND_SWORD)
+                .define('i', Items.IRON_SWORD)
+                .define('n', Items.NETHERITE_PICKAXE)
+                .unlockedBy(getHasName(Items.DIAMOND_SWORD), has(Items.IRON_SWORD))
+                .unlockedBy(getHasName(Items.NETHERITE_PICKAXE), has(Items.NETHERITE_PICKAXE))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(),1)
+                .pattern("wdn")
+                .pattern("stu")
+                .pattern("ime")
+                .define('w', Items.SCULK_SHRIEKER)
+                .define('d', Items.DIAMOND_BLOCK)
+                .define('n', Items.NETHERITE_INGOT)
+                .define('s', Items.NETHER_STAR)
+                .define('t', Items.SMOOTH_STONE)
+                .define('d', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .define('i', Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE)
+                .define('m', Items.MOSSY_COBBLESTONE)
+                .define('e', ModBlocks.SAPPHIRE_ORE.get())
+                .unlockedBy(getHasName(Items.DIAMOND_SWORD), has(Items.IRON_SWORD))
+                .unlockedBy(getHasName(Items.NETHERITE_PICKAXE), has(Items.NETHERITE_PICKAXE))
+                .save(p_297267_);
     }
 
     protected static void oreSmelting(RecipeOutput p_300202_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

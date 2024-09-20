@@ -1,7 +1,6 @@
 package net.agent.testmod.particle;
 
 import net.agent.testmod.TestMod;
-import net.agent.testmod.particle.custom.SapphireParticles;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraftforge.eventbus.api.IEventBus;

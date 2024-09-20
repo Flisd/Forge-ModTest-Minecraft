@@ -1,14 +1,10 @@
 package net.agent.testmod.item.custom;
 
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.player.Player;
+import net.agent.testmod.particle.ModParticles;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
@@ -19,35 +15,23 @@ public class SapphireStaff extends Item {
         super(properties);
     }
 
-    @SubscribeEvent
-    public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-        Player player = event.player;
-        ItemStack mainHand = player.getMainHandItem();
+    @Override
+    public InteractionResult useOn(UseOnContext p_41427_) {
+        BlockPos pos = p_41427_.getClickedPos();
+        if(p_41427_.getLevel().isClientSide())
+            spawnParticles(p_41427_,pos);
+        return InteractionResult.SUCCESS;
+    }
 
-        if (mainHand.getItem() instanceof SapphireStaff) {
-            // Reduce durability by 1 every second
-            if (event.phase == TickEvent.Phase.END && player.level().getGameTime() % 20 == 0) {
-                mainHand.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(InteractionHand.MAIN_HAND));
-            }
-
-            Level world = player.level();
-            List<Entity> entities = world.getEntities(player, player.getBoundingBox().inflate(5)); // 5-block radius
-
-            for (Entity entity : entities) {
-                if (entity instanceof ItemEntity) {
-                    pullEntityTowardsPlayer((ItemEntity) entity, player);
-                }
+    private void spawnParticles(UseOnContext context, BlockPos pos) {
+        System.out.println("Spawning particles at: " + pos);
+        for (int i = 0; i < 360; i++) {
+            if (i % 20 == 0) {
+                context.getLevel().addParticle(ModParticles.SAPPHIRE_PARTICLES.get(),
+                        pos.getX() + 0.5d, pos.getY() + 1d, pos.getZ() + 0.5d,
+                        Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
             }
         }
     }
 
-    private static void pullEntityTowardsPlayer(ItemEntity itemEntity, Player player) {
-        double speed = 0.05; // Pull speed
-        double dx = player.getX() - itemEntity.getX();
-        double dy = player.getY() + 1.0 - itemEntity.getY(); // +1 to adjust for height
-        double dz = player.getZ() - itemEntity.getZ();
-
-        double distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
-        itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().add(dx / distance * speed, dy / distance * speed, dz / distance * speed));
-    }
 }
