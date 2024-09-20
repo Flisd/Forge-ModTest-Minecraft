@@ -103,6 +103,5 @@ public class ModEvents {
                     new ItemStack(Items.NETHER_STAR, 2),
                     10, 20,0.2f));
         }
-
     }
 }

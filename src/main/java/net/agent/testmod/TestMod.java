@@ -11,6 +11,7 @@ import net.agent.testmod.entity.ModEntities;
 import net.agent.testmod.event.RandomSoundEventHandler;
 import net.agent.testmod.item.ModCreativeModeTabs;
 import net.agent.testmod.item.ModItems;
+import net.agent.testmod.particle.ModParticles;
 import net.agent.testmod.sound.ModSounds;
 import net.agent.testmod.villager.ModVillagers;
 import net.minecraft.client.Minecraft;
@@ -50,6 +51,8 @@ public class TestMod {
         ModVillagers.register(modEventBus);
         ModEffects.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(VortexBlock.class);
+
+        ModParticles.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         //MinecraftForge.EVENT_BUS.register(RandomSoundEventHandler.class);
