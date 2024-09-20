@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond_sword"
+    },
+    "i": {
+      "item": "minecraft:iron_sword"
+    },
+    "n": {
+      "item": "minecraft:netherite_pickaxe"
+    }
+  },
+  "pattern": [
+    "idi",
+    "dnd",
+    "idi"
+  ],
+  "result": {
+    "item": "testmod:sapphire_tool_crate_key"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.4	2024-09-09T13:54:55.7970682	Recipes
+// 1.20.4	2024-09-20T14:35:06.1576759	Recipes
 333de4601cd08f71d7d69c07e4c94245ebd66780 data/testmod/advancements/recipes/misc/compact_enchanting_bottle.json
 a381ecaccf60ac6745e236ec2b543da5bdd8cbb8 data/testmod/advancements/recipes/misc/diamond_tnt.json
 ec075a3ba79937a2cae8e0ced534d661391f1641 data/testmod/advancements/recipes/misc/drill.json
@@ -6,6 +6,8 @@ acf080893166c99630f51be2a741a8cdbe4fdb63 data/testmod/advancements/recipes/misc/
 a9c130a1677fdb0e1d96df9efaafafa0fc52e577 data/testmod/advancements/recipes/misc/food_orb.json
 7d52d90a70d1d434675e5ac2bbd44658a99f89f8 data/testmod/advancements/recipes/misc/god_orb.json
 cce9cb9650539aef35a8bad168226f373855e9bb data/testmod/advancements/recipes/misc/ivy_sword.json
+8561ff8c456140f94894c075093163ac1a8e8c59 data/testmod/advancements/recipes/misc/kit_crate_block.json
+8e730c0b0fa0c7c20020375a26947b625e7230da data/testmod/advancements/recipes/misc/kit_crate_key.json
 5647b00679bc5ded3fdf71cf8695850b65ea59fc data/testmod/advancements/recipes/misc/lighting_sword.json
 e3d4b5416b2a19fe9639395d741d126fd5a9d265 data/testmod/advancements/recipes/misc/magnet_staff.json
 5334c550790722c4ebd2820c3a61a454daf1e862 data/testmod/advancements/recipes/misc/metal_detector.json
@@ -24,8 +26,11 @@ f5b96ce1dac3b5892f178b36fa60785fdf7cb396 data/testmod/advancements/recipes/misc/
 4746ad87be2ef21a733a49507e4035c29baaf4fc data/testmod/advancements/recipes/misc/sapphire_from_smelting_nether_sapphire_ore.json
 a5e4eb00e4fd6f3498c3e3f0c69dfcc34205b827 data/testmod/advancements/recipes/misc/sapphire_from_smelting_raw_sapphire.json
 a15972695542d9b6992220a37614e9cda80dfe1a data/testmod/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
+5d48b8275fbfcab285dd8e1ce09c1916f0141bbd data/testmod/advancements/recipes/misc/sapphire_tool_crate_block.json
+072706c80b90318115dc68e6f91c902bf34273e7 data/testmod/advancements/recipes/misc/sapphire_tool_crate_key.json
 422501d3c1d577c09ca82a41e197aca87721ed1f data/testmod/advancements/recipes/misc/sound_block.json
 3518881a41c4e185db98261c307620e758009681 data/testmod/advancements/recipes/misc/spawner_detector.json
+425ed20659253a444f8290b66377576a7b1ea7ea data/testmod/advancements/recipes/misc/starter_kit_item.json
 16124aee0a4ed8ca0a8863b41a13eec988c16345 data/testmod/advancements/recipes/misc/steel_ball.json
 e390b337d4e4a39eaf6f01cb0a75e2843909922f data/testmod/advancements/recipes/misc/tnt_orb.json
 8eed8cf3ccc2bcc4eb4d2e789fe64bbc40aca008 data/testmod/advancements/recipes/misc/tnt_sword.json
@@ -37,6 +42,8 @@ e926baa6150876a02bce93d1ea3717f88ff625af data/testmod/recipes/ender_block.json
 c4aef8eca8d6494e02a8a9869bff19d186c2f07a data/testmod/recipes/food_orb.json
 de02953ceafc1ab86f5b794a26d74681411e9584 data/testmod/recipes/god_orb.json
 7cc16cbc2326e1d364d66a270eb022fa69ccd097 data/testmod/recipes/ivy_sword.json
+7540b28b48254d48c3f72bf7fbcfa7e2751fcaca data/testmod/recipes/kit_crate_block.json
+13b72cda4f8933231bc318a7332e956cfa181885 data/testmod/recipes/kit_crate_key.json
 58b01d10a16ddd7ad6824f1294e6d6a6fe0fe9d3 data/testmod/recipes/lighting_sword.json
 308977a5e3e65219778f339b6889c71a20577a68 data/testmod/recipes/magnet_staff.json
 f6fac5cfe37672836870bf44fe405ff34cf456d8 data/testmod/recipes/metal_detector.json
@@ -55,8 +62,11 @@ f20b7f3f65d40ceb2cc335f44900389235b1dc9f data/testmod/recipes/sapphire_from_smel
 0b2951768ce8b783f185a1b5a3d7f593d18d49e7 data/testmod/recipes/sapphire_from_smelting_nether_sapphire_ore.json
 6083d4fbf393499b7fe586880a9b214ad44418a9 data/testmod/recipes/sapphire_from_smelting_raw_sapphire.json
 c7813c2cfbebbfa24521dcaad22a59811f87ac2b data/testmod/recipes/sapphire_from_smelting_sapphire_ore.json
+7b0012356b476c900b17a3cc9687d8a53c1fc796 data/testmod/recipes/sapphire_tool_crate_block.json
+2b7dd9f3745f042ed1ba9e9686dbd9b2a9feb112 data/testmod/recipes/sapphire_tool_crate_key.json
 284759919c5563d3276a7d14cb6419b99cd67007 data/testmod/recipes/sound_block.json
 fc7a784712a58302674b0c7d461eea95fe33b31a data/testmod/recipes/spawner_detector.json
+55fd36704772fecccb8ea2314c53a1f9b7ab4aa3 data/testmod/recipes/starter_kit_item.json
 dccbbebc7d050d6acbf4be5924b1a273b684e523 data/testmod/recipes/steel_ball.json
 c0ad8e797c605e97fa397d9194dd6187afb161f3 data/testmod/recipes/tnt_orb.json
 c461a99259f0e1f5338d385239faefe6ee6b8aae data/testmod/recipes/tnt_sword.json

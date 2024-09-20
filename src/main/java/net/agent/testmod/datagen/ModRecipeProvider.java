@@ -285,7 +285,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.NETHERITE_PICKAXE), has(Items.NETHERITE_PICKAXE))
                 .save(p_297267_);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(),1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KIT_CRATE_KEY.get(), 1)
                 .pattern("wdn")
                 .pattern("stu")
                 .pattern("ime")
@@ -294,12 +294,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('n', Items.NETHERITE_INGOT)
                 .define('s', Items.NETHER_STAR)
                 .define('t', Items.SMOOTH_STONE)
-                .define('d', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .define('u', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
                 .define('i', Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE)
                 .define('m', Items.MOSSY_COBBLESTONE)
                 .define('e', ModBlocks.SAPPHIRE_ORE.get())
-                .unlockedBy(getHasName(Items.DIAMOND_SWORD), has(Items.IRON_SWORD))
-                .unlockedBy(getHasName(Items.NETHERITE_PICKAXE), has(Items.NETHERITE_PICKAXE))
+                .unlockedBy("has_sculk_shrieker", has(Items.SCULK_SHRIEKER))
+                .unlockedBy("has_diamond_block", has(Items.DIAMOND_BLOCK))
+                .unlockedBy("has_netherite_ingot", has(Items.NETHERITE_INGOT))
+                .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
+                .unlockedBy("has_smooth_stone", has(Items.SMOOTH_STONE))
+                .unlockedBy("has_netherite_upgrade_smithing_template", has(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
+                .unlockedBy("has_silence_armor_trim_smithing_template", has(Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE))
+                .unlockedBy("has_mossy_cobblestone", has(Items.MOSSY_COBBLESTONE))
+                .unlockedBy("has_sapphire_ore", has(ModBlocks.SAPPHIRE_ORE.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STARTER_KIT_ITEM.get(),2)
+                .pattern("csc")
+                .pattern("sis")
+                .pattern("csc")
+                .define('s', Items.STONE)
+                .define('i', Items.IRON_BLOCK)
+                .define('c', Items.COBBLESTONE)
+                .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.IRON_BLOCK))
+                .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
                 .save(p_297267_);
     }
 

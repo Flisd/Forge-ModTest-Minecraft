@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:netherite_boots"
+    },
+    "c": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "h": {
+      "item": "minecraft:netherite_helmet"
+    },
+    "l": {
+      "item": "minecraft:netherite_leggings"
+    },
+    "n": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "pattern": [
+    "hcl",
+    "bnh",
+    "clb"
+  ],
+  "result": {
+    "item": "testmod:kit_crate_block"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:diamond_block"
+    },
+    "d": {
+      "item": "minecraft:dispenser"
+    },
+    "n": {
+      "item": "minecraft:netherite_block"
+    },
+    "s": {
+      "item": "testmod:sapphire_block"
+    }
+  },
+  "pattern": [
+    "dbd",
+    "sns",
+    "dbd"
+  ],
+  "result": {
+    "item": "testmod:sapphire_tool_crate_block"
+  }
+}
