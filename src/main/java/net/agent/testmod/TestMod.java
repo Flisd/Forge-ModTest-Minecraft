@@ -61,7 +61,7 @@ public class TestMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Some preinit code
+
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

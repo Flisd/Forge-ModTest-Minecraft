@@ -143,5 +143,6 @@
   "item.testmod.starter_kit_item": "Starter Kit",
   "item.testmod.totem_kit_item": "Totem Kit",
 
-  "block.testmod.vortex_block": "Vortex Block"
+  "block.testmod.vortex_block": "Vortex Block",
+  "enchantment.testmod.ore_vein_miner" : "Ore Vein Miner"
 }

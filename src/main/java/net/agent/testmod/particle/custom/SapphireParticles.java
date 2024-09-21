@@ -1,34 +1,20 @@
 package net.agent.testmod.particle.custom;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import org.jetbrains.annotations.NotNull;
 
-@OnlyIn(Dist.CLIENT)
 public class SapphireParticles extends TextureSheetParticle {
-    private static final RandomSource RANDOM = RandomSource.create();
-    private final SpriteSet sprites;
+    public SapphireParticles(ClientLevel level, double xCoord, double yCoord, double zCoord, SpriteSet spriteSet, double xd, double yd, double zd) {
+        super(level, xCoord, yCoord, zCoord, xd, yd, zd);
 
-    protected SapphireParticles(ClientLevel clientLevel, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed, SpriteSet spriteSet) {
-        super(clientLevel, xPos, yPos, zPos, 0.5D - RANDOM.nextDouble(), ySpeed, 0.5D - RANDOM.nextDouble());
-        this.friction = 0.96F;
-        this.gravity = -0.1F;
-        this.speedUpWhenYMotionIsBlocked = true;
-        this.sprites = spriteSet;
-        this.yd *= 0.2F;
-        if (xSpeed == 0.0D && zSpeed == 0.0D) {
-            this.xd *= 0.1F;
-            this.zd *= 0.1F;
-        }
-
-        this.quadSize *= 0.75F;
-        this.lifetime = 40;
-        this.hasPhysics = false;
+        this.friction = 0.98F;
+        this.xd = xd;
+        this.yd = yd;
+        this.zd = zd;
+        this.quadSize= 1;
+        this.lifetime = 100;
         this.setSpriteFromAge(spriteSet);
 
         this.rCol = 1f;
@@ -37,32 +23,46 @@ public class SapphireParticles extends TextureSheetParticle {
     }
 
     @Override
+    public void tick() {
+        super.tick();
+        fadeOut();
+    }
+
+    private void fadeOut() {
+        this.alpha = (-(1 / (float) lifetime) * age + 1);
+    }
+
+    @NotNull
+    @Override
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
 
-    @Override
-    public void tick() {
-        super.tick();
-        fadeOut();
-        this.setSpriteFromAge(this.sprites);
-    }
-
-    public void fadeOut(){
-        this.alpha = (-(1/(float)lifetime)*age+1);
-    }
-
-    @OnlyIn(Dist.CLIENT)
     public static class Provider implements ParticleProvider<SimpleParticleType> {
+        private final SpriteSet spriteSet;
+
+        public Provider(SpriteSet spriteSet) {
+            this.spriteSet = spriteSet;
+        }
+
+        public Particle createParticle(@NotNull SimpleParticleType particleType, @NotNull ClientLevel level, double x, double y, double z, double dx, double dy, double dz) {
+            SapphireParticles sapphireParticles = new SapphireParticles(level, x, y, z, this.spriteSet, dx, dy, dz);
+            sapphireParticles.setColor(1F, 0.80F, 0.25F);
+            return sapphireParticles;
+        }
+    }
+    public static class Factory implements ParticleProvider<SimpleParticleType> {
         private final SpriteSet sprite;
 
-        public Provider(SpriteSet sprite) {
+        public Factory(SpriteSet sprite) {
             this.sprite = sprite;
         }
 
         @Override
-        public Particle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-            return new SapphireParticles(level, x, y, z, xSpeed, ySpeed, zSpeed, this.sprite);
+        public Particle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z, double xd, double yd, double zd) {
+            SapphireParticles particle = new SapphireParticles(level, x, y, z, sprite, xd, yd, zd);
+            particle.pickSprite(this.sprite);
+            return particle;
         }
     }
 }

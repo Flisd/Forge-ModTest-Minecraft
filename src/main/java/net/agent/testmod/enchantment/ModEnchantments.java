@@ -58,6 +58,9 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> TREE_BYE = ENCHANTMENTS.register("tree_bye",
             ()-> new TreeByeBye());
 
+    public static RegistryObject<Enchantment> ORE_VEIN_MINER = ENCHANTMENTS.register("ore_vein_miner",
+            ()-> new OreVeinMiner());
+
     public static void register(IEventBus iEventBus){
         ENCHANTMENTS.register(iEventBus);
     }
