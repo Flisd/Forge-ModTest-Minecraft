@@ -12,6 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEventBusEvents {
     @SubscribeEvent
     public void registerParticleFactories(final RegisterParticleProvidersEvent event) {
-        event.registerSpriteSet(ModParticles.SAPPHIRE_PARTICLES.get(), SapphireParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.SAPPHIRE_PARTICLES.get(), SapphireParticles.Factory::new);
     }
 }
