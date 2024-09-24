@@ -38,6 +38,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK.get());
         this.dropSelf(ModBlocks.KIT_CRATE_BLOCK.get());
         this.dropSelf(ModBlocks.VORTEX_BLOCK.get());
+        this.dropSelf(ModBlocks.PITFALL_BLOCK.get());
 //        this.dropSelf(ModBlocks.DICE_BLOCK.get());
 
 

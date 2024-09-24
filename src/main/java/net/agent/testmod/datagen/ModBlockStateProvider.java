@@ -58,6 +58,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK);
         blockWithItem(ModBlocks.KIT_CRATE_BLOCK);
         blockWithItem(ModBlocks.VORTEX_BLOCK);
+        blockWithItem(ModBlocks.PITFALL_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
