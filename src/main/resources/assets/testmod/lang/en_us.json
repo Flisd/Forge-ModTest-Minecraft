@@ -146,5 +146,6 @@
   "block.testmod.vortex_block": "Vortex Block",
   "enchantment.testmod.ore_vein_miner" : "Ore Vein Miner",
 
-  "block.testmod.pitfall_block": "Pitfall Block"
+  "block.testmod.pitfall_block": "Pitfall Block",
+  "block.testmod.xp_block": "XP Block"
 }

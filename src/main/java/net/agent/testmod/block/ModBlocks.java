@@ -124,6 +124,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PITFALL_BLOCK = registerBlock("pitfall_block",
             () -> new PitfallBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> XP_BLOCK = registerBlock("xp_block",
+            () -> new ExperienceStorageBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
