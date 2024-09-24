@@ -2,6 +2,7 @@ package net.agent.testmod.event;
 
 import net.agent.testmod.TestMod;
 import net.agent.testmod.particle.ModParticles;
+import net.agent.testmod.particle.custom.BlindParticles;
 import net.agent.testmod.particle.custom.SapphireParticles;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
@@ -13,5 +14,6 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public void registerParticleFactories(final RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(ModParticles.SAPPHIRE_PARTICLES.get(), SapphireParticles.Factory::new);
+        event.registerSpriteSet(ModParticles.BLIND_PARTICLES.get(), BlindParticles.Factory::new);
     }
 }

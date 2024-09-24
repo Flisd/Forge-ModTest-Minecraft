@@ -24,7 +24,6 @@ public class SapphireStaff extends Item {
     }
 
     private void spawnParticles(UseOnContext context, BlockPos pos) {
-        System.out.println("Spawning particles at: " + pos);
         for (int i = 0; i < 360; i++) {
             if (i % 20 == 0) {
                 context.getLevel().addParticle(ModParticles.SAPPHIRE_PARTICLES.get(),

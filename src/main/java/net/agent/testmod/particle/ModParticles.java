@@ -1,6 +1,7 @@
 package net.agent.testmod.particle;
 
 import net.agent.testmod.TestMod;
+import net.agent.testmod.particle.custom.BlindParticles;
 import net.agent.testmod.particle.custom.SapphireParticles;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -34,6 +35,9 @@ public class ModParticles {
     public static final RegistryObject<SimpleParticleType> SAPPHIRE_PARTICLES = PARTICLES.register("sapphire_particles",
             () -> new SimpleParticleType(true));
 
+    public static final RegistryObject<SimpleParticleType> BLIND_PARTICLES = PARTICLES.register("blind_particles",
+            () -> new SimpleParticleType(true));
+
     public static void register(IEventBus eventBus) {
         PARTICLES.register(eventBus);
     }
@@ -44,5 +48,6 @@ public class ModParticles {
         ParticleEngine particleEngine = Minecraft.getInstance().particleEngine;
 
         particleEngine.register(SAPPHIRE_PARTICLES.get(), SapphireParticles.Factory::new);
+        particleEngine.register(BLIND_PARTICLES.get(), BlindParticles.Factory::new);
     }
 }

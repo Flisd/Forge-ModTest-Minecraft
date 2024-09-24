@@ -1,21 +1,25 @@
 package net.agent.testmod.item.custom;
 
+import net.agent.testmod.particle.ModParticles;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-import java.awt.*;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class PotionSwordItem extends SwordItem {
     private static final int MAX_POTIONS = 3;
@@ -60,5 +64,34 @@ public class PotionSwordItem extends SwordItem {
         }
         p_41423_.add(Component.literal(pots.toString()));
         super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        if (level.isClientSide()) {
+            spawnParticles(level, player);
+        }
+        return InteractionResultHolder.success(itemstack);
+    }
+
+    private void spawnParticles(Level level, Player player) {
+        double x = player.getX();
+        double y = player.getY() + player.getEyeHeight();
+        double z = player.getZ();
+        double dx = player.getLookAngle().x * 0.5;
+        double dy = player.getLookAngle().y * 0.5;
+        double dz = player.getLookAngle().z * 0.5;
+
+        for (int i = 0; i < 50; i++) {
+            BlockPos pos = new BlockPos((int) x, (int) y, (int) z);
+            if (!level.isEmptyBlock(pos)) {
+                break;
+            }
+            level.addParticle(ModParticles.BLIND_PARTICLES.get(), x, y, z, 0, 0, 0);
+            x += dx;
+            y += dy;
+            z += dz;
+        }
     }
 }
