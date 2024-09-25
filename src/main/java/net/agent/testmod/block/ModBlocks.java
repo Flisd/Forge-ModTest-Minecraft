@@ -4,7 +4,6 @@ import net.agent.testmod.TestMod;
 import net.agent.testmod.block.custom.*;
 import net.agent.testmod.block.custom.OreGenBlock;
 import net.agent.testmod.item.ModItems;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -127,6 +126,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> XP_BLOCK = registerBlock("xp_block",
             () -> new ExperienceStorageBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> FREEZE_TRAP_BLOCK = registerBlock("freeze_trap_block",
+            () -> new FreezeTrapBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

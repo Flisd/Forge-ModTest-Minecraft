@@ -147,5 +147,7 @@
   "enchantment.testmod.ore_vein_miner" : "Ore Vein Miner",
 
   "block.testmod.pitfall_block": "Pitfall Block",
-  "block.testmod.xp_block": "XP Block"
+  "block.testmod.xp_block": "XP Block",
+  "block.testmod.freeze_trap_block": "Freeze Trap Block",
+  "creativetab.sapphire_items" : "Sapphire Tab"
 }

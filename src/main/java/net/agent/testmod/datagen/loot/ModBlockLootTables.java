@@ -40,6 +40,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VORTEX_BLOCK.get());
         this.dropSelf(ModBlocks.PITFALL_BLOCK.get());
         this.dropSelf(ModBlocks.XP_BLOCK.get());
+        this.dropSelf(ModBlocks.FREEZE_TRAP_BLOCK.get());
 //        this.dropSelf(ModBlocks.DICE_BLOCK.get());
 
 

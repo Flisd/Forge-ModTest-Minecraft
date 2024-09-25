@@ -13,7 +13,49 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TestMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> GOD_TAB = CREATIVE_MODE_TABS.register("god_tab",
+    public static final RegistryObject<CreativeModeTab> SAPPHIRE_ITEMS = CREATIVE_MODE_TABS.register("sapphire_items",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get(), 1))
+                    .title(Component.translatable("creativetab.sapphire_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(new ItemStack(ModItems.SAPPHIRE.get(), 1));
+                        output.accept(new ItemStack(ModItems.RAW_SAPPHIRE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.RAW_SAPPHIRE_BLOCK.get(), 1));
+
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_ORE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.NETHER_SAPPHIRE_ORE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.END_SAPPHIRE_ORE.get(), 1));
+
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_STAIRS.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_SLAB.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_BUTTON.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_FENCE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_FENCE_GATE.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_WALL.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_DOOR.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_TRAP_DOOR.get(), 1));
+
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_STAFF.get(), 1));
+
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get(), 1));
+
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_HELMET.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_CHESTPLATE.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_LEGGINGS.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_BOOTS.get(), 1));
+
+                        output.accept(new ItemStack(ModBlocks.SAPPHIRE_TOOL_CRATE_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModItems.SAPPHIRE_TOOL_CRATE_KEY.get(), 1));
+                    })
+                    .build());
+
+        public static final RegistryObject<CreativeModeTab> GOD_TAB = CREATIVE_MODE_TABS.register("god_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get(), 1))
                     .title(Component.translatable("creativetab.test_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -115,6 +157,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.VORTEX_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.PITFALL_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.XP_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.FREEZE_TRAP_BLOCK.get(), 1));
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

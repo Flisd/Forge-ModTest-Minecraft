@@ -138,7 +138,7 @@ public class GearMeUpMonkeyCommand {
                     // 1 stack of Arrows
                     addItemOrDrop(player, new ItemStack(Items.ARROW, 64));
 
-                    // 5 strength 2 potions
+                    // 3 strength 2 potions
                     ItemStack strengthPotion = new ItemStack(Items.SPLASH_POTION);
                     PotionUtils.setPotion(strengthPotion, Potions.STRENGTH);
 
