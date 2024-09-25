@@ -158,6 +158,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.PITFALL_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.XP_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.FREEZE_TRAP_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.HOLOGRAM_BLOCK.get(), 1));
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

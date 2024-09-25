@@ -1,6 +1,7 @@
 package net.agent.testmod.block.entity;
 
 import net.agent.testmod.block.ModBlocks;
+import net.agent.testmod.block.custom.HologramBlock;
 import net.agent.testmod.block.entity.renderer.OreGenBlockEntity;
 import net.agent.testmod.block.custom.OreGenBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -18,6 +19,9 @@ public class ModBlockEntities {
 
     public static final RegistryObject<BlockEntityType<OreGenBlockEntity>> ORE_GEN_BLOCK_ENTITY = BLOCK_ENTITIES.register("ore_gen_block_entity", () ->
             BlockEntityType.Builder.of(OreGenBlockEntity::new, ModBlocks.ORE_GEN_BLOCK.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<HologramBlockEntity>> HOLOGRAM_BLOCK_ENTITY = BLOCK_ENTITIES.register("hologram_block_entity", () ->
+            BlockEntityType.Builder.of(HologramBlockEntity::new, ModBlocks.HOLOGRAM_BLOCK.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

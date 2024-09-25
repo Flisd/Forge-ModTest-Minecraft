@@ -5,6 +5,8 @@ import net.agent.testmod.block.ModBlocks;
 import net.agent.testmod.block.custom.VortexBlock;
 import net.agent.testmod.block.entity.ModBlockEntities;
 import net.agent.testmod.block.entity.renderer.BeaconSquareBlockEntityRenderer;
+import net.agent.testmod.block.entity.renderer.HologramBlockEntityRenderer;
+import net.agent.testmod.block.entity.renderer.OreGenBlockEntity;
 import net.agent.testmod.effect.ModEffects;
 import net.agent.testmod.enchantment.ModEnchantments;
 import net.agent.testmod.entity.ModEntities;
@@ -90,6 +92,7 @@ public class TestMod {
             EntityRenderers.register(ModEntities.COMPACT_BOTTLE_PROJECTILE.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.TUNNEL_PROJECTILE.get(), ThrownItemRenderer::new);
             BlockEntityRenderers.register(ModBlockEntities.BEACON_SQUARE.get(), BeaconSquareBlockEntityRenderer::new);
+            BlockEntityRenderers.register(ModBlockEntities.HOLOGRAM_BLOCK_ENTITY.get(), HologramBlockEntityRenderer::new);
         }
     }
 }
