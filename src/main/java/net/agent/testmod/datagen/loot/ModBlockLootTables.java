@@ -43,6 +43,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FREEZE_TRAP_BLOCK.get());
         this.dropSelf(ModBlocks.HOLOGRAM_BLOCK.get());
         this.dropSelf(ModBlocks.BLIND_TRAP_BLOCK.get());
+        this.dropSelf(ModBlocks.BAD_POT_BLOCK.get());
+        this.dropSelf(ModBlocks.GOOD_POT_BLOCK.get());
+        this.dropSelf(ModBlocks.LUCK_POT_BLOCK.get());
 //        this.dropSelf(ModBlocks.DICE_BLOCK.get());
 
 

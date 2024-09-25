@@ -1,4 +1,5 @@
-// 1.20.4	2024-09-25T11:58:36.9845151	Block States: testmod
+// 1.20.4	2024-09-25T16:07:27.3241338	Block States: testmod
+e9795cc341dbd55dcecd36093053f6171dfc7cb0 assets/testmod/blockstates/bad_pot_block.json
 1c2b3084723bff5823ca497784c503b2b206427e assets/testmod/blockstates/beacon_pow.json
 8ab5d938f6728e697386d9772172bd9439232d04 assets/testmod/blockstates/blind_trap_block.json
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
@@ -8,10 +9,12 @@ ce75376a060968498b7b9c856c2e93932d768f23 assets/testmod/blockstates/ender_block.
 647c80f0c44c2ce8f7cd7347ca1f256b2c37b3de assets/testmod/blockstates/end_sapphire_ore.json
 dbd38f9b74c448b390960ea96e74df6b486118d8 assets/testmod/blockstates/fog_block.json
 403f939bfd4dc9f23b450e780f6df18d967e2340 assets/testmod/blockstates/freeze_trap_block.json
+de5361961d2a60d1c0938a1ace783799e7ae6a0b assets/testmod/blockstates/good_pot_block.json
 575b793d240eb3072f4f15277665d518ca52b293 assets/testmod/blockstates/green_light_block.json
 ff1e1e4ddaaedf65584dd3bfa57f9cada375bde7 assets/testmod/blockstates/hologram_block.json
 b50ba1975c4656a8c74d402c6b73612c4ee6d9dd assets/testmod/blockstates/kit_crate_block.json
 cad4c41650952ea399b181ff08367437ad54e0f1 assets/testmod/blockstates/launch_block.json
+e50f83089045081bccb0e4f14e9a5e2ba1f3a0d1 assets/testmod/blockstates/luck_pot_block.json
 b8283618095f416197c4f68848cc8209216e13be assets/testmod/blockstates/nether_sapphire_ore.json
 e33f43cc0a635541df2eb4bdad2d53d59cea54b4 assets/testmod/blockstates/ore_gen_block.json
 4727cf59aed848ecd1e14442839617031d0f0f0e assets/testmod/blockstates/ore_luck_block.json
@@ -33,6 +36,7 @@ c40bd2a83c3ade7e0fab23c0bbecad2babdc8959 assets/testmod/blockstates/sapphire_wal
 ca468d346fe6f72dc5c6b14dfff70dd298ed49af assets/testmod/blockstates/sound_block.json
 86e1d0d4056b35516d5eec4bb0382b260bb75a53 assets/testmod/blockstates/vortex_block.json
 920a1f29edb66b7f2c7518d23b1291695eb2d35f assets/testmod/blockstates/xp_block.json
+73310829057f14c3e9230cde0f085578d8a4c626 assets/testmod/models/block/bad_pot_block.json
 a952360527050db8b7771e9a3328adb86246643d assets/testmod/models/block/blind_trap_block.json
 8428f8865a991799b9774e5bc07f72a0f0998404 assets/testmod/models/block/camouflage_block.json
 5f9a33e160a169fbfdba568ada7fbfc002ce5750 assets/testmod/models/block/deepslate_sapphire_ore.json
@@ -41,10 +45,12 @@ a952360527050db8b7771e9a3328adb86246643d assets/testmod/models/block/blind_trap_
 d66ae1fe9d455b40b9379ba815a65d2fd4186f4a assets/testmod/models/block/end_sapphire_ore.json
 f0c8447ee21350e1cd97ebd4f3fdf0eed49f3e4b assets/testmod/models/block/fog_block.json
 226998b05e9b40a13a4e7588fd0e6407f0405945 assets/testmod/models/block/freeze_trap_block.json
+0a51c4cca84a41d10a6335d7cf886505738f3aea assets/testmod/models/block/good_pot_block.json
 04667cb45f876a957484d8cf3fe92f65dffcd330 assets/testmod/models/block/green_light_block.json
 c820b09ff888e72a4b58487e99117126c8f07782 assets/testmod/models/block/hologram_block.json
 f72e0e672de65d42b89f696da37261f1e88328fb assets/testmod/models/block/kit_crate_block.json
 a85fcf7f0c1ff9ff4538b9e397ac9d402226ae33 assets/testmod/models/block/launch_block.json
+c17f51b9c691e692ebaf057be5ee3c6eed99f82c assets/testmod/models/block/luck_pot_block.json
 0df38c2f40b54f9b2431b35e93d1af459c38050d assets/testmod/models/block/nether_sapphire_ore.json
 d30092453551746505512a99b447813315cf8325 assets/testmod/models/block/ore_gen_block.json
 de538a53a4a49376cb8438b7b2f304636fdad8ed assets/testmod/models/block/ore_luck_block.json
@@ -86,6 +92,7 @@ e9f8526a09b42c86c67c7c80f26752989e15ac9b assets/testmod/models/block/sapphire_tr
 ccce52e5b930faa3f9fdb458932384af33cdc03c assets/testmod/models/block/sound_block.json
 0a178a79023cf58e4104ae3124d7aeee2095f05b assets/testmod/models/block/vortex_block.json
 2637d0189072fbb6650123c793a12571ac824a1e assets/testmod/models/block/xp_block.json
+95ed211b6e1c77725b8d1b3519a7416b060ec9dd assets/testmod/models/item/bad_pot_block.json
 9d452afdb92ca0b8c9f46dc7c183c9036bb4b7bf assets/testmod/models/item/beacon_pow.json
 c39e2e285d43617d1cf9c4c89e8af0641d9ac69d assets/testmod/models/item/blind_trap_block.json
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
@@ -95,10 +102,12 @@ c23d2d2420331faa243e4ded59e359ead84fa756 assets/testmod/models/item/deepslate_sa
 d7af242e8e730f789902f06814e466427e347bef assets/testmod/models/item/end_sapphire_ore.json
 954a7fd65f130b63e075478954bc16de654b1c1f assets/testmod/models/item/fog_block.json
 81862fb780c45b463ae029023ca88bd0c8f6a2e9 assets/testmod/models/item/freeze_trap_block.json
+1018373ea26d97dd2c00ab9b3388ee8d7190a062 assets/testmod/models/item/good_pot_block.json
 abeadef6001c7c463d372e42d24186a3a3c87d37 assets/testmod/models/item/green_light_block.json
 2546b4c45d96b04101cabe2ce3c2a107b6fbf50c assets/testmod/models/item/hologram_block.json
 3c974698dce3873fc5d1869b843c8143326ed9d0 assets/testmod/models/item/kit_crate_block.json
 72c0c492b08e037220e3d76a9a5fbe67b7872b22 assets/testmod/models/item/launch_block.json
+627c68e1aaebc208987edef0cd2594232093b1a5 assets/testmod/models/item/luck_pot_block.json
 184d3a254b16a6674455f8cc081edf7aaa05c15d assets/testmod/models/item/nether_sapphire_ore.json
 1890b2f0de2e19e0c25f99610ac23fd79b33d125 assets/testmod/models/item/ore_gen_block.json
 45339b03ae331581526e6a10baf13d40dca9c343 assets/testmod/models/item/ore_luck_block.json

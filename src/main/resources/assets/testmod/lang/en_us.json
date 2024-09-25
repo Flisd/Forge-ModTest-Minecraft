@@ -151,5 +151,8 @@
   "block.testmod.freeze_trap_block": "Freeze Trap Block",
   "creativetab.sapphire_items" : "Sapphire Tab",
   "block.testmod.hologram_block": "Hologram Block",
-  "block.testmod.blind_trap_block": "Blind Trap Block"
+  "block.testmod.blind_trap_block": "Blind Trap Block",
+  "block.testmod.bad_pot_block": "Bad Pot Block",
+  "block.testmod.good_pot_block": "Good Pot Block",
+  "block.testmod.luck_pot_block": "Luck Pot Block"
 }

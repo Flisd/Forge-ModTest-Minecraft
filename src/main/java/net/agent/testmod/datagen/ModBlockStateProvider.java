@@ -63,6 +63,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.FREEZE_TRAP_BLOCK);
         blockWithItem(ModBlocks.HOLOGRAM_BLOCK);
         blockWithItem(ModBlocks.BLIND_TRAP_BLOCK);
+        blockWithItem(ModBlocks.BAD_POT_BLOCK);
+        blockWithItem(ModBlocks.GOOD_POT_BLOCK);
+        blockWithItem(ModBlocks.LUCK_POT_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

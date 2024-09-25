@@ -1,4 +1,5 @@
-// 1.20.4	2024-09-25T11:58:36.9825149	Loot Tables
+// 1.20.4	2024-09-25T16:07:27.3221338	Loot Tables
+ffb9386f17be88106907559877ad4a2a831d5fb1 data/testmod/loot_tables/blocks/bad_pot_block.json
 1ecc570e3a96586bacaaa0bf5cbe5735dcdbf85c data/testmod/loot_tables/blocks/beacon_pow.json
 9e11c2aac88ea5fde51c9ebf7b6ddde15b8cb6e5 data/testmod/loot_tables/blocks/blind_trap_block.json
 d37e74e45fcf893d0ea42f43e838a19397aafdef data/testmod/loot_tables/blocks/camouflage_block.json
@@ -7,10 +8,12 @@ fc1d87d2ffe41343e909a051ca24669eb240e0b0 data/testmod/loot_tables/blocks/diamond
 06b49d0bf05fb45f9ee42033003ff86b8940e165 data/testmod/loot_tables/blocks/ender_block.json
 198b1eee9eb16d0c0ffe2fa8e712382a1cf5782a data/testmod/loot_tables/blocks/end_sapphire_ore.json
 928f05e50efe0d1d8d787ee4ee18ea7c27946cc1 data/testmod/loot_tables/blocks/freeze_trap_block.json
+adc601e5790afe399eec2d817d018731d6229ea8 data/testmod/loot_tables/blocks/good_pot_block.json
 109f93b80ef55c794ce35fb70a4cd6a4e29ab907 data/testmod/loot_tables/blocks/green_light_block.json
 c7006813d6f3dcff760db0b2e8f641b5860079a3 data/testmod/loot_tables/blocks/hologram_block.json
 d5c88c976f635095075d89203d30c85e229c907b data/testmod/loot_tables/blocks/kit_crate_block.json
 1887396fd98f66f61352ee979da6fe02838ee70d data/testmod/loot_tables/blocks/launch_block.json
+2cd87c81f2070002f2123b2fc5e64bb85ccf020b data/testmod/loot_tables/blocks/luck_pot_block.json
 f5f48ea8d42a9cd0a1ce51912e0c564e191bda88 data/testmod/loot_tables/blocks/nether_sapphire_ore.json
 a56f380c13754a102f0935d846120be1410bdfa9 data/testmod/loot_tables/blocks/ore_gen_block.json
 8c870ab4fc65fe38fc4a0a69d4ccbcdde464bfde data/testmod/loot_tables/blocks/ore_luck_block.json

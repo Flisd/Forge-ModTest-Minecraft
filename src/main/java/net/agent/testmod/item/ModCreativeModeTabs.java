@@ -56,7 +56,7 @@ public class ModCreativeModeTabs {
                     .build());
 
         public static final RegistryObject<CreativeModeTab> GOD_TAB = CREATIVE_MODE_TABS.register("god_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get(), 1))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MAGIC_DUST.get(), 1))
                     .title(Component.translatable("creativetab.test_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModItems.SAPPHIRE.get(), 1));
@@ -160,6 +160,9 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.FREEZE_TRAP_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.HOLOGRAM_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.BLIND_TRAP_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.BAD_POT_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.GOOD_POT_BLOCK.get(), 1));
+                        output.accept(new ItemStack(ModBlocks.LUCK_POT_BLOCK.get(), 1));
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

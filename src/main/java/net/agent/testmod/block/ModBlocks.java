@@ -135,6 +135,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLIND_TRAP_BLOCK = registerBlock("blind_trap_block",
             () -> new BlindnessTrapBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> BAD_POT_BLOCK = registerBlock("bad_pot_block",
+            () -> new BadPotionUpBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> GOOD_POT_BLOCK = registerBlock("good_pot_block",
+            () -> new GoodPotionUpBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> LUCK_POT_BLOCK = registerBlock("luck_pot_block",
+            () -> new LuckPotionUpBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

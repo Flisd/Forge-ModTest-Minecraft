@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testmod:block/luck_pot_block"
+    }
+  }
+}
