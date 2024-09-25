@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testmod:block/blind_trap_block"
+    }
+  }
+}

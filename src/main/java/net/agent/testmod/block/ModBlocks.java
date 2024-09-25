@@ -132,6 +132,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> HOLOGRAM_BLOCK = registerBlock("hologram_block",
             () -> new HologramBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> BLIND_TRAP_BLOCK = registerBlock("blind_trap_block",
+            () -> new BlindnessTrapBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

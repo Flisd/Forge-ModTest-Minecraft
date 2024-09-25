@@ -12,4 +12,4 @@ public class HologramBlockEntity extends BlockEntity {
     public String getHologramText() {
         return "Monkey";
     }
-}   
+}
