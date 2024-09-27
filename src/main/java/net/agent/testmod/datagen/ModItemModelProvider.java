@@ -122,6 +122,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PREMIUM_KIT_ITEM);
         simpleItem(ModItems.STARTER_KIT_ITEM);
         simpleItem(ModItems.TOTEM_KIT_ITEM);
+        simpleItem(ModItems.HOW_DID_WE_GET_HERE_POT);
 //        handheldItem(ModItems.ELEMENT_GAUNTLET);
     }
 

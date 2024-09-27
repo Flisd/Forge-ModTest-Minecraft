@@ -48,28 +48,25 @@ public class ExperienceStorageBlock extends Block {
             }
         } else {
             releaseXP(world, pos);
+            world.setBlock(pos, state.setValue(ABSORBINGXP, true), 3); // Reset to absorbing mode
         }
         world.scheduleTick(pos, this, 10);
     }
+
 
     @Override
     public void stepOn(Level world, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof Player) {
             world.setBlock(pos, state.setValue(ABSORBINGXP, false), 3);
+            world.scheduleTick(pos, this, 40); // Schedule a tick to reset after 2 seconds (40 ticks)
         }
     }
+
 
     @Override
     public void entityInside(BlockState state, Level world, BlockPos pos, Entity entity) {
         if (entity instanceof Player) {
             world.setBlock(pos, state.setValue(ABSORBINGXP, false), 3);
-        }
-    }
-
-    @Override
-    public void neighborChanged(BlockState state, Level world, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
-        if (world.hasNeighborSignal(pos)) {
-            releaseXP(world, pos);
         }
     }
 
@@ -90,6 +87,10 @@ public class ExperienceStorageBlock extends Block {
 
     public int getStoredXP() {
         return storedXP;
+    }
+
+    public void setStoredXP(int x) {
+        storedXP=x;
     }
 
     public void addXP(int xp) {

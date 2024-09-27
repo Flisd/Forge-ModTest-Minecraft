@@ -7,6 +7,14 @@
     "testmod:nether_sapphire_ore",
     "testmod:end_sapphire_ore",
     "testmod:launch_block",
+    "testmod:luck_pot_block",
+    "testmod:bad_pot_block",
+    "testmod:good_pot_block",
+    "testmod:hologram_block",
+    "testmod:beacon_pow",
+    "testmod:freeze_trap_block",
+    "testmod:ore_gen_block",
+    "testmod:ender_block",
     "testmod:sound_block"
   ]
 }

@@ -154,5 +154,7 @@
   "block.testmod.blind_trap_block": "Blind Trap Block",
   "block.testmod.bad_pot_block": "Bad Pot Block",
   "block.testmod.good_pot_block": "Good Pot Block",
-  "block.testmod.luck_pot_block": "Luck Pot Block"
+  "block.testmod.luck_pot_block": "Luck Pot Block",
+
+  "item.testmod.how_did_we_get_here.effect.empty": "How did YOU get HERE??"
 }

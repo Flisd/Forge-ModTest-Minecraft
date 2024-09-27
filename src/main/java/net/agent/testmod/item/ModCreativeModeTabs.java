@@ -163,6 +163,8 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.BAD_POT_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.GOOD_POT_BLOCK.get(), 1));
                         output.accept(new ItemStack(ModBlocks.LUCK_POT_BLOCK.get(), 1));
+
+                        output.accept(new ItemStack(ModItems.HOW_DID_WE_GET_HERE_POT.get(), 1));
 //                        output.accept(new ItemStack(ModBlocks.BEACON_POW.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.PROJECTILE_SHOOTER_BLOCK.get(), 1));
                         //output.accept(new ItemStack(ModBlocks.DICE_BLOCK.get(), 1));

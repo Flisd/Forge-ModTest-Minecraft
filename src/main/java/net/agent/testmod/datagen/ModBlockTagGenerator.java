@@ -9,6 +9,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -24,6 +25,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
                 .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
 
+        this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.BLIND_TRAP_BLOCK.get());
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
@@ -32,6 +36,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                         ModBlocks.END_SAPPHIRE_ORE.get(),
                         ModBlocks.LAUNCH_BLOCK.get(),
+                        ModBlocks.LUCK_POT_BLOCK.get(),
+                        ModBlocks.BAD_POT_BLOCK.get(),
+                        ModBlocks.GOOD_POT_BLOCK.get(),
+                        ModBlocks.HOLOGRAM_BLOCK.get(),
+                        ModBlocks.BEACON_POW.get(),
+                        ModBlocks.FREEZE_TRAP_BLOCK.get(),
+                        ModBlocks.ORE_GEN_BLOCK.get(),
+                        ModBlocks.ENDER_BLOCK.get(),
                         ModBlocks.SOUND_BLOCK.get());
 
 
