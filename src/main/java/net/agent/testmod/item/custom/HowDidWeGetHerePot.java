@@ -1,8 +1,6 @@
 package net.agent.testmod.item.custom;
 
 import com.google.common.collect.Lists;
-import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -26,6 +24,7 @@ public class HowDidWeGetHerePot extends SplashPotionItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
         if (!world.isClientSide) {
             ItemStack customPotion = new ItemStack(Items.SPLASH_POTION);
             PotionUtils.setPotion(customPotion, Potions.EMPTY);
@@ -63,8 +62,13 @@ public class HowDidWeGetHerePot extends SplashPotionItem {
             thrownPotion.setItem(customPotion);
             thrownPotion.setDeltaMovement(Vec3.ZERO);
             world.addFreshEntity(thrownPotion);
+
+            // Decrease the item stack count
+            if (!player.getAbilities().instabuild) {
+                itemstack.shrink(1);
+            }
         }
-        return new InteractionResultHolder<>(InteractionResult.SUCCESS, player.getItemInHand(hand));
+        return new InteractionResultHolder<>(InteractionResult.SUCCESS, itemstack);
     }
 
     @Override
