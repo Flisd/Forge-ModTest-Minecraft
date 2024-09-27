@@ -24,7 +24,7 @@ public class IllegalTotemsCommand {
                 .executes(context -> {
                     ServerPlayer player = context.getSource().getPlayerOrException();
                     if (player.gameMode.getGameModeForPlayer() == GameType.CREATIVE) {
-                        player.addItem(new ItemStack(Items.TOTEM_OF_UNDYING, 64));
+                        player.addItem(new ItemStack(Items.TOTEM_OF_UNDYING, 75));
 
                         return 1;
                     } else {

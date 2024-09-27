@@ -172,7 +172,10 @@ public class ModItems {
             () -> new TotemKitItem(new Item.Properties()));
 
     public static final RegistryObject<Item> HOW_DID_WE_GET_HERE_POT = ITEMS.register("how_did_we_get_here",
-            () -> new HowDidWeGetHerePot(new Item.Properties()));
+            () -> new HowDidWeGetHerePot(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> STRENGTH_SPEED_POT = ITEMS.register("strength_speed_pot",
+            () -> new StrengthSpeedPot(  new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

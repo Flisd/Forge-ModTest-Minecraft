@@ -125,7 +125,7 @@ public class GearMeUpMonkeyCommand {
 
                     // Crossbow
                     ItemStack crossbow = new ItemStack(Items.CROSSBOW);
-                    crossbow.enchant(Enchantments.QUICK_CHARGE, 3);
+                    crossbow.enchant(Enchantments.QUICK_CHARGE, 5);
                     crossbow.enchant(Enchantments.MENDING, 1);
                     crossbow.enchant(Enchantments.UNBREAKING, 3);
                     crossbow.enchant(Enchantments.MULTISHOT, 1);
@@ -138,16 +138,19 @@ public class GearMeUpMonkeyCommand {
                     // 1 stack of Arrows
                     addItemOrDrop(player, new ItemStack(Items.ARROW, 64));
 
-                    // 3 strength 2 potions
-                    ItemStack strengthPotion = new ItemStack(Items.SPLASH_POTION);
-                    PotionUtils.setPotion(strengthPotion, Potions.STRENGTH);
+//                    // 3 strength 2 potions
+//                    ItemStack strengthPotion = new ItemStack(Items.SPLASH_POTION);
+//                    PotionUtils.setPotion(strengthPotion, Potions.STRENGTH);
+//
+//                    List<MobEffectInstance> customEffects = Lists.newArrayList();
+//                    customEffects.add(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 1)); // Strength II for 3 minutes
+//
+//                    PotionUtils.setCustomEffects(strengthPotion, customEffects);
+//                    strengthPotion.setCount(3);
+//                    addItemOrDrop(player, strengthPotion);
 
-                    List<MobEffectInstance> customEffects = Lists.newArrayList();
-                    customEffects.add(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 1)); // Strength II for 3 minutes
-
-                    PotionUtils.setCustomEffects(strengthPotion, customEffects);
-                    strengthPotion.setCount(3);
-                    addItemOrDrop(player, strengthPotion);
+                    // Better Pot
+                    addItemOrDrop(player,new ItemStack(ModItems.STRENGTH_SPEED_POT.get(),3));
 
                     // 1 shulker boxes (why not)
                     addItemOrDrop(player, new ItemStack(Items.PURPLE_SHULKER_BOX, 1));
