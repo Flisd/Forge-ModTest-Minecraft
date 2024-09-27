@@ -144,6 +144,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LUCK_POT_BLOCK = registerBlock("luck_pot_block",
             () -> new LuckPotionUpBlock(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> DISPENSER_SQUARE = registerBlock("dispenser_square",
+            () -> new DispenserSquare(Block.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> ret = BLOCKS.register(name, block);

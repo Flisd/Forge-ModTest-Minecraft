@@ -37,6 +37,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_SAPPHIRE_ORE.get(),
                         ModBlocks.LAUNCH_BLOCK.get(),
                         ModBlocks.LUCK_POT_BLOCK.get(),
+                        ModBlocks.DISPENSER_SQUARE.get(),
                         ModBlocks.BAD_POT_BLOCK.get(),
                         ModBlocks.GOOD_POT_BLOCK.get(),
                         ModBlocks.HOLOGRAM_BLOCK.get(),

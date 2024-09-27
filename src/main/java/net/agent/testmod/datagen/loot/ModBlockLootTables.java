@@ -46,6 +46,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BAD_POT_BLOCK.get());
         this.dropSelf(ModBlocks.GOOD_POT_BLOCK.get());
         this.dropSelf(ModBlocks.LUCK_POT_BLOCK.get());
+        this.dropSelf(ModBlocks.DISPENSER_SQUARE.get());
 //        this.dropSelf(ModBlocks.DICE_BLOCK.get());
 
 

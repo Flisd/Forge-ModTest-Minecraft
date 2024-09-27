@@ -157,5 +157,6 @@
   "block.testmod.luck_pot_block": "Luck Pot Block",
 
   "item.testmod.how_did_we_get_here.effect.empty": "How did YOU get HERE??",
-  "item.testmod.strength_speed_pot.effect.empty": "Strength and Speed 2"
+  "item.testmod.strength_speed_pot.effect.empty": "Strength and Speed 2",
+  "block.testmod.dispenser_square": "Dispenser Squared"
 }

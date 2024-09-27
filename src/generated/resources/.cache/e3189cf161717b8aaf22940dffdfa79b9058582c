@@ -1,10 +1,11 @@
-// 1.20.4	2024-09-27T09:55:11.6557955	Block States: testmod
+// 1.20.4	2024-09-27T16:18:59.0254933	Block States: testmod
 e9795cc341dbd55dcecd36093053f6171dfc7cb0 assets/testmod/blockstates/bad_pot_block.json
 1c2b3084723bff5823ca497784c503b2b206427e assets/testmod/blockstates/beacon_pow.json
 8ab5d938f6728e697386d9772172bd9439232d04 assets/testmod/blockstates/blind_trap_block.json
 c4740a6f8d19f28eaf48c9fd2feda81daf5de655 assets/testmod/blockstates/camouflage_block.json
 592a016a6656dcb60b662bf79098e9f53191b013 assets/testmod/blockstates/deepslate_sapphire_ore.json
 3f00ffa82fe212d2d9812412a5db8701b60e00a2 assets/testmod/blockstates/diamond_tnt.json
+b4a02df0330cada2022c66ec0a69b6ce86603bf9 assets/testmod/blockstates/dispenser_square.json
 ce75376a060968498b7b9c856c2e93932d768f23 assets/testmod/blockstates/ender_block.json
 647c80f0c44c2ce8f7cd7347ca1f256b2c37b3de assets/testmod/blockstates/end_sapphire_ore.json
 dbd38f9b74c448b390960ea96e74df6b486118d8 assets/testmod/blockstates/fog_block.json
@@ -41,6 +42,7 @@ a952360527050db8b7771e9a3328adb86246643d assets/testmod/models/block/blind_trap_
 8428f8865a991799b9774e5bc07f72a0f0998404 assets/testmod/models/block/camouflage_block.json
 5f9a33e160a169fbfdba568ada7fbfc002ce5750 assets/testmod/models/block/deepslate_sapphire_ore.json
 36f8272f0af9c5174414b11ea29cd4eba7be34af assets/testmod/models/block/diamond_tnt.json
+e73d656e3c94c4ba03acbda51972c2a96a952136 assets/testmod/models/block/dispenser_square.json
 8dc8b822b163d592852fbe9918196ad7f0b01ba6 assets/testmod/models/block/ender_block.json
 d66ae1fe9d455b40b9379ba815a65d2fd4186f4a assets/testmod/models/block/end_sapphire_ore.json
 f0c8447ee21350e1cd97ebd4f3fdf0eed49f3e4b assets/testmod/models/block/fog_block.json
@@ -98,6 +100,7 @@ c39e2e285d43617d1cf9c4c89e8af0641d9ac69d assets/testmod/models/item/blind_trap_b
 c0d544381961281d7b1b70f2ad937ff1fc1aaf16 assets/testmod/models/item/camouflage_block.json
 c23d2d2420331faa243e4ded59e359ead84fa756 assets/testmod/models/item/deepslate_sapphire_ore.json
 57ce9b6c0c798e64f3a261a01d9e84ec97302656 assets/testmod/models/item/diamond_tnt.json
+f82d8415552b4a416a65713bd929aa472200b215 assets/testmod/models/item/dispenser_square.json
 6edd4b3fa5fc45f50d55ed2dab001c4ea899d749 assets/testmod/models/item/ender_block.json
 d7af242e8e730f789902f06814e466427e347bef assets/testmod/models/item/end_sapphire_ore.json
 954a7fd65f130b63e075478954bc16de654b1c1f assets/testmod/models/item/fog_block.json

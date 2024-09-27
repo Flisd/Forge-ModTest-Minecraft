@@ -66,6 +66,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BAD_POT_BLOCK);
         blockWithItem(ModBlocks.GOOD_POT_BLOCK);
         blockWithItem(ModBlocks.LUCK_POT_BLOCK);
+        blockWithItem(ModBlocks.DISPENSER_SQUARE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
